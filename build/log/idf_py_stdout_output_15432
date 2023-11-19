@@ -1,0 +1,648 @@
+[0/1] Re-running CMake...
+-- ccache will be used for faster recompilation
+-- Project is not inside a git repository, or git repository has no commits; will not use 'git describe' to determine PROJECT_VER.
+-- Building ESP-IDF components for target esp32
+Processing 3 dependencies:
+[1/3] espressif/bdc_motor (0.1.0)
+[2/3] espressif/pid_ctrl (0.1.1)
+[3/3] idf (5.0.2)
+-- Project sdkconfig file C:/Users/etara/RC_Car/ble_compatibility_test/sdkconfig
+Loading defaults file C:/Users/etara/RC_Car/ble_compatibility_test/sdkconfig.defaults...
+-- App "ble_compatibility_test" version: 1
+-- Adding linker script C:/Users/etara/RC_Car/ble_compatibility_test/build/esp-idf/esp_system/ld/memory.ld
+-- Adding linker script C:/Users/etara/esp/esp-idf/components/esp_system/ld/esp32/sections.ld.in
+-- Adding linker script C:/Users/etara/esp/esp-idf/components/esp_rom/esp32/ld/esp32.rom.ld
+-- Adding linker script C:/Users/etara/esp/esp-idf/components/esp_rom/esp32/ld/esp32.rom.api.ld
+-- Adding linker script C:/Users/etara/esp/esp-idf/components/esp_rom/esp32/ld/esp32.rom.libgcc.ld
+-- Adding linker script C:/Users/etara/esp/esp-idf/components/esp_rom/esp32/ld/esp32.rom.newlib-data.ld
+-- Adding linker script C:/Users/etara/esp/esp-idf/components/esp_rom/esp32/ld/esp32.rom.syscalls.ld
+-- Adding linker script C:/Users/etara/esp/esp-idf/components/esp_rom/esp32/ld/esp32.rom.newlib-funcs.ld
+-- Adding linker script C:/Users/etara/esp/esp-idf/components/soc/esp32/ld/esp32.peripherals.ld
+-- Components: app_trace app_update bootloader bootloader_support bt cmock console cxx driver efuse esp-tls esp_adc esp_app_format esp_common esp_eth esp_event esp_gdbstub esp_hid esp_http_client esp_http_server esp_https_ota esp_https_server esp_hw_support esp_lcd esp_local_ctrl esp_netif esp_partition esp_phy esp_pm esp_psram esp_ringbuf esp_rom esp_system esp_timer esp_wifi espcoredump espressif__bdc_motor espressif__pid_ctrl esptool_py fatfs freertos hal heap http_parser idf_test ieee802154 json log lwip main mbedtls mqtt newlib nvs_flash openthread partition_table perfmon protobuf-c protocomm pthread sdmmc soc spi_flash spiffs tcp_transport ulp unity usb vfs wear_levelling wifi_provisioning wpa_supplicant xtensa
+-- Component paths: C:/Users/etara/esp/esp-idf/components/app_trace C:/Users/etara/esp/esp-idf/components/app_update C:/Users/etara/esp/esp-idf/components/bootloader C:/Users/etara/esp/esp-idf/components/bootloader_support C:/Users/etara/esp/esp-idf/components/bt C:/Users/etara/esp/esp-idf/components/cmock C:/Users/etara/esp/esp-idf/components/console C:/Users/etara/esp/esp-idf/components/cxx C:/Users/etara/esp/esp-idf/components/driver C:/Users/etara/esp/esp-idf/components/efuse C:/Users/etara/esp/esp-idf/components/esp-tls C:/Users/etara/esp/esp-idf/components/esp_adc C:/Users/etara/esp/esp-idf/components/esp_app_format C:/Users/etara/esp/esp-idf/components/esp_common C:/Users/etara/esp/esp-idf/components/esp_eth C:/Users/etara/esp/esp-idf/components/esp_event C:/Users/etara/esp/esp-idf/components/esp_gdbstub C:/Users/etara/esp/esp-idf/components/esp_hid C:/Users/etara/esp/esp-idf/components/esp_http_client C:/Users/etara/esp/esp-idf/components/esp_http_server C:/Users/etara/esp/esp-idf/components/esp_https_ota C:/Users/etara/esp/esp-idf/components/esp_https_server C:/Users/etara/esp/esp-idf/components/esp_hw_support C:/Users/etara/esp/esp-idf/components/esp_lcd C:/Users/etara/esp/esp-idf/components/esp_local_ctrl C:/Users/etara/esp/esp-idf/components/esp_netif C:/Users/etara/esp/esp-idf/components/esp_partition C:/Users/etara/esp/esp-idf/components/esp_phy C:/Users/etara/esp/esp-idf/components/esp_pm C:/Users/etara/esp/esp-idf/components/esp_psram C:/Users/etara/esp/esp-idf/components/esp_ringbuf C:/Users/etara/esp/esp-idf/components/esp_rom C:/Users/etara/esp/esp-idf/components/esp_system C:/Users/etara/esp/esp-idf/components/esp_timer C:/Users/etara/esp/esp-idf/components/esp_wifi C:/Users/etara/esp/esp-idf/components/espcoredump C:/Users/etara/RC_Car/ble_compatibility_test/managed_components/espressif__bdc_motor C:/Users/etara/RC_Car/ble_compatibility_test/managed_components/espressif__pid_ctrl C:/Users/etara/esp/esp-idf/components/esptool_py C:/Users/etara/esp/esp-idf/components/fatfs C:/Users/etara/esp/esp-idf/components/freertos C:/Users/etara/esp/esp-idf/components/hal C:/Users/etara/esp/esp-idf/components/heap C:/Users/etara/esp/esp-idf/components/http_parser C:/Users/etara/esp/esp-idf/components/idf_test C:/Users/etara/esp/esp-idf/components/ieee802154 C:/Users/etara/esp/esp-idf/components/json C:/Users/etara/esp/esp-idf/components/log C:/Users/etara/esp/esp-idf/components/lwip C:/Users/etara/RC_Car/ble_compatibility_test/main C:/Users/etara/esp/esp-idf/components/mbedtls C:/Users/etara/esp/esp-idf/components/mqtt C:/Users/etara/esp/esp-idf/components/newlib C:/Users/etara/esp/esp-idf/components/nvs_flash C:/Users/etara/esp/esp-idf/components/openthread C:/Users/etara/esp/esp-idf/components/partition_table C:/Users/etara/esp/esp-idf/components/perfmon C:/Users/etara/esp/esp-idf/components/protobuf-c C:/Users/etara/esp/esp-idf/components/protocomm C:/Users/etara/esp/esp-idf/components/pthread C:/Users/etara/esp/esp-idf/components/sdmmc C:/Users/etara/esp/esp-idf/components/soc C:/Users/etara/esp/esp-idf/components/spi_flash C:/Users/etara/esp/esp-idf/components/spiffs C:/Users/etara/esp/esp-idf/components/tcp_transport C:/Users/etara/esp/esp-idf/components/ulp C:/Users/etara/esp/esp-idf/components/unity C:/Users/etara/esp/esp-idf/components/usb C:/Users/etara/esp/esp-idf/components/vfs C:/Users/etara/esp/esp-idf/components/wear_levelling C:/Users/etara/esp/esp-idf/components/wifi_provisioning C:/Users/etara/esp/esp-idf/components/wpa_supplicant C:/Users/etara/esp/esp-idf/components/xtensa
+-- Configuring done
+-- Generating done
+-- Build files have been written to: C:/Users/etara/RC_Car/ble_compatibility_test/build
+[1/1102] Building C object esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/src/bootloader_random.c.obj
+[2/1102] Building C object esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/src/bootloader_clock_init.c.obj
+[3/1102] Building C object esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/src/bootloader_mem.c.obj
+[4/1102] Building C object esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/src/bootloader_random_esp32.c.obj
+FAILED: esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/src/bootloader_random_esp32.c.obj 
+ccache C:\Users\etara\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\bin\xtensa-esp32-elf-gcc.exe -DMBEDTLS_CONFIG_FILE=\"mbedtls/esp_config.h\" -DSOC_MMU_PAGE_SIZE=CONFIG_MMU_PAGE_SIZE -IC:/Users/etara/RC_Car/ble_compatibility_test/build/config -IC:/Users/etara/esp/esp-idf/components/bootloader_support/include -IC:/Users/etara/esp/esp-idf/components/bootloader_support/bootloader_flash/include -IC:/Users/etara/esp/esp-idf/components/bootloader_support/private_include -IC:/Users/etara/esp/esp-idf/components/newlib/platform_include -IC:/Users/etara/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include -IC:/Users/etara/esp/esp-idf/components/freertos/esp_additions/include/freertos -IC:/Users/etara/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include -IC:/Users/etara/esp/esp-idf/components/freertos/esp_additions/include -IC:/Users/etara/esp/esp-idf/components/esp_hw_support/include -IC:/Users/etara/esp/esp-idf/components/esp_hw_support/include/soc -IC:/Users/etara/esp/esp-idf/components/esp_hw_support/include/soc/esp32 -IC:/Users/etara/esp/esp-idf/components/esp_hw_support/port/esp32/. -IC:/Users/etara/esp/esp-idf/components/esp_hw_support/port/esp32/private_include -IC:/Users/etara/esp/esp-idf/components/heap/include -IC:/Users/etara/esp/esp-idf/components/log/include -IC:/Users/etara/esp/esp-idf/components/soc/include -IC:/Users/etara/esp/esp-idf/components/soc/esp32/. -IC:/Users/etara/esp/esp-idf/components/soc/esp32/include -IC:/Users/etara/esp/esp-idf/components/hal/esp32/include -IC:/Users/etara/esp/esp-idf/components/hal/include -IC:/Users/etara/esp/esp-idf/components/hal/platform_port/include -IC:/Users/etara/esp/esp-idf/components/esp_rom/include -IC:/Users/etara/esp/esp-idf/components/esp_rom/include/esp32 -IC:/Users/etara/esp/esp-idf/components/esp_rom/esp32 -IC:/Users/etara/esp/esp-idf/components/esp_common/include -IC:/Users/etara/esp/esp-idf/components/esp_system/include -IC:/Users/etara/esp/esp-idf/components/esp_system/port/soc -IC:/Users/etara/esp/esp-idf/components/esp_system/port/include/private -IC:/Users/etara/esp/esp-idf/components/xtensa/include -IC:/Users/etara/esp/esp-idf/components/xtensa/esp32/include -IC:/Users/etara/esp/esp-idf/components/lwip/include -IC:/Users/etara/esp/esp-idf/components/lwip/include/apps -IC:/Users/etara/esp/esp-idf/components/lwip/include/apps/sntp -IC:/Users/etara/esp/esp-idf/components/lwip/lwip/src/include -IC:/Users/etara/esp/esp-idf/components/lwip/port/esp32/include -IC:/Users/etara/esp/esp-idf/components/lwip/port/esp32/include/arch -IC:/Users/etara/esp/esp-idf/components/spi_flash/include -IC:/Users/etara/esp/esp-idf/components/mbedtls/port/include -IC:/Users/etara/esp/esp-idf/components/mbedtls/mbedtls/include -IC:/Users/etara/esp/esp-idf/components/mbedtls/mbedtls/library -IC:/Users/etara/esp/esp-idf/components/mbedtls/esp_crt_bundle/include -IC:/Users/etara/esp/esp-idf/components/efuse/include -IC:/Users/etara/esp/esp-idf/components/efuse/esp32/include -IC:/Users/etara/esp/esp-idf/components/esp_app_format/include -mlongcalls -Wno-frame-address  -fdiagnostics-color=always -ffunction-sections -fdata-sections -Wall -Werror=all -Wno-error=unused-function -Wno-error=unused-variable -Wno-error=deprecated-declarations -Wextra -Wno-unused-parameter -Wno-sign-compare -Wno-enum-conversion -gdwarf-4 -ggdb -Og -fmacro-prefix-map=C:/Users/etara/RC_Car/ble_compatibility_test=. -fmacro-prefix-map=C:/Users/etara/esp/esp-idf=/IDF -fstrict-volatile-bitfields -Wno-error=unused-but-set-variable -fno-jump-tables -fno-tree-switch-conversion -DconfigENABLE_FREERTOS_DEBUG_OCDAWARE=1 -std=gnu17 -Wno-old-style-declaration -D_GNU_SOURCE -DIDF_VER=\"v5.0.2-dirty\" -DESP_PLATFORM -D_POSIX_READER_WRITER_LOCKS -Wno-format -MD -MT esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/src/bootloader_random_esp32.c.obj -MF esp-idf\bootloader_support\CMakeFiles\__idf_bootloader_support.dir\src\bootloader_random_esp32.c.obj.d -o esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/src/bootloader_random_esp32.c.obj -c C:/Users/etara/esp/esp-idf/components/bootloader_support/src/bootloader_random_esp32.c
+In file included from C:/Users/etara/esp/esp-idf/components/bootloader_support/src/bootloader_random_esp32.c:13:
+C:/Users/etara/esp/esp-idf/components/log/include/esp_log.h:432:9: error: expected identifier or '(' before 'if'
+  432 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |         ^~
+C:/Users/etara/esp/esp-idf/components/log/include/esp_log.h:432:77: warning: __VA_ARGS__ can only appear in the expansion of a C99 variadic macro
+  432 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                                                             ^
+C:/Users/etara/esp/esp-idf/components/log/include/esp_log.h:432:75: error: stray '##' in program
+  432 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                                                           ^~
+C:/Users/etara/esp/esp-idf/components/log/include/esp_log.h:410:137: note: in definition of macro 'ESP_LOG_LEVEL'
+  410 |         if (level==ESP_LOG_ERROR )          { esp_log_write(ESP_LOG_ERROR,      tag, LOG_FORMAT(E, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                                                                         ^~~~~~~~~~~
+C:/Users/etara/esp/esp-idf/components/log/include/esp_log.h:432:75: error: stray '##' in program
+  432 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                                                           ^~
+C:/Users/etara/esp/esp-idf/components/log/include/esp_log.h:411:137: note: in definition of macro 'ESP_LOG_LEVEL'
+  411 |         else if (level==ESP_LOG_WARN )      { esp_log_write(ESP_LOG_WARN,       tag, LOG_FORMAT(W, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                                                                         ^~~~~~~~~~~
+C:/Users/etara/esp/esp-idf/components/log/include/esp_log.h:432:75: error: stray '##' in program
+  432 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                                                           ^~
+C:/Users/etara/esp/esp-idf/components/log/include/esp_log.h:412:137: note: in definition of macro 'ESP_LOG_LEVEL'
+  412 |         else if (level==ESP_LOG_DEBUG )     { esp_log_write(ESP_LOG_DEBUG,      tag, LOG_FORMAT(D, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                                                                         ^~~~~~~~~~~
+C:/Users/etara/esp/esp-idf/components/log/include/esp_log.h:432:75: error: stray '##' in program
+  432 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                                                           ^~
+C:/Users/etara/esp/esp-idf/components/log/include/esp_log.h:413:137: note: in definition of macro 'ESP_LOG_LEVEL'
+  413 |         else if (level==ESP_LOG_VERBOSE )   { esp_log_write(ESP_LOG_VERBOSE,    tag, LOG_FORMAT(V, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                                                                         ^~~~~~~~~~~
+C:/Users/etara/esp/esp-idf/components/log/include/esp_log.h:432:75: error: stray '##' in program
+  432 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                                                           ^~
+C:/Users/etara/esp/esp-idf/components/log/include/esp_log.h:414:137: note: in definition of macro 'ESP_LOG_LEVEL'
+  414 |         else                                { esp_log_write(ESP_LOG_INFO,       tag, LOG_FORMAT(I, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                                                                         ^~~~~~~~~~~
+C:/Users/etara/esp/esp-idf/components/log/include/esp_log.h:415:7: error: expected identifier or '(' before 'while'
+  415 |     } while(0)
+      |       ^~~~~
+C:/Users/etara/esp/esp-idf/components/log/include/esp_log.h:432:41: note: in expansion of macro 'ESP_LOG_LEVEL'
+  432 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                         ^~~~~~~~~~~~~
+C:/Users/etara/esp/esp-idf/components/log/include/esp_log.h:433:5: error: expected identifier or '(' before '}' token
+  433 |     } while(0)
+      |     ^
+C:/Users/etara/esp/esp-idf/components/log/include/esp_log.h:433:7: error: expected identifier or '(' before 'while'
+  433 |     } while(0)
+      |       ^~~~~
+C:/Users/etara/esp/esp-idf/components/bootloader_support/src/bootloader_random_esp32.c: In function 'bootloader_random_enable':
+C:/Users/etara/esp/esp-idf/components/bootloader_support/src/bootloader_random_esp32.c:28:5: error: implicit declaration of function 'periph_module_enable'; did you mean 'periph_module_disable'? [-Werror=implicit-function-declaration]
+   28 |     periph_module_enable(PERIPH_RNG_MODULE);
+      |     ^~~~~~~~~~~~~~~~~~~~
+      |     periph_module_disable
+cc1.exe: some warnings being treated as errors
+[5/1102] Building C object esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/bootloader_flash/src/bootloader_flash.c.obj
+FAILED: esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/bootloader_flash/src/bootloader_flash.c.obj 
+ccache C:\Users\etara\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\bin\xtensa-esp32-elf-gcc.exe -DMBEDTLS_CONFIG_FILE=\"mbedtls/esp_config.h\" -DSOC_MMU_PAGE_SIZE=CONFIG_MMU_PAGE_SIZE -IC:/Users/etara/RC_Car/ble_compatibility_test/build/config -IC:/Users/etara/esp/esp-idf/components/bootloader_support/include -IC:/Users/etara/esp/esp-idf/components/bootloader_support/bootloader_flash/include -IC:/Users/etara/esp/esp-idf/components/bootloader_support/private_include -IC:/Users/etara/esp/esp-idf/components/newlib/platform_include -IC:/Users/etara/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include -IC:/Users/etara/esp/esp-idf/components/freertos/esp_additions/include/freertos -IC:/Users/etara/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include -IC:/Users/etara/esp/esp-idf/components/freertos/esp_additions/include -IC:/Users/etara/esp/esp-idf/components/esp_hw_support/include -IC:/Users/etara/esp/esp-idf/components/esp_hw_support/include/soc -IC:/Users/etara/esp/esp-idf/components/esp_hw_support/include/soc/esp32 -IC:/Users/etara/esp/esp-idf/components/esp_hw_support/port/esp32/. -IC:/Users/etara/esp/esp-idf/components/esp_hw_support/port/esp32/private_include -IC:/Users/etara/esp/esp-idf/components/heap/include -IC:/Users/etara/esp/esp-idf/components/log/include -IC:/Users/etara/esp/esp-idf/components/soc/include -IC:/Users/etara/esp/esp-idf/components/soc/esp32/. -IC:/Users/etara/esp/esp-idf/components/soc/esp32/include -IC:/Users/etara/esp/esp-idf/components/hal/esp32/include -IC:/Users/etara/esp/esp-idf/components/hal/include -IC:/Users/etara/esp/esp-idf/components/hal/platform_port/include -IC:/Users/etara/esp/esp-idf/components/esp_rom/include -IC:/Users/etara/esp/esp-idf/components/esp_rom/include/esp32 -IC:/Users/etara/esp/esp-idf/components/esp_rom/esp32 -IC:/Users/etara/esp/esp-idf/components/esp_common/include -IC:/Users/etara/esp/esp-idf/components/esp_system/include -IC:/Users/etara/esp/esp-idf/components/esp_system/port/soc -IC:/Users/etara/esp/esp-idf/components/esp_system/port/include/private -IC:/Users/etara/esp/esp-idf/components/xtensa/include -IC:/Users/etara/esp/esp-idf/components/xtensa/esp32/include -IC:/Users/etara/esp/esp-idf/components/lwip/include -IC:/Users/etara/esp/esp-idf/components/lwip/include/apps -IC:/Users/etara/esp/esp-idf/components/lwip/include/apps/sntp -IC:/Users/etara/esp/esp-idf/components/lwip/lwip/src/include -IC:/Users/etara/esp/esp-idf/components/lwip/port/esp32/include -IC:/Users/etara/esp/esp-idf/components/lwip/port/esp32/include/arch -IC:/Users/etara/esp/esp-idf/components/spi_flash/include -IC:/Users/etara/esp/esp-idf/components/mbedtls/port/include -IC:/Users/etara/esp/esp-idf/components/mbedtls/mbedtls/include -IC:/Users/etara/esp/esp-idf/components/mbedtls/mbedtls/library -IC:/Users/etara/esp/esp-idf/components/mbedtls/esp_crt_bundle/include -IC:/Users/etara/esp/esp-idf/components/efuse/include -IC:/Users/etara/esp/esp-idf/components/efuse/esp32/include -IC:/Users/etara/esp/esp-idf/components/esp_app_format/include -mlongcalls -Wno-frame-address  -fdiagnostics-color=always -ffunction-sections -fdata-sections -Wall -Werror=all -Wno-error=unused-function -Wno-error=unused-variable -Wno-error=deprecated-declarations -Wextra -Wno-unused-parameter -Wno-sign-compare -Wno-enum-conversion -gdwarf-4 -ggdb -Og -fmacro-prefix-map=C:/Users/etara/RC_Car/ble_compatibility_test=. -fmacro-prefix-map=C:/Users/etara/esp/esp-idf=/IDF -fstrict-volatile-bitfields -Wno-error=unused-but-set-variable -fno-jump-tables -fno-tree-switch-conversion -DconfigENABLE_FREERTOS_DEBUG_OCDAWARE=1 -std=gnu17 -Wno-old-style-declaration -D_GNU_SOURCE -DIDF_VER=\"v5.0.2-dirty\" -DESP_PLATFORM -D_POSIX_READER_WRITER_LOCKS -Wno-format -MD -MT esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/bootloader_flash/src/bootloader_flash.c.obj -MF esp-idf\bootloader_support\CMakeFiles\__idf_bootloader_support.dir\bootloader_flash\src\bootloader_flash.c.obj.d -o esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/bootloader_flash/src/bootloader_flash.c.obj -c C:/Users/etara/esp/esp-idf/components/bootloader_support/bootloader_flash/src/bootloader_flash.c
+In file included from C:/Users/etara/esp/esp-idf/components/bootloader_support/bootloader_flash/src/bootloader_flash.c:9:
+C:/Users/etara/esp/esp-idf/components/log/include/esp_log.h:432:9: error: expected identifier or '(' before 'if'
+  432 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |         ^~
+C:/Users/etara/esp/esp-idf/components/log/include/esp_log.h:432:77: warning: __VA_ARGS__ can only appear in the expansion of a C99 variadic macro
+  432 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                                                             ^
+C:/Users/etara/esp/esp-idf/components/log/include/esp_log.h:432:75: error: stray '##' in program
+  432 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                                                           ^~
+C:/Users/etara/esp/esp-idf/components/log/include/esp_log.h:410:137: note: in definition of macro 'ESP_LOG_LEVEL'
+  410 |         if (level==ESP_LOG_ERROR )          { esp_log_write(ESP_LOG_ERROR,      tag, LOG_FORMAT(E, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                                                                         ^~~~~~~~~~~
+C:/Users/etara/esp/esp-idf/components/log/include/esp_log.h:432:75: error: stray '##' in program
+  432 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                                                           ^~
+C:/Users/etara/esp/esp-idf/components/log/include/esp_log.h:411:137: note: in definition of macro 'ESP_LOG_LEVEL'
+  411 |         else if (level==ESP_LOG_WARN )      { esp_log_write(ESP_LOG_WARN,       tag, LOG_FORMAT(W, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                                                                         ^~~~~~~~~~~
+C:/Users/etara/esp/esp-idf/components/log/include/esp_log.h:432:75: error: stray '##' in program
+  432 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                                                           ^~
+C:/Users/etara/esp/esp-idf/components/log/include/esp_log.h:412:137: note: in definition of macro 'ESP_LOG_LEVEL'
+  412 |         else if (level==ESP_LOG_DEBUG )     { esp_log_write(ESP_LOG_DEBUG,      tag, LOG_FORMAT(D, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                                                                         ^~~~~~~~~~~
+C:/Users/etara/esp/esp-idf/components/log/include/esp_log.h:432:75: error: stray '##' in program
+  432 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                                                           ^~
+C:/Users/etara/esp/esp-idf/components/log/include/esp_log.h:413:137: note: in definition of macro 'ESP_LOG_LEVEL'
+  413 |         else if (level==ESP_LOG_VERBOSE )   { esp_log_write(ESP_LOG_VERBOSE,    tag, LOG_FORMAT(V, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                                                                         ^~~~~~~~~~~
+C:/Users/etara/esp/esp-idf/components/log/include/esp_log.h:432:75: error: stray '##' in program
+  432 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                                                           ^~
+C:/Users/etara/esp/esp-idf/components/log/include/esp_log.h:414:137: note: in definition of macro 'ESP_LOG_LEVEL'
+  414 |         else                                { esp_log_write(ESP_LOG_INFO,       tag, LOG_FORMAT(I, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                                                                         ^~~~~~~~~~~
+C:/Users/etara/esp/esp-idf/components/log/include/esp_log.h:415:7: error: expected identifier or '(' before 'while'
+  415 |     } while(0)
+      |       ^~~~~
+C:/Users/etara/esp/esp-idf/components/log/include/esp_log.h:432:41: note: in expansion of macro 'ESP_LOG_LEVEL'
+  432 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                         ^~~~~~~~~~~~~
+C:/Users/etara/esp/esp-idf/components/log/include/esp_log.h:433:5: error: expected identifier or '(' before '}' token
+  433 |     } while(0)
+      |     ^
+C:/Users/etara/esp/esp-idf/components/log/include/esp_log.h:433:7: error: expected identifier or '(' before 'while'
+  433 |     } while(0)
+      |       ^~~~~
+In file included from C:/Users/etara/esp/esp-idf/components/soc/include/soc/efuse_periph.h:9,
+                 from C:/Users/etara/esp/esp-idf/components/hal/esp32/include/hal/efuse_ll.h:11,
+                 from C:/Users/etara/esp/esp-idf/components/bootloader_support/include/esp_flash_encrypt.h:15,
+                 from C:/Users/etara/esp/esp-idf/components/bootloader_support/bootloader_flash/src/bootloader_flash.c:10:
+C:/Users/etara/esp/esp-idf/components/soc/esp32/include/soc/efuse_struct.h:98:3: warning: data definition has no type or storage class
+   98 | } efuse_dev_t;
+      |   ^~~~~~~~~~~
+C:/Users/etara/esp/esp-idf/components/soc/esp32/include/soc/efuse_struct.h:98:3: error: type defaults to 'int' in declaration of 'efuse_dev_t' [-Werror=implicit-int]
+C:/Users/etara/esp/esp-idf/components/soc/esp32/include/soc/efuse_struct.h:100:20: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'EFUSE'
+  100 | extern efuse_dev_t EFUSE;
+      |                    ^~~~~
+C:/Users/etara/esp/esp-idf/components/bootloader_support/bootloader_flash/src/bootloader_flash.c: In function 'bootloader_mmap':
+C:/Users/etara/esp/esp-idf/components/bootloader_support/bootloader_flash/src/bootloader_flash.c:66:5: error: expected 'while' before 'const'
+   66 |     const void *result = NULL;
+      |     ^~~~~
+C:/Users/etara/esp/esp-idf/components/bootloader_support/bootloader_flash/src/bootloader_flash.c:69:74: error: 'result' undeclared (first use in this function)
+   69 |     esp_err_t err = spi_flash_mmap(src_page, size, SPI_FLASH_MMAP_DATA, &result, &map);
+      |                                                                          ^~~~~~
+C:/Users/etara/esp/esp-idf/components/bootloader_support/bootloader_flash/src/bootloader_flash.c:69:74: note: each undeclared identifier is reported only once for each function it appears in
+C:/Users/etara/esp/esp-idf/components/bootloader_support/bootloader_flash/src/bootloader_flash.c:74:5: error: expected 'while' before 'return'
+   74 |     return (void *)((intptr_t)result + (src_addr - src_page));
+      |     ^~~~~~
+C:/Users/etara/esp/esp-idf/components/bootloader_support/bootloader_flash/src/bootloader_flash.c:417:24: error: invalid storage class for function 'is_issi_chip'
+  417 | FORCE_INLINE_ATTR bool is_issi_chip(const esp_rom_spiflash_chip_t* chip)
+      |                        ^~~~~~~~~~~~
+C:/Users/etara/esp/esp-idf/components/bootloader_support/bootloader_flash/src/bootloader_flash.c:423:24: error: invalid storage class for function 'is_gd_q_chip'
+  423 | FORCE_INLINE_ATTR bool is_gd_q_chip(const esp_rom_spiflash_chip_t* chip)
+      |                        ^~~~~~~~~~~~
+C:/Users/etara/esp/esp-idf/components/bootloader_support/bootloader_flash/src/bootloader_flash.c:428:24: error: invalid storage class for function 'is_mxic_chip'
+  428 | FORCE_INLINE_ATTR bool is_mxic_chip(const esp_rom_spiflash_chip_t* chip)
+      |                        ^~~~~~~~~~~~
+C:/Users/etara/esp/esp-idf/components/bootloader_support/bootloader_flash/src/bootloader_flash.c:433:43: error: weak declaration of 'bootloader_flash_unlock' must be public
+  433 | esp_err_t IRAM_ATTR __attribute__((weak)) bootloader_flash_unlock(void)
+      |                                           ^~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/etara/esp/esp-idf/components/bootloader_support/bootloader_flash/src/bootloader_flash.c:660:23: error: invalid storage class for function 'is_xmc_chip_strict'
+  660 | static IRAM_ATTR bool is_xmc_chip_strict(uint32_t rdid)
+      |                       ^~~~~~~~~~~~~~~~~~
+C:/Users/etara/esp/esp-idf/components/bootloader_support/bootloader_flash/src/bootloader_flash.c:745:24: error: invalid storage class for function 'bootloader_mspi_reset'
+  745 | FORCE_INLINE_ATTR void bootloader_mspi_reset(void)
+      |                        ^~~~~~~~~~~~~~~~~~~~~
+C:/Users/etara/esp/esp-idf/components/bootloader_support/bootloader_flash/src/bootloader_flash.c:784:1: error: expected declaration or statement at end of input
+  784 | }
+      | ^
+C:/Users/etara/esp/esp-idf/components/bootloader_support/bootloader_flash/src/bootloader_flash.c:784:1: error: expected declaration or statement at end of input
+C:/Users/etara/esp/esp-idf/components/bootloader_support/bootloader_flash/src/bootloader_flash.c:785: error: control reaches end of non-void function [-Werror=return-type]
+At top level:
+C:/Users/etara/esp/esp-idf/components/bootloader_support/bootloader_flash/src/bootloader_flash.c:764:21: warning: 'bootloader_flash_reset_chip' defined but not used [-Wunused-function]
+  764 | esp_err_t IRAM_ATTR bootloader_flash_reset_chip(void)
+      |                     ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/etara/esp/esp-idf/components/bootloader_support/bootloader_flash/src/bootloader_flash.c:687:21: warning: 'bootloader_flash_xmc_startup' defined but not used [-Wunused-function]
+  687 | esp_err_t IRAM_ATTR bootloader_flash_xmc_startup(void)
+      |                     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/etara/esp/esp-idf/components/bootloader_support/bootloader_flash/src/bootloader_flash.c:606:6: warning: 'bootloader_spi_flash_reset' defined but not used [-Wunused-function]
+  606 | void bootloader_spi_flash_reset(void)
+      |      ^~~~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/etara/esp/esp-idf/components/bootloader_support/bootloader_flash/src/bootloader_flash.c:594:6: warning: 'bootloader_enable_wp' defined but not used [-Wunused-function]
+  594 | void bootloader_enable_wp(void)
+      |      ^~~~~~~~~~~~~~~~~~~~
+C:/Users/etara/esp/esp-idf/components/bootloader_support/bootloader_flash/src/bootloader_flash.c:433:43: warning: 'bootloader_flash_unlock' defined but not used [-Wunused-function]
+  433 | esp_err_t IRAM_ATTR __attribute__((weak)) bootloader_flash_unlock(void)
+      |                                           ^~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/etara/esp/esp-idf/components/bootloader_support/bootloader_flash/src/bootloader_flash.c:109:11: warning: 'bootloader_flash_erase_range' defined but not used [-Wunused-function]
+  109 | esp_err_t bootloader_flash_erase_range(uint32_t start_addr, uint32_t size)
+      |           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/etara/esp/esp-idf/components/bootloader_support/bootloader_flash/src/bootloader_flash.c:103:11: warning: 'bootloader_flash_erase_sector' defined but not used [-Wunused-function]
+  103 | esp_err_t bootloader_flash_erase_sector(size_t sector)
+      |           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/etara/esp/esp-idf/components/bootloader_support/bootloader_flash/src/bootloader_flash.c:94:11: warning: 'bootloader_flash_write' defined but not used [-Wunused-function]
+   94 | esp_err_t bootloader_flash_write(size_t dest_addr, void *src, size_t size, bool write_encrypted)
+      |           ^~~~~~~~~~~~~~~~~~~~~~
+C:/Users/etara/esp/esp-idf/components/bootloader_support/bootloader_flash/src/bootloader_flash.c:85:11: warning: 'bootloader_flash_read' defined but not used [-Wunused-function]
+   85 | esp_err_t bootloader_flash_read(size_t src, void *dest, size_t size, bool allow_decrypt)
+      |           ^~~~~~~~~~~~~~~~~~~~~
+C:/Users/etara/esp/esp-idf/components/bootloader_support/bootloader_flash/src/bootloader_flash.c:77:6: warning: 'bootloader_munmap' defined but not used [-Wunused-function]
+   77 | void bootloader_munmap(const void *mapping)
+      |      ^~~~~~~~~~~~~~~~~
+C:/Users/etara/esp/esp-idf/components/bootloader_support/bootloader_flash/src/bootloader_flash.c:51:20: warning: 'TAG' defined but not used [-Wunused-variable]
+   51 | static const char *TAG = "bootloader_mmap";
+      |                    ^~~
+cc1.exe: some warnings being treated as errors
+[6/1102] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/C_/Users/etara/esp/esp-idf/components/mbedtls/port/aes/block/esp_aes.c.obj
+FAILED: esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/C_/Users/etara/esp/esp-idf/components/mbedtls/port/aes/block/esp_aes.c.obj 
+ccache C:\Users\etara\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\bin\xtensa-esp32-elf-gcc.exe -DMBEDTLS_CONFIG_FILE=\"mbedtls/esp_config.h\" -DSOC_MMU_PAGE_SIZE=CONFIG_MMU_PAGE_SIZE -IC:/Users/etara/RC_Car/ble_compatibility_test/build/config -IC:/Users/etara/esp/esp-idf/components/mbedtls/port/include -IC:/Users/etara/esp/esp-idf/components/mbedtls/mbedtls/include -IC:/Users/etara/esp/esp-idf/components/mbedtls/mbedtls/library -IC:/Users/etara/esp/esp-idf/components/newlib/platform_include -IC:/Users/etara/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include -IC:/Users/etara/esp/esp-idf/components/freertos/esp_additions/include/freertos -IC:/Users/etara/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include -IC:/Users/etara/esp/esp-idf/components/freertos/esp_additions/include -IC:/Users/etara/esp/esp-idf/components/esp_hw_support/include -IC:/Users/etara/esp/esp-idf/components/esp_hw_support/include/soc -IC:/Users/etara/esp/esp-idf/components/esp_hw_support/include/soc/esp32 -IC:/Users/etara/esp/esp-idf/components/esp_hw_support/port/esp32/. -IC:/Users/etara/esp/esp-idf/components/esp_hw_support/port/esp32/private_include -IC:/Users/etara/esp/esp-idf/components/heap/include -IC:/Users/etara/esp/esp-idf/components/log/include -IC:/Users/etara/esp/esp-idf/components/soc/include -IC:/Users/etara/esp/esp-idf/components/soc/esp32/. -IC:/Users/etara/esp/esp-idf/components/soc/esp32/include -IC:/Users/etara/esp/esp-idf/components/hal/esp32/include -IC:/Users/etara/esp/esp-idf/components/hal/include -IC:/Users/etara/esp/esp-idf/components/hal/platform_port/include -IC:/Users/etara/esp/esp-idf/components/esp_rom/include -IC:/Users/etara/esp/esp-idf/components/esp_rom/include/esp32 -IC:/Users/etara/esp/esp-idf/components/esp_rom/esp32 -IC:/Users/etara/esp/esp-idf/components/esp_common/include -IC:/Users/etara/esp/esp-idf/components/esp_system/include -IC:/Users/etara/esp/esp-idf/components/esp_system/port/soc -IC:/Users/etara/esp/esp-idf/components/esp_system/port/include/private -IC:/Users/etara/esp/esp-idf/components/xtensa/include -IC:/Users/etara/esp/esp-idf/components/xtensa/esp32/include -IC:/Users/etara/esp/esp-idf/components/lwip/include -IC:/Users/etara/esp/esp-idf/components/lwip/include/apps -IC:/Users/etara/esp/esp-idf/components/lwip/include/apps/sntp -IC:/Users/etara/esp/esp-idf/components/lwip/lwip/src/include -IC:/Users/etara/esp/esp-idf/components/lwip/port/esp32/include -IC:/Users/etara/esp/esp-idf/components/lwip/port/esp32/include/arch -mlongcalls -Wno-frame-address  -Wall -Wextra -Wwrite-strings -Wformat=2 -Wno-format-nonliteral -Wvla -Wlogical-op -Wshadow -Wformat-signedness -Wformat-overflow=2 -Wformat-truncation -Werror -Wmissing-declarations -Wmissing-prototypes -fdiagnostics-color=always -ffunction-sections -fdata-sections -Wall -Werror=all -Wno-error=unused-function -Wno-error=unused-variable -Wno-error=deprecated-declarations -Wextra -Wno-unused-parameter -Wno-sign-compare -Wno-enum-conversion -gdwarf-4 -ggdb -Og -fmacro-prefix-map=C:/Users/etara/RC_Car/ble_compatibility_test=. -fmacro-prefix-map=C:/Users/etara/esp/esp-idf=/IDF -fstrict-volatile-bitfields -Wno-error=unused-but-set-variable -fno-jump-tables -fno-tree-switch-conversion -DconfigENABLE_FREERTOS_DEBUG_OCDAWARE=1 -std=gnu17 -Wno-old-style-declaration -D_GNU_SOURCE -DIDF_VER=\"v5.0.2-dirty\" -DESP_PLATFORM -D_POSIX_READER_WRITER_LOCKS -MD -MT esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/C_/Users/etara/esp/esp-idf/components/mbedtls/port/aes/block/esp_aes.c.obj -MF esp-idf\mbedtls\mbedtls\library\CMakeFiles\mbedcrypto.dir\C_\Users\etara\esp\esp-idf\components\mbedtls\port\aes\block\esp_aes.c.obj.d -o esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/C_/Users/etara/esp/esp-idf/components/mbedtls/port/aes/block/esp_aes.c.obj -c C:/Users/etara/esp/esp-idf/components/mbedtls/port/aes/block/esp_aes.c
+In file included from C:/Users/etara/esp/esp-idf/components/mbedtls/port/aes/block/esp_aes.c:31:
+C:/Users/etara/esp/esp-idf/components/log/include/esp_log.h:432:9: error: expected identifier or '(' before 'if'
+  432 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |         ^~
+C:/Users/etara/esp/esp-idf/components/log/include/esp_log.h:432:77: error: __VA_ARGS__ can only appear in the expansion of a C99 variadic macro [-Werror]
+  432 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                                                             ^
+C:/Users/etara/esp/esp-idf/components/log/include/esp_log.h:432:75: error: stray '##' in program
+  432 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                                                           ^~
+C:/Users/etara/esp/esp-idf/components/log/include/esp_log.h:410:137: note: in definition of macro 'ESP_LOG_LEVEL'
+  410 |         if (level==ESP_LOG_ERROR )          { esp_log_write(ESP_LOG_ERROR,      tag, LOG_FORMAT(E, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                                                                         ^~~~~~~~~~~
+C:/Users/etara/esp/esp-idf/components/log/include/esp_log.h:432:75: error: stray '##' in program
+  432 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                                                           ^~
+C:/Users/etara/esp/esp-idf/components/log/include/esp_log.h:411:137: note: in definition of macro 'ESP_LOG_LEVEL'
+  411 |         else if (level==ESP_LOG_WARN )      { esp_log_write(ESP_LOG_WARN,       tag, LOG_FORMAT(W, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                                                                         ^~~~~~~~~~~
+C:/Users/etara/esp/esp-idf/components/log/include/esp_log.h:432:75: error: stray '##' in program
+  432 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                                                           ^~
+C:/Users/etara/esp/esp-idf/components/log/include/esp_log.h:412:137: note: in definition of macro 'ESP_LOG_LEVEL'
+  412 |         else if (level==ESP_LOG_DEBUG )     { esp_log_write(ESP_LOG_DEBUG,      tag, LOG_FORMAT(D, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                                                                         ^~~~~~~~~~~
+C:/Users/etara/esp/esp-idf/components/log/include/esp_log.h:432:75: error: stray '##' in program
+  432 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                                                           ^~
+C:/Users/etara/esp/esp-idf/components/log/include/esp_log.h:413:137: note: in definition of macro 'ESP_LOG_LEVEL'
+  413 |         else if (level==ESP_LOG_VERBOSE )   { esp_log_write(ESP_LOG_VERBOSE,    tag, LOG_FORMAT(V, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                                                                         ^~~~~~~~~~~
+C:/Users/etara/esp/esp-idf/components/log/include/esp_log.h:432:75: error: stray '##' in program
+  432 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                                                           ^~
+C:/Users/etara/esp/esp-idf/components/log/include/esp_log.h:414:137: note: in definition of macro 'ESP_LOG_LEVEL'
+  414 |         else                                { esp_log_write(ESP_LOG_INFO,       tag, LOG_FORMAT(I, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                                                                         ^~~~~~~~~~~
+C:/Users/etara/esp/esp-idf/components/log/include/esp_log.h:415:7: error: expected identifier or '(' before 'while'
+  415 |     } while(0)
+      |       ^~~~~
+C:/Users/etara/esp/esp-idf/components/log/include/esp_log.h:432:41: note: in expansion of macro 'ESP_LOG_LEVEL'
+  432 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                         ^~~~~~~~~~~~~
+C:/Users/etara/esp/esp-idf/components/log/include/esp_log.h:433:5: error: expected identifier or '(' before '}' token
+  433 |     } while(0)
+      |     ^
+C:/Users/etara/esp/esp-idf/components/log/include/esp_log.h:433:7: error: expected identifier or '(' before 'while'
+  433 |     } while(0)
+      |       ^~~~~
+In file included from C:/Users/etara/esp/esp-idf/components/soc/esp32/include/soc/dport_reg.h:12,
+                 from C:/Users/etara/esp/esp-idf/components/soc/include/soc/hwcrypto_periph.h:13,
+                 from C:/Users/etara/esp/esp-idf/components/mbedtls/port/aes/block/esp_aes.c:33:
+C:/Users/etara/esp/esp-idf/components/hal/esp32/include/hal/aes_ll.h: In function 'aes_ll_get_state':
+C:/Users/etara/esp/esp-idf/components/soc/esp32/include/soc/dport_access.h:116:42: error: implicit declaration of function 'esp_dport_access_reg_read'; did you mean 'esp_dport_access_read_buffer'? [-Werror=implicit-function-declaration]
+  116 |     #define DPORT_REG_READ(reg)          esp_dport_access_reg_read(reg)
+      |                                          ^~~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/etara/esp/esp-idf/components/hal/esp32/include/hal/aes_ll.h:136:12: note: in expansion of macro 'DPORT_REG_READ'
+  136 |     return DPORT_REG_READ(AES_IDLE_REG);
+      |            ^~~~~~~~~~~~~~
+C:/Users/etara/esp/esp-idf/components/mbedtls/port/aes/block/esp_aes.c: In function 'esp_aes_validate_input':
+C:/Users/etara/esp/esp-idf/components/mbedtls/port/aes/block/esp_aes.c:125:5: error: expected 'while' before 'if'
+  125 |     if (!input) {
+      |     ^~
+C:/Users/etara/esp/esp-idf/components/mbedtls/port/aes/block/esp_aes.c:546:1: error: expected declaration or statement at end of input
+  546 | }
+      | ^
+C:/Users/etara/esp/esp-idf/components/mbedtls/port/aes/block/esp_aes.c:546:1: error: expected declaration or statement at end of input
+At top level:
+C:/Users/etara/esp/esp-idf/components/mbedtls/port/aes/block/esp_aes.c:118:12: warning: 'esp_aes_validate_input' defined but not used [-Wunused-function]
+  118 | static int esp_aes_validate_input(esp_aes_context *ctx, const unsigned char *input,
+      |            ^~~~~~~~~~~~~~~~~~~~~~
+C:/Users/etara/esp/esp-idf/components/mbedtls/port/aes/block/esp_aes.c:78:12: warning: 'esp_aes_block' defined but not used [-Wunused-function]
+   78 | static int esp_aes_block(esp_aes_context *ctx, const void *input, void *output)
+      |            ^~~~~~~~~~~~~
+C:/Users/etara/esp/esp-idf/components/mbedtls/port/aes/block/esp_aes.c:44:20: warning: 'TAG' defined but not used [-Wunused-variable]
+   44 | static const char *TAG = "esp-aes";
+      |                    ^~~
+cc1.exe: all warnings being treated as errors
+[7/1102] Building C object esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/src/bootloader_common_loader.c.obj
+FAILED: esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/src/bootloader_common_loader.c.obj 
+ccache C:\Users\etara\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\bin\xtensa-esp32-elf-gcc.exe -DMBEDTLS_CONFIG_FILE=\"mbedtls/esp_config.h\" -DSOC_MMU_PAGE_SIZE=CONFIG_MMU_PAGE_SIZE -IC:/Users/etara/RC_Car/ble_compatibility_test/build/config -IC:/Users/etara/esp/esp-idf/components/bootloader_support/include -IC:/Users/etara/esp/esp-idf/components/bootloader_support/bootloader_flash/include -IC:/Users/etara/esp/esp-idf/components/bootloader_support/private_include -IC:/Users/etara/esp/esp-idf/components/newlib/platform_include -IC:/Users/etara/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include -IC:/Users/etara/esp/esp-idf/components/freertos/esp_additions/include/freertos -IC:/Users/etara/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include -IC:/Users/etara/esp/esp-idf/components/freertos/esp_additions/include -IC:/Users/etara/esp/esp-idf/components/esp_hw_support/include -IC:/Users/etara/esp/esp-idf/components/esp_hw_support/include/soc -IC:/Users/etara/esp/esp-idf/components/esp_hw_support/include/soc/esp32 -IC:/Users/etara/esp/esp-idf/components/esp_hw_support/port/esp32/. -IC:/Users/etara/esp/esp-idf/components/esp_hw_support/port/esp32/private_include -IC:/Users/etara/esp/esp-idf/components/heap/include -IC:/Users/etara/esp/esp-idf/components/log/include -IC:/Users/etara/esp/esp-idf/components/soc/include -IC:/Users/etara/esp/esp-idf/components/soc/esp32/. -IC:/Users/etara/esp/esp-idf/components/soc/esp32/include -IC:/Users/etara/esp/esp-idf/components/hal/esp32/include -IC:/Users/etara/esp/esp-idf/components/hal/include -IC:/Users/etara/esp/esp-idf/components/hal/platform_port/include -IC:/Users/etara/esp/esp-idf/components/esp_rom/include -IC:/Users/etara/esp/esp-idf/components/esp_rom/include/esp32 -IC:/Users/etara/esp/esp-idf/components/esp_rom/esp32 -IC:/Users/etara/esp/esp-idf/components/esp_common/include -IC:/Users/etara/esp/esp-idf/components/esp_system/include -IC:/Users/etara/esp/esp-idf/components/esp_system/port/soc -IC:/Users/etara/esp/esp-idf/components/esp_system/port/include/private -IC:/Users/etara/esp/esp-idf/components/xtensa/include -IC:/Users/etara/esp/esp-idf/components/xtensa/esp32/include -IC:/Users/etara/esp/esp-idf/components/lwip/include -IC:/Users/etara/esp/esp-idf/components/lwip/include/apps -IC:/Users/etara/esp/esp-idf/components/lwip/include/apps/sntp -IC:/Users/etara/esp/esp-idf/components/lwip/lwip/src/include -IC:/Users/etara/esp/esp-idf/components/lwip/port/esp32/include -IC:/Users/etara/esp/esp-idf/components/lwip/port/esp32/include/arch -IC:/Users/etara/esp/esp-idf/components/spi_flash/include -IC:/Users/etara/esp/esp-idf/components/mbedtls/port/include -IC:/Users/etara/esp/esp-idf/components/mbedtls/mbedtls/include -IC:/Users/etara/esp/esp-idf/components/mbedtls/mbedtls/library -IC:/Users/etara/esp/esp-idf/components/mbedtls/esp_crt_bundle/include -IC:/Users/etara/esp/esp-idf/components/efuse/include -IC:/Users/etara/esp/esp-idf/components/efuse/esp32/include -IC:/Users/etara/esp/esp-idf/components/esp_app_format/include -mlongcalls -Wno-frame-address  -fdiagnostics-color=always -ffunction-sections -fdata-sections -Wall -Werror=all -Wno-error=unused-function -Wno-error=unused-variable -Wno-error=deprecated-declarations -Wextra -Wno-unused-parameter -Wno-sign-compare -Wno-enum-conversion -gdwarf-4 -ggdb -Og -fmacro-prefix-map=C:/Users/etara/RC_Car/ble_compatibility_test=. -fmacro-prefix-map=C:/Users/etara/esp/esp-idf=/IDF -fstrict-volatile-bitfields -Wno-error=unused-but-set-variable -fno-jump-tables -fno-tree-switch-conversion -DconfigENABLE_FREERTOS_DEBUG_OCDAWARE=1 -std=gnu17 -Wno-old-style-declaration -D_GNU_SOURCE -DIDF_VER=\"v5.0.2-dirty\" -DESP_PLATFORM -D_POSIX_READER_WRITER_LOCKS -Wno-format -MD -MT esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/src/bootloader_common_loader.c.obj -MF esp-idf\bootloader_support\CMakeFiles\__idf_bootloader_support.dir\src\bootloader_common_loader.c.obj.d -o esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/src/bootloader_common_loader.c.obj -c C:/Users/etara/esp/esp-idf/components/bootloader_support/src/bootloader_common_loader.c
+In file included from C:/Users/etara/esp/esp-idf/components/bootloader_support/src/bootloader_common_loader.c:10:
+C:/Users/etara/esp/esp-idf/components/log/include/esp_log.h:432:9: error: expected identifier or '(' before 'if'
+  432 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |         ^~
+C:/Users/etara/esp/esp-idf/components/log/include/esp_log.h:432:77: warning: __VA_ARGS__ can only appear in the expansion of a C99 variadic macro
+  432 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                                                             ^
+C:/Users/etara/esp/esp-idf/components/log/include/esp_log.h:432:75: error: stray '##' in program
+  432 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                                                           ^~
+C:/Users/etara/esp/esp-idf/components/log/include/esp_log.h:410:137: note: in definition of macro 'ESP_LOG_LEVEL'
+  410 |         if (level==ESP_LOG_ERROR )          { esp_log_write(ESP_LOG_ERROR,      tag, LOG_FORMAT(E, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                                                                         ^~~~~~~~~~~
+C:/Users/etara/esp/esp-idf/components/log/include/esp_log.h:432:75: error: stray '##' in program
+  432 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                                                           ^~
+C:/Users/etara/esp/esp-idf/components/log/include/esp_log.h:411:137: note: in definition of macro 'ESP_LOG_LEVEL'
+  411 |         else if (level==ESP_LOG_WARN )      { esp_log_write(ESP_LOG_WARN,       tag, LOG_FORMAT(W, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                                                                         ^~~~~~~~~~~
+C:/Users/etara/esp/esp-idf/components/log/include/esp_log.h:432:75: error: stray '##' in program
+  432 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                                                           ^~
+C:/Users/etara/esp/esp-idf/components/log/include/esp_log.h:412:137: note: in definition of macro 'ESP_LOG_LEVEL'
+  412 |         else if (level==ESP_LOG_DEBUG )     { esp_log_write(ESP_LOG_DEBUG,      tag, LOG_FORMAT(D, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                                                                         ^~~~~~~~~~~
+C:/Users/etara/esp/esp-idf/components/log/include/esp_log.h:432:75: error: stray '##' in program
+  432 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                                                           ^~
+C:/Users/etara/esp/esp-idf/components/log/include/esp_log.h:413:137: note: in definition of macro 'ESP_LOG_LEVEL'
+  413 |         else if (level==ESP_LOG_VERBOSE )   { esp_log_write(ESP_LOG_VERBOSE,    tag, LOG_FORMAT(V, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                                                                         ^~~~~~~~~~~
+C:/Users/etara/esp/esp-idf/components/log/include/esp_log.h:432:75: error: stray '##' in program
+  432 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                                                           ^~
+C:/Users/etara/esp/esp-idf/components/log/include/esp_log.h:414:137: note: in definition of macro 'ESP_LOG_LEVEL'
+  414 |         else                                { esp_log_write(ESP_LOG_INFO,       tag, LOG_FORMAT(I, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                                                                         ^~~~~~~~~~~
+C:/Users/etara/esp/esp-idf/components/log/include/esp_log.h:415:7: error: expected identifier or '(' before 'while'
+  415 |     } while(0)
+      |       ^~~~~
+C:/Users/etara/esp/esp-idf/components/log/include/esp_log.h:432:41: note: in expansion of macro 'ESP_LOG_LEVEL'
+  432 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                         ^~~~~~~~~~~~~
+C:/Users/etara/esp/esp-idf/components/log/include/esp_log.h:433:5: error: expected identifier or '(' before '}' token
+  433 |     } while(0)
+      |     ^
+C:/Users/etara/esp/esp-idf/components/log/include/esp_log.h:433:7: error: expected identifier or '(' before 'while'
+  433 |     } while(0)
+      |       ^~~~~
+In file included from C:/Users/etara/esp/esp-idf/components/bootloader_support/src/bootloader_common_loader.c:11:
+C:/Users/etara/esp/esp-idf/components/esp_rom/include/esp_rom_spiflash.h:32:3: warning: data definition has no type or storage class
+   32 | } esp_rom_spiflash_read_mode_t;
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/etara/esp/esp-idf/components/esp_rom/include/esp_rom_spiflash.h:32:3: error: type defaults to 'int' in declaration of 'esp_rom_spiflash_read_mode_t' [-Werror=implicit-int]
+C:/Users/etara/esp/esp-idf/components/esp_rom/include/esp_rom_spiflash.h:130:60: error: expected declaration specifiers or '...' before 'esp_rom_spiflash_read_mode_t'
+  130 | esp_rom_spiflash_result_t esp_rom_spiflash_config_readmode(esp_rom_spiflash_read_mode_t mode);
+      |                                                            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/etara/esp/esp-idf/components/bootloader_support/src/bootloader_common_loader.c: In function 'bootloader_common_check_chip_validity':
+C:/Users/etara/esp/esp-idf/components/bootloader_support/src/bootloader_common_loader.c:67:7: error: expected 'while' before 'else'
+   67 |     } else {
+      |       ^~~~
+C:/Users/etara/esp/esp-idf/components/bootloader_support/src/bootloader_common_loader.c:120:1: error: expected declaration or statement at end of input
+  120 | }
+      | ^
+C:/Users/etara/esp/esp-idf/components/bootloader_support/src/bootloader_common_loader.c:120:1: error: expected declaration or statement at end of input
+C:/Users/etara/esp/esp-idf/components/bootloader_support/src/bootloader_common_loader.c:62:15: warning: variable 'err' set but not used [-Wunused-but-set-variable]
+   62 |     esp_err_t err = ESP_OK;
+      |               ^~~
+C:/Users/etara/esp/esp-idf/components/bootloader_support/src/bootloader_common_loader.c:212: error: control reaches end of non-void function [-Werror=return-type]
+At top level:
+C:/Users/etara/esp/esp-idf/components/bootloader_support/src/bootloader_common_loader.c:32:20: warning: 'TAG' defined but not used [-Wunused-variable]
+   32 | static const char* TAG = "boot_comm";
+      |                    ^~~
+cc1.exe: some warnings being treated as errors
+[8/1102] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/C_/Users/etara/esp/esp-idf/components/mbedtls/port/sha/esp_sha.c.obj
+FAILED: esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/C_/Users/etara/esp/esp-idf/components/mbedtls/port/sha/esp_sha.c.obj 
+ccache C:\Users\etara\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\bin\xtensa-esp32-elf-gcc.exe -DMBEDTLS_CONFIG_FILE=\"mbedtls/esp_config.h\" -DSOC_MMU_PAGE_SIZE=CONFIG_MMU_PAGE_SIZE -IC:/Users/etara/RC_Car/ble_compatibility_test/build/config -IC:/Users/etara/esp/esp-idf/components/mbedtls/port/include -IC:/Users/etara/esp/esp-idf/components/mbedtls/mbedtls/include -IC:/Users/etara/esp/esp-idf/components/mbedtls/mbedtls/library -IC:/Users/etara/esp/esp-idf/components/newlib/platform_include -IC:/Users/etara/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include -IC:/Users/etara/esp/esp-idf/components/freertos/esp_additions/include/freertos -IC:/Users/etara/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include -IC:/Users/etara/esp/esp-idf/components/freertos/esp_additions/include -IC:/Users/etara/esp/esp-idf/components/esp_hw_support/include -IC:/Users/etara/esp/esp-idf/components/esp_hw_support/include/soc -IC:/Users/etara/esp/esp-idf/components/esp_hw_support/include/soc/esp32 -IC:/Users/etara/esp/esp-idf/components/esp_hw_support/port/esp32/. -IC:/Users/etara/esp/esp-idf/components/esp_hw_support/port/esp32/private_include -IC:/Users/etara/esp/esp-idf/components/heap/include -IC:/Users/etara/esp/esp-idf/components/log/include -IC:/Users/etara/esp/esp-idf/components/soc/include -IC:/Users/etara/esp/esp-idf/components/soc/esp32/. -IC:/Users/etara/esp/esp-idf/components/soc/esp32/include -IC:/Users/etara/esp/esp-idf/components/hal/esp32/include -IC:/Users/etara/esp/esp-idf/components/hal/include -IC:/Users/etara/esp/esp-idf/components/hal/platform_port/include -IC:/Users/etara/esp/esp-idf/components/esp_rom/include -IC:/Users/etara/esp/esp-idf/components/esp_rom/include/esp32 -IC:/Users/etara/esp/esp-idf/components/esp_rom/esp32 -IC:/Users/etara/esp/esp-idf/components/esp_common/include -IC:/Users/etara/esp/esp-idf/components/esp_system/include -IC:/Users/etara/esp/esp-idf/components/esp_system/port/soc -IC:/Users/etara/esp/esp-idf/components/esp_system/port/include/private -IC:/Users/etara/esp/esp-idf/components/xtensa/include -IC:/Users/etara/esp/esp-idf/components/xtensa/esp32/include -IC:/Users/etara/esp/esp-idf/components/lwip/include -IC:/Users/etara/esp/esp-idf/components/lwip/include/apps -IC:/Users/etara/esp/esp-idf/components/lwip/include/apps/sntp -IC:/Users/etara/esp/esp-idf/components/lwip/lwip/src/include -IC:/Users/etara/esp/esp-idf/components/lwip/port/esp32/include -IC:/Users/etara/esp/esp-idf/components/lwip/port/esp32/include/arch -mlongcalls -Wno-frame-address  -Wall -Wextra -Wwrite-strings -Wformat=2 -Wno-format-nonliteral -Wvla -Wlogical-op -Wshadow -Wformat-signedness -Wformat-overflow=2 -Wformat-truncation -Werror -Wmissing-declarations -Wmissing-prototypes -fdiagnostics-color=always -ffunction-sections -fdata-sections -Wall -Werror=all -Wno-error=unused-function -Wno-error=unused-variable -Wno-error=deprecated-declarations -Wextra -Wno-unused-parameter -Wno-sign-compare -Wno-enum-conversion -gdwarf-4 -ggdb -Og -fmacro-prefix-map=C:/Users/etara/RC_Car/ble_compatibility_test=. -fmacro-prefix-map=C:/Users/etara/esp/esp-idf=/IDF -fstrict-volatile-bitfields -Wno-error=unused-but-set-variable -fno-jump-tables -fno-tree-switch-conversion -DconfigENABLE_FREERTOS_DEBUG_OCDAWARE=1 -std=gnu17 -Wno-old-style-declaration -D_GNU_SOURCE -DIDF_VER=\"v5.0.2-dirty\" -DESP_PLATFORM -D_POSIX_READER_WRITER_LOCKS -MD -MT esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/C_/Users/etara/esp/esp-idf/components/mbedtls/port/sha/esp_sha.c.obj -MF esp-idf\mbedtls\mbedtls\library\CMakeFiles\mbedcrypto.dir\C_\Users\etara\esp\esp-idf\components\mbedtls\port\sha\esp_sha.c.obj.d -o esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/C_/Users/etara/esp/esp-idf/components/mbedtls/port/sha/esp_sha.c.obj -c C:/Users/etara/esp/esp-idf/components/mbedtls/port/sha/esp_sha.c
+In file included from C:/Users/etara/esp/esp-idf/components/mbedtls/port/sha/esp_sha.c:12:
+C:/Users/etara/esp/esp-idf/components/log/include/esp_log.h:432:9: error: expected identifier or '(' before 'if'
+  432 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |         ^~
+C:/Users/etara/esp/esp-idf/components/log/include/esp_log.h:432:77: error: __VA_ARGS__ can only appear in the expansion of a C99 variadic macro [-Werror]
+  432 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                                                             ^
+C:/Users/etara/esp/esp-idf/components/log/include/esp_log.h:432:75: error: stray '##' in program
+  432 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                                                           ^~
+C:/Users/etara/esp/esp-idf/components/log/include/esp_log.h:410:137: note: in definition of macro 'ESP_LOG_LEVEL'
+  410 |         if (level==ESP_LOG_ERROR )          { esp_log_write(ESP_LOG_ERROR,      tag, LOG_FORMAT(E, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                                                                         ^~~~~~~~~~~
+C:/Users/etara/esp/esp-idf/components/log/include/esp_log.h:432:75: error: stray '##' in program
+  432 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                                                           ^~
+C:/Users/etara/esp/esp-idf/components/log/include/esp_log.h:411:137: note: in definition of macro 'ESP_LOG_LEVEL'
+  411 |         else if (level==ESP_LOG_WARN )      { esp_log_write(ESP_LOG_WARN,       tag, LOG_FORMAT(W, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                                                                         ^~~~~~~~~~~
+C:/Users/etara/esp/esp-idf/components/log/include/esp_log.h:432:75: error: stray '##' in program
+  432 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                                                           ^~
+C:/Users/etara/esp/esp-idf/components/log/include/esp_log.h:412:137: note: in definition of macro 'ESP_LOG_LEVEL'
+  412 |         else if (level==ESP_LOG_DEBUG )     { esp_log_write(ESP_LOG_DEBUG,      tag, LOG_FORMAT(D, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                                                                         ^~~~~~~~~~~
+C:/Users/etara/esp/esp-idf/components/log/include/esp_log.h:432:75: error: stray '##' in program
+  432 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                                                           ^~
+C:/Users/etara/esp/esp-idf/components/log/include/esp_log.h:413:137: note: in definition of macro 'ESP_LOG_LEVEL'
+  413 |         else if (level==ESP_LOG_VERBOSE )   { esp_log_write(ESP_LOG_VERBOSE,    tag, LOG_FORMAT(V, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                                                                         ^~~~~~~~~~~
+C:/Users/etara/esp/esp-idf/components/log/include/esp_log.h:432:75: error: stray '##' in program
+  432 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                                                           ^~
+C:/Users/etara/esp/esp-idf/components/log/include/esp_log.h:414:137: note: in definition of macro 'ESP_LOG_LEVEL'
+  414 |         else                                { esp_log_write(ESP_LOG_INFO,       tag, LOG_FORMAT(I, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                                                                         ^~~~~~~~~~~
+C:/Users/etara/esp/esp-idf/components/log/include/esp_log.h:415:7: error: expected identifier or '(' before 'while'
+  415 |     } while(0)
+      |       ^~~~~
+C:/Users/etara/esp/esp-idf/components/log/include/esp_log.h:432:41: note: in expansion of macro 'ESP_LOG_LEVEL'
+  432 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                         ^~~~~~~~~~~~~
+C:/Users/etara/esp/esp-idf/components/log/include/esp_log.h:433:5: error: expected identifier or '(' before '}' token
+  433 |     } while(0)
+      |     ^
+C:/Users/etara/esp/esp-idf/components/log/include/esp_log.h:433:7: error: expected identifier or '(' before 'while'
+  433 |     } while(0)
+      |       ^~~~~
+C:/Users/etara/esp/esp-idf/components/mbedtls/port/sha/esp_sha.c: In function 'esp_sha':
+C:/Users/etara/esp/esp-idf/components/mbedtls/port/sha/esp_sha.c:99:1: error: expected 'while' at end of input
+   99 | }
+      | ^
+C:/Users/etara/esp/esp-idf/components/mbedtls/port/sha/esp_sha.c:99:1: error: expected declaration or statement at end of input
+At top level:
+C:/Users/etara/esp/esp-idf/components/mbedtls/port/sha/esp_sha.c:26:20: warning: 'TAG' defined but not used [-Wunused-variable]
+   26 | static const char *TAG = "esp_sha";
+      |                    ^~~
+cc1.exe: all warnings being treated as errors
+[9/1102] Performing build step for 'bootloader'
+FAILED: bootloader-prefix/src/bootloader-stamp/bootloader-build bootloader/bootloader.elf bootloader/bootloader.bin bootloader/bootloader.map C:/Users/etara/RC_Car/ble_compatibility_test/build/bootloader-prefix/src/bootloader-stamp/bootloader-build C:/Users/etara/RC_Car/ble_compatibility_test/build/bootloader/bootloader.elf C:/Users/etara/RC_Car/ble_compatibility_test/build/bootloader/bootloader.bin C:/Users/etara/RC_Car/ble_compatibility_test/build/bootloader/bootloader.map 
+cmd.exe /C "cd /D C:\Users\etara\RC_Car\ble_compatibility_test\build\bootloader && C:\Users\etara\.espressif\tools\cmake\3.24.0\bin\cmake.exe --build ."
+[0/1] Re-running CMake...
+-- Building ESP-IDF components for target esp32
+-- Project sdkconfig file C:/Users/etara/RC_Car/ble_compatibility_test/sdkconfig
+-- Adding linker script C:/Users/etara/esp/esp-idf/components/soc/esp32/ld/esp32.peripherals.ld
+-- App "bootloader" version: v5.0.2-dirty
+-- Adding linker script C:/Users/etara/esp/esp-idf/components/esp_rom/esp32/ld/esp32.rom.ld
+-- Adding linker script C:/Users/etara/esp/esp-idf/components/esp_rom/esp32/ld/esp32.rom.api.ld
+-- Adding linker script C:/Users/etara/esp/esp-idf/components/esp_rom/esp32/ld/esp32.rom.libgcc.ld
+-- Adding linker script C:/Users/etara/esp/esp-idf/components/esp_rom/esp32/ld/esp32.rom.newlib-funcs.ld
+-- Adding linker script C:/Users/etara/esp/esp-idf/components/bootloader/subproject/main/ld/esp32/bootloader.ld
+-- Adding linker script C:/Users/etara/esp/esp-idf/components/bootloader/subproject/main/ld/esp32/bootloader.rom.ld
+-- Components: bootloader bootloader_support efuse esp_app_format esp_common esp_hw_support esp_rom esp_system esptool_py freertos hal log main micro-ecc newlib partition_table soc spi_flash xtensa
+-- Component paths: C:/Users/etara/esp/esp-idf/components/bootloader C:/Users/etara/esp/esp-idf/components/bootloader_support C:/Users/etara/esp/esp-idf/components/efuse C:/Users/etara/esp/esp-idf/components/esp_app_format C:/Users/etara/esp/esp-idf/components/esp_common C:/Users/etara/esp/esp-idf/components/esp_hw_support C:/Users/etara/esp/esp-idf/components/esp_rom C:/Users/etara/esp/esp-idf/components/esp_system C:/Users/etara/esp/esp-idf/components/esptool_py C:/Users/etara/esp/esp-idf/components/freertos C:/Users/etara/esp/esp-idf/components/hal C:/Users/etara/esp/esp-idf/components/log C:/Users/etara/esp/esp-idf/components/bootloader/subproject/main C:/Users/etara/esp/esp-idf/components/bootloader/subproject/components/micro-ecc C:/Users/etara/esp/esp-idf/components/newlib C:/Users/etara/esp/esp-idf/components/partition_table C:/Users/etara/esp/esp-idf/components/soc C:/Users/etara/esp/esp-idf/components/spi_flash C:/Users/etara/esp/esp-idf/components/xtensa
+-- Configuring done
+-- Generating done
+-- Build files have been written to: C:/Users/etara/RC_Car/ble_compatibility_test/build/bootloader
+[1/68] Building C object esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/src/bootloader_common.c.obj
+FAILED: esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/src/bootloader_common.c.obj 
+C:\Users\etara\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\bin\xtensa-esp32-elf-gcc.exe -DSOC_MMU_PAGE_SIZE=CONFIG_MMU_PAGE_SIZE -IC:/Users/etara/RC_Car/ble_compatibility_test/build/bootloader/config -IC:/Users/etara/esp/esp-idf/components/bootloader_support/include -IC:/Users/etara/esp/esp-idf/components/bootloader_support/bootloader_flash/include -IC:/Users/etara/esp/esp-idf/components/bootloader_support/private_include -IC:/Users/etara/esp/esp-idf/components/log/include -IC:/Users/etara/esp/esp-idf/components/esp_rom/include -IC:/Users/etara/esp/esp-idf/components/esp_rom/include/esp32 -IC:/Users/etara/esp/esp-idf/components/esp_rom/esp32 -IC:/Users/etara/esp/esp-idf/components/esp_common/include -IC:/Users/etara/esp/esp-idf/components/esp_hw_support/include -IC:/Users/etara/esp/esp-idf/components/esp_hw_support/include/soc -IC:/Users/etara/esp/esp-idf/components/esp_hw_support/include/soc/esp32 -IC:/Users/etara/esp/esp-idf/components/esp_hw_support/port/esp32/. -IC:/Users/etara/esp/esp-idf/components/esp_hw_support/port/esp32/private_include -IC:/Users/etara/esp/esp-idf/components/newlib/platform_include -IC:/Users/etara/esp/esp-idf/components/xtensa/include -IC:/Users/etara/esp/esp-idf/components/xtensa/esp32/include -IC:/Users/etara/esp/esp-idf/components/soc/include -IC:/Users/etara/esp/esp-idf/components/soc/esp32/. -IC:/Users/etara/esp/esp-idf/components/soc/esp32/include -IC:/Users/etara/esp/esp-idf/components/bootloader/subproject/components/micro-ecc -IC:/Users/etara/esp/esp-idf/components/bootloader/subproject/components/micro-ecc/micro-ecc -IC:/Users/etara/esp/esp-idf/components/spi_flash/include -IC:/Users/etara/esp/esp-idf/components/hal/esp32/include -IC:/Users/etara/esp/esp-idf/components/hal/include -IC:/Users/etara/esp/esp-idf/components/hal/platform_port/include -IC:/Users/etara/esp/esp-idf/components/efuse/include -IC:/Users/etara/esp/esp-idf/components/efuse/esp32/include -IC:/Users/etara/esp/esp-idf/components/esp_app_format/include -mlongcalls -Wno-frame-address  -fdiagnostics-color=always -ffunction-sections -fdata-sections -Wall -Werror=all -Wno-error=unused-function -Wno-error=unused-variable -Wno-error=deprecated-declarations -Wextra -Wno-unused-parameter -Wno-sign-compare -Wno-enum-conversion -gdwarf-4 -ggdb -Os -freorder-blocks -fmacro-prefix-map=C:/Users/etara/esp/esp-idf/components/bootloader/subproject=. -fmacro-prefix-map=C:/Users/etara/esp/esp-idf=/IDF -fstrict-volatile-bitfields -Wno-error=unused-but-set-variable -fno-jump-tables -fno-tree-switch-conversion -fno-stack-protector -std=gnu17 -Wno-old-style-declaration -D_GNU_SOURCE -DIDF_VER=\"v5.0.2-dirty\" -DESP_PLATFORM -DBOOTLOADER_BUILD=1 -Wno-format -MD -MT esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/src/bootloader_common.c.obj -MF esp-idf\bootloader_support\CMakeFiles\__idf_bootloader_support.dir\src\bootloader_common.c.obj.d -o esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/src/bootloader_common.c.obj -c C:/Users/etara/esp/esp-idf/components/bootloader_support/src/bootloader_common.c
+In file included from C:/Users/etara/esp/esp-idf/components/bootloader_support/src/bootloader_common.c:11:
+C:/Users/etara/esp/esp-idf/components/log/include/esp_log.h:432:9: error: expected identifier or '(' before 'if'
+  432 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |         ^~
+C:/Users/etara/esp/esp-idf/components/log/include/esp_log.h:432:77: warning: __VA_ARGS__ can only appear in the expansion of a C99 variadic macro
+  432 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                                                             ^
+C:/Users/etara/esp/esp-idf/components/log/include/esp_log.h:432:75: error: stray '##' in program
+  432 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                                                           ^~
+C:/Users/etara/esp/esp-idf/components/log/include/esp_log.h:410:137: note: in definition of macro 'ESP_LOG_LEVEL'
+  410 |         if (level==ESP_LOG_ERROR )          { esp_log_write(ESP_LOG_ERROR,      tag, LOG_FORMAT(E, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                                                                         ^~~~~~~~~~~
+C:/Users/etara/esp/esp-idf/components/log/include/esp_log.h:432:75: error: stray '##' in program
+  432 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                                                           ^~
+C:/Users/etara/esp/esp-idf/components/log/include/esp_log.h:411:137: note: in definition of macro 'ESP_LOG_LEVEL'
+  411 |         else if (level==ESP_LOG_WARN )      { esp_log_write(ESP_LOG_WARN,       tag, LOG_FORMAT(W, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                                                                         ^~~~~~~~~~~
+C:/Users/etara/esp/esp-idf/components/log/include/esp_log.h:432:75: error: stray '##' in program
+  432 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                                                           ^~
+C:/Users/etara/esp/esp-idf/components/log/include/esp_log.h:412:137: note: in definition of macro 'ESP_LOG_LEVEL'
+  412 |         else if (level==ESP_LOG_DEBUG )     { esp_log_write(ESP_LOG_DEBUG,      tag, LOG_FORMAT(D, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                                                                         ^~~~~~~~~~~
+C:/Users/etara/esp/esp-idf/components/log/include/esp_log.h:432:75: error: stray '##' in program
+  432 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                                                           ^~
+C:/Users/etara/esp/esp-idf/components/log/include/esp_log.h:413:137: note: in definition of macro 'ESP_LOG_LEVEL'
+  413 |         else if (level==ESP_LOG_VERBOSE )   { esp_log_write(ESP_LOG_VERBOSE,    tag, LOG_FORMAT(V, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                                                                         ^~~~~~~~~~~
+C:/Users/etara/esp/esp-idf/components/log/include/esp_log.h:432:75: error: stray '##' in program
+  432 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                                                           ^~
+C:/Users/etara/esp/esp-idf/components/log/include/esp_log.h:414:137: note: in definition of macro 'ESP_LOG_LEVEL'
+  414 |         else                                { esp_log_write(ESP_LOG_INFO,       tag, LOG_FORMAT(I, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                                                                         ^~~~~~~~~~~
+C:/Users/etara/esp/esp-idf/components/log/include/esp_log.h:415:7: error: expected identifier or '(' before 'while'
+  415 |     } while(0)
+      |       ^~~~~
+C:/Users/etara/esp/esp-idf/components/log/include/esp_log.h:432:41: note: in expansion of macro 'ESP_LOG_LEVEL'
+  432 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                         ^~~~~~~~~~~~~
+C:/Users/etara/esp/esp-idf/components/log/include/esp_log.h:433:5: error: expected identifier or '(' before '}' token
+  433 |     } while(0)
+      |     ^
+C:/Users/etara/esp/esp-idf/components/log/include/esp_log.h:433:7: error: expected identifier or '(' before 'while'
+  433 |     } while(0)
+      |       ^~~~~
+In file included from C:/Users/etara/esp/esp-idf/components/bootloader_support/src/bootloader_common.c:12:
+C:/Users/etara/esp/esp-idf/components/esp_rom/include/esp_rom_spiflash.h:32:3: warning: data definition has no type or storage class
+   32 | } esp_rom_spiflash_read_mode_t;
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/etara/esp/esp-idf/components/esp_rom/include/esp_rom_spiflash.h:32:3: error: type defaults to 'int' in declaration of 'esp_rom_spiflash_read_mode_t' [-Werror=implicit-int]
+C:/Users/etara/esp/esp-idf/components/esp_rom/include/esp_rom_spiflash.h:130:60: error: expected declaration specifiers or '...' before 'esp_rom_spiflash_read_mode_t'
+  130 | esp_rom_spiflash_result_t esp_rom_spiflash_config_readmode(esp_rom_spiflash_read_mode_t mode);
+      |                                                            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+cc1.exe: some warnings being treated as errors
+[2/68] Building C object esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/bootloader_flash/src/bootloader_flash.c.obj
+FAILED: esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/bootloader_flash/src/bootloader_flash.c.obj 
+C:\Users\etara\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\bin\xtensa-esp32-elf-gcc.exe -DSOC_MMU_PAGE_SIZE=CONFIG_MMU_PAGE_SIZE -IC:/Users/etara/RC_Car/ble_compatibility_test/build/bootloader/config -IC:/Users/etara/esp/esp-idf/components/bootloader_support/include -IC:/Users/etara/esp/esp-idf/components/bootloader_support/bootloader_flash/include -IC:/Users/etara/esp/esp-idf/components/bootloader_support/private_include -IC:/Users/etara/esp/esp-idf/components/log/include -IC:/Users/etara/esp/esp-idf/components/esp_rom/include -IC:/Users/etara/esp/esp-idf/components/esp_rom/include/esp32 -IC:/Users/etara/esp/esp-idf/components/esp_rom/esp32 -IC:/Users/etara/esp/esp-idf/components/esp_common/include -IC:/Users/etara/esp/esp-idf/components/esp_hw_support/include -IC:/Users/etara/esp/esp-idf/components/esp_hw_support/include/soc -IC:/Users/etara/esp/esp-idf/components/esp_hw_support/include/soc/esp32 -IC:/Users/etara/esp/esp-idf/components/esp_hw_support/port/esp32/. -IC:/Users/etara/esp/esp-idf/components/esp_hw_support/port/esp32/private_include -IC:/Users/etara/esp/esp-idf/components/newlib/platform_include -IC:/Users/etara/esp/esp-idf/components/xtensa/include -IC:/Users/etara/esp/esp-idf/components/xtensa/esp32/include -IC:/Users/etara/esp/esp-idf/components/soc/include -IC:/Users/etara/esp/esp-idf/components/soc/esp32/. -IC:/Users/etara/esp/esp-idf/components/soc/esp32/include -IC:/Users/etara/esp/esp-idf/components/bootloader/subproject/components/micro-ecc -IC:/Users/etara/esp/esp-idf/components/bootloader/subproject/components/micro-ecc/micro-ecc -IC:/Users/etara/esp/esp-idf/components/spi_flash/include -IC:/Users/etara/esp/esp-idf/components/hal/esp32/include -IC:/Users/etara/esp/esp-idf/components/hal/include -IC:/Users/etara/esp/esp-idf/components/hal/platform_port/include -IC:/Users/etara/esp/esp-idf/components/efuse/include -IC:/Users/etara/esp/esp-idf/components/efuse/esp32/include -IC:/Users/etara/esp/esp-idf/components/esp_app_format/include -mlongcalls -Wno-frame-address  -fdiagnostics-color=always -ffunction-sections -fdata-sections -Wall -Werror=all -Wno-error=unused-function -Wno-error=unused-variable -Wno-error=deprecated-declarations -Wextra -Wno-unused-parameter -Wno-sign-compare -Wno-enum-conversion -gdwarf-4 -ggdb -Os -freorder-blocks -fmacro-prefix-map=C:/Users/etara/esp/esp-idf/components/bootloader/subproject=. -fmacro-prefix-map=C:/Users/etara/esp/esp-idf=/IDF -fstrict-volatile-bitfields -Wno-error=unused-but-set-variable -fno-jump-tables -fno-tree-switch-conversion -fno-stack-protector -std=gnu17 -Wno-old-style-declaration -D_GNU_SOURCE -DIDF_VER=\"v5.0.2-dirty\" -DESP_PLATFORM -DBOOTLOADER_BUILD=1 -Wno-format -MD -MT esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/bootloader_flash/src/bootloader_flash.c.obj -MF esp-idf\bootloader_support\CMakeFiles\__idf_bootloader_support.dir\bootloader_flash\src\bootloader_flash.c.obj.d -o esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/bootloader_flash/src/bootloader_flash.c.obj -c C:/Users/etara/esp/esp-idf/components/bootloader_support/bootloader_flash/src/bootloader_flash.c
+In file included from C:/Users/etara/esp/esp-idf/components/bootloader_support/bootloader_flash/src/bootloader_flash.c:9:
+C:/Users/etara/esp/esp-idf/components/log/include/esp_log.h:432:9: error: expected identifier or '(' before 'if'
+  432 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |         ^~
+C:/Users/etara/esp/esp-idf/components/log/include/esp_log.h:432:77: warning: __VA_ARGS__ can only appear in the expansion of a C99 variadic macro
+  432 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                                                             ^
+C:/Users/etara/esp/esp-idf/components/log/include/esp_log.h:432:75: error: stray '##' in program
+  432 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                                                           ^~
+C:/Users/etara/esp/esp-idf/components/log/include/esp_log.h:410:137: note: in definition of macro 'ESP_LOG_LEVEL'
+  410 |         if (level==ESP_LOG_ERROR )          { esp_log_write(ESP_LOG_ERROR,      tag, LOG_FORMAT(E, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                                                                         ^~~~~~~~~~~
+C:/Users/etara/esp/esp-idf/components/log/include/esp_log.h:432:75: error: stray '##' in program
+  432 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                                                           ^~
+C:/Users/etara/esp/esp-idf/components/log/include/esp_log.h:411:137: note: in definition of macro 'ESP_LOG_LEVEL'
+  411 |         else if (level==ESP_LOG_WARN )      { esp_log_write(ESP_LOG_WARN,       tag, LOG_FORMAT(W, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                                                                         ^~~~~~~~~~~
+C:/Users/etara/esp/esp-idf/components/log/include/esp_log.h:432:75: error: stray '##' in program
+  432 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                                                           ^~
+C:/Users/etara/esp/esp-idf/components/log/include/esp_log.h:412:137: note: in definition of macro 'ESP_LOG_LEVEL'
+  412 |         else if (level==ESP_LOG_DEBUG )     { esp_log_write(ESP_LOG_DEBUG,      tag, LOG_FORMAT(D, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                                                                         ^~~~~~~~~~~
+C:/Users/etara/esp/esp-idf/components/log/include/esp_log.h:432:75: error: stray '##' in program
+  432 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                                                           ^~
+C:/Users/etara/esp/esp-idf/components/log/include/esp_log.h:413:137: note: in definition of macro 'ESP_LOG_LEVEL'
+  413 |         else if (level==ESP_LOG_VERBOSE )   { esp_log_write(ESP_LOG_VERBOSE,    tag, LOG_FORMAT(V, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                                                                         ^~~~~~~~~~~
+C:/Users/etara/esp/esp-idf/components/log/include/esp_log.h:432:75: error: stray '##' in program
+  432 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                                                           ^~
+C:/Users/etara/esp/esp-idf/components/log/include/esp_log.h:414:137: note: in definition of macro 'ESP_LOG_LEVEL'
+  414 |         else                                { esp_log_write(ESP_LOG_INFO,       tag, LOG_FORMAT(I, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                                                                         ^~~~~~~~~~~
+C:/Users/etara/esp/esp-idf/components/log/include/esp_log.h:415:7: error: expected identifier or '(' before 'while'
+  415 |     } while(0)
+      |       ^~~~~
+C:/Users/etara/esp/esp-idf/components/log/include/esp_log.h:432:41: note: in expansion of macro 'ESP_LOG_LEVEL'
+  432 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                         ^~~~~~~~~~~~~
+C:/Users/etara/esp/esp-idf/components/log/include/esp_log.h:433:5: error: expected identifier or '(' before '}' token
+  433 |     } while(0)
+      |     ^
+C:/Users/etara/esp/esp-idf/components/log/include/esp_log.h:433:7: error: expected identifier or '(' before 'while'
+  433 |     } while(0)
+      |       ^~~~~
+In file included from C:/Users/etara/esp/esp-idf/components/soc/include/soc/efuse_periph.h:9,
+                 from C:/Users/etara/esp/esp-idf/components/hal/esp32/include/hal/efuse_ll.h:11,
+                 from C:/Users/etara/esp/esp-idf/components/bootloader_support/include/esp_flash_encrypt.h:15,
+                 from C:/Users/etara/esp/esp-idf/components/bootloader_support/bootloader_flash/src/bootloader_flash.c:10:
+C:/Users/etara/esp/esp-idf/components/soc/esp32/include/soc/efuse_struct.h:98:3: warning: data definition has no type or storage class
+   98 | } efuse_dev_t;
+      |   ^~~~~~~~~~~
+C:/Users/etara/esp/esp-idf/components/soc/esp32/include/soc/efuse_struct.h:98:3: error: type defaults to 'int' in declaration of 'efuse_dev_t' [-Werror=implicit-int]
+C:/Users/etara/esp/esp-idf/components/soc/esp32/include/soc/efuse_struct.h:100:20: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'EFUSE'
+  100 | extern efuse_dev_t EFUSE;
+      |                    ^~~~~
+cc1.exe: some warnings being treated as errors
+[3/68] Building C object esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/src/bootloader_mem.c.obj
+[4/68] Building C object esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/src/bootloader_clock_init.c.obj
+[5/68] Building C object esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/src/bootloader_common_loader.c.obj
+FAILED: esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/src/bootloader_common_loader.c.obj 
+C:\Users\etara\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\bin\xtensa-esp32-elf-gcc.exe -DSOC_MMU_PAGE_SIZE=CONFIG_MMU_PAGE_SIZE -IC:/Users/etara/RC_Car/ble_compatibility_test/build/bootloader/config -IC:/Users/etara/esp/esp-idf/components/bootloader_support/include -IC:/Users/etara/esp/esp-idf/components/bootloader_support/bootloader_flash/include -IC:/Users/etara/esp/esp-idf/components/bootloader_support/private_include -IC:/Users/etara/esp/esp-idf/components/log/include -IC:/Users/etara/esp/esp-idf/components/esp_rom/include -IC:/Users/etara/esp/esp-idf/components/esp_rom/include/esp32 -IC:/Users/etara/esp/esp-idf/components/esp_rom/esp32 -IC:/Users/etara/esp/esp-idf/components/esp_common/include -IC:/Users/etara/esp/esp-idf/components/esp_hw_support/include -IC:/Users/etara/esp/esp-idf/components/esp_hw_support/include/soc -IC:/Users/etara/esp/esp-idf/components/esp_hw_support/include/soc/esp32 -IC:/Users/etara/esp/esp-idf/components/esp_hw_support/port/esp32/. -IC:/Users/etara/esp/esp-idf/components/esp_hw_support/port/esp32/private_include -IC:/Users/etara/esp/esp-idf/components/newlib/platform_include -IC:/Users/etara/esp/esp-idf/components/xtensa/include -IC:/Users/etara/esp/esp-idf/components/xtensa/esp32/include -IC:/Users/etara/esp/esp-idf/components/soc/include -IC:/Users/etara/esp/esp-idf/components/soc/esp32/. -IC:/Users/etara/esp/esp-idf/components/soc/esp32/include -IC:/Users/etara/esp/esp-idf/components/bootloader/subproject/components/micro-ecc -IC:/Users/etara/esp/esp-idf/components/bootloader/subproject/components/micro-ecc/micro-ecc -IC:/Users/etara/esp/esp-idf/components/spi_flash/include -IC:/Users/etara/esp/esp-idf/components/hal/esp32/include -IC:/Users/etara/esp/esp-idf/components/hal/include -IC:/Users/etara/esp/esp-idf/components/hal/platform_port/include -IC:/Users/etara/esp/esp-idf/components/efuse/include -IC:/Users/etara/esp/esp-idf/components/efuse/esp32/include -IC:/Users/etara/esp/esp-idf/components/esp_app_format/include -mlongcalls -Wno-frame-address  -fdiagnostics-color=always -ffunction-sections -fdata-sections -Wall -Werror=all -Wno-error=unused-function -Wno-error=unused-variable -Wno-error=deprecated-declarations -Wextra -Wno-unused-parameter -Wno-sign-compare -Wno-enum-conversion -gdwarf-4 -ggdb -Os -freorder-blocks -fmacro-prefix-map=C:/Users/etara/esp/esp-idf/components/bootloader/subproject=. -fmacro-prefix-map=C:/Users/etara/esp/esp-idf=/IDF -fstrict-volatile-bitfields -Wno-error=unused-but-set-variable -fno-jump-tables -fno-tree-switch-conversion -fno-stack-protector -std=gnu17 -Wno-old-style-declaration -D_GNU_SOURCE -DIDF_VER=\"v5.0.2-dirty\" -DESP_PLATFORM -DBOOTLOADER_BUILD=1 -Wno-format -MD -MT esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/src/bootloader_common_loader.c.obj -MF esp-idf\bootloader_support\CMakeFiles\__idf_bootloader_support.dir\src\bootloader_common_loader.c.obj.d -o esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/src/bootloader_common_loader.c.obj -c C:/Users/etara/esp/esp-idf/components/bootloader_support/src/bootloader_common_loader.c
+In file included from C:/Users/etara/esp/esp-idf/components/bootloader_support/src/bootloader_common_loader.c:10:
+C:/Users/etara/esp/esp-idf/components/log/include/esp_log.h:432:9: error: expected identifier or '(' before 'if'
+  432 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |         ^~
+C:/Users/etara/esp/esp-idf/components/log/include/esp_log.h:432:77: warning: __VA_ARGS__ can only appear in the expansion of a C99 variadic macro
+  432 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                                                             ^
+C:/Users/etara/esp/esp-idf/components/log/include/esp_log.h:432:75: error: stray '##' in program
+  432 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                                                           ^~
+C:/Users/etara/esp/esp-idf/components/log/include/esp_log.h:410:137: note: in definition of macro 'ESP_LOG_LEVEL'
+  410 |         if (level==ESP_LOG_ERROR )          { esp_log_write(ESP_LOG_ERROR,      tag, LOG_FORMAT(E, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                                                                         ^~~~~~~~~~~
+C:/Users/etara/esp/esp-idf/components/log/include/esp_log.h:432:75: error: stray '##' in program
+  432 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                                                           ^~
+C:/Users/etara/esp/esp-idf/components/log/include/esp_log.h:411:137: note: in definition of macro 'ESP_LOG_LEVEL'
+  411 |         else if (level==ESP_LOG_WARN )      { esp_log_write(ESP_LOG_WARN,       tag, LOG_FORMAT(W, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                                                                         ^~~~~~~~~~~
+C:/Users/etara/esp/esp-idf/components/log/include/esp_log.h:432:75: error: stray '##' in program
+  432 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                                                           ^~
+C:/Users/etara/esp/esp-idf/components/log/include/esp_log.h:412:137: note: in definition of macro 'ESP_LOG_LEVEL'
+  412 |         else if (level==ESP_LOG_DEBUG )     { esp_log_write(ESP_LOG_DEBUG,      tag, LOG_FORMAT(D, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                                                                         ^~~~~~~~~~~
+C:/Users/etara/esp/esp-idf/components/log/include/esp_log.h:432:75: error: stray '##' in program
+  432 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                                                           ^~
+C:/Users/etara/esp/esp-idf/components/log/include/esp_log.h:413:137: note: in definition of macro 'ESP_LOG_LEVEL'
+  413 |         else if (level==ESP_LOG_VERBOSE )   { esp_log_write(ESP_LOG_VERBOSE,    tag, LOG_FORMAT(V, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                                                                         ^~~~~~~~~~~
+C:/Users/etara/esp/esp-idf/components/log/include/esp_log.h:432:75: error: stray '##' in program
+  432 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                                                           ^~
+C:/Users/etara/esp/esp-idf/components/log/include/esp_log.h:414:137: note: in definition of macro 'ESP_LOG_LEVEL'
+  414 |         else                                { esp_log_write(ESP_LOG_INFO,       tag, LOG_FORMAT(I, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                                                                         ^~~~~~~~~~~
+C:/Users/etara/esp/esp-idf/components/log/include/esp_log.h:415:7: error: expected identifier or '(' before 'while'
+  415 |     } while(0)
+      |       ^~~~~
+C:/Users/etara/esp/esp-idf/components/log/include/esp_log.h:432:41: note: in expansion of macro 'ESP_LOG_LEVEL'
+  432 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                         ^~~~~~~~~~~~~
+C:/Users/etara/esp/esp-idf/components/log/include/esp_log.h:433:5: error: expected identifier or '(' before '}' token
+  433 |     } while(0)
+      |     ^
+C:/Users/etara/esp/esp-idf/components/log/include/esp_log.h:433:7: error: expected identifier or '(' before 'while'
+  433 |     } while(0)
+      |       ^~~~~
+In file included from C:/Users/etara/esp/esp-idf/components/bootloader_support/src/bootloader_common_loader.c:11:
+C:/Users/etara/esp/esp-idf/components/esp_rom/include/esp_rom_spiflash.h:32:3: warning: data definition has no type or storage class
+   32 | } esp_rom_spiflash_read_mode_t;
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/etara/esp/esp-idf/components/esp_rom/include/esp_rom_spiflash.h:32:3: error: type defaults to 'int' in declaration of 'esp_rom_spiflash_read_mode_t' [-Werror=implicit-int]
+C:/Users/etara/esp/esp-idf/components/esp_rom/include/esp_rom_spiflash.h:130:60: error: expected declaration specifiers or '...' before 'esp_rom_spiflash_read_mode_t'
+  130 | esp_rom_spiflash_result_t esp_rom_spiflash_config_readmode(esp_rom_spiflash_read_mode_t mode);
+      |                                                            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+cc1.exe: some warnings being treated as errors
+[6/68] Building C object esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/src/bootloader_random.c.obj
+ninja: build stopped: subcommand failed.
+ninja: build stopped: subcommand failed.

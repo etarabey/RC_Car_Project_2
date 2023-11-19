@@ -1,0 +1,13 @@
+CMake Error at C:/Users/etara/esp/esp-idf/tools/cmake/build.cmake:519 (message):
+  ERROR: Solver failed processing dependency "espressif/mcpwm" from the
+  manifest file
+  "C:/Users/etara/RC_Car/ble_compatibility_test/main\idf_component.yml".
+
+  Cannot find versions of "espressif/mcpwm" satisfying ">=1" for the current
+  target "esp32".
+
+Call Stack (most recent call first):
+  C:/Users/etara/esp/esp-idf/tools/cmake/project.cmake:447 (idf_build_process)
+  CMakeLists.txt:6 (project)
+
+

@@ -1,0 +1,235 @@
+Detecting C compiler ABI info failed to compile with the following output:
+Change Dir: C:/Users/etara/RC_Car/ble_compatibility_test/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_2b60e.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:m && Microsoft (R) Build Engine version 17.0.0+c9eb9dd64 for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.30.30706 for x64
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  cl /c /W1 /WX- /diagnostics:column /O2 /D _MBCS /D "CMAKE_INTDIR=\"Debug\"" /Gm- /MD /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_2b60e.dir\Debug\\" /Fd"cmTC_2b60e.dir\Debug\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue  -mlongcalls -Wno-frame-address "C:\Users\etara\.espressif\tools\cmake\3.24.0\share\cmake-3.24\Modules\CMakeCCompilerABI.c"
+cl : command line error D8021: invalid numeric argument '/Wno-frame-address' [C:\Users\etara\RC_Car\ble_compatibility_test\build\CMakeFiles\CMakeTmp\cmTC_2b60e.vcxproj]
+
+
+
+
+Determining if the C compiler works failed with the following output:
+Change Dir: C:/Users/etara/RC_Car/ble_compatibility_test/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_0ddc5.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:m && Microsoft (R) Build Engine version 17.0.0+c9eb9dd64 for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.30.30706 for x64
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  cl /c /W1 /WX- /diagnostics:column /O2 /D _MBCS /D "CMAKE_INTDIR=\"Debug\"" /Gm- /MD /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_0ddc5.dir\Debug\\" /Fd"cmTC_0ddc5.dir\Debug\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue  -mlongcalls -Wno-frame-address C:\Users\etara\RC_Car\ble_compatibility_test\build\CMakeFiles\CMakeTmp\testCCompiler.c
+cl : command line error D8021: invalid numeric argument '/Wno-frame-address' [C:\Users\etara\RC_Car\ble_compatibility_test\build\CMakeFiles\CMakeTmp\cmTC_0ddc5.vcxproj]
+
+
+
+Detecting C compiler ABI info failed to compile with the following output:
+Change Dir: C:/Users/etara/RC_Car/ble_compatibility_test/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_f57a9.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:m && Microsoft (R) Build Engine version 17.0.0+c9eb9dd64 for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.30.30706 for x64
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  cl /c /W1 /WX- /diagnostics:column /O2 /D _MBCS /D "CMAKE_INTDIR=\"Debug\"" /Gm- /MD /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_f57a9.dir\Debug\\" /Fd"cmTC_f57a9.dir\Debug\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue  -mlongcalls -Wno-frame-address "C:\Users\etara\.espressif\tools\cmake\3.24.0\share\cmake-3.24\Modules\CMakeCCompilerABI.c"
+cl : command line error D8021: invalid numeric argument '/Wno-frame-address' [C:\Users\etara\RC_Car\ble_compatibility_test\build\CMakeFiles\CMakeTmp\cmTC_f57a9.vcxproj]
+
+
+
+
+Determining if the C compiler works failed with the following output:
+Change Dir: C:/Users/etara/RC_Car/ble_compatibility_test/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_6a387.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:m && Microsoft (R) Build Engine version 17.0.0+c9eb9dd64 for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.30.30706 for x64
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  cl /c /W1 /WX- /diagnostics:column /O2 /D _MBCS /D "CMAKE_INTDIR=\"Debug\"" /Gm- /MD /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_6a387.dir\Debug\\" /Fd"cmTC_6a387.dir\Debug\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue  -mlongcalls -Wno-frame-address C:\Users\etara\RC_Car\ble_compatibility_test\build\CMakeFiles\CMakeTmp\testCCompiler.c
+cl : command line error D8021: invalid numeric argument '/Wno-frame-address' [C:\Users\etara\RC_Car\ble_compatibility_test\build\CMakeFiles\CMakeTmp\cmTC_6a387.vcxproj]
+
+
+
+Detecting C compiler ABI info failed to compile with the following output:
+Change Dir: C:/Users/etara/RC_Car/ble_compatibility_test/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_cd949.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:m && Microsoft (R) Build Engine version 17.0.0+c9eb9dd64 for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.30.30706 for x64
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  cl /c /W1 /WX- /diagnostics:column /O2 /D _MBCS /D "CMAKE_INTDIR=\"Debug\"" /Gm- /MD /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_cd949.dir\Debug\\" /Fd"cmTC_cd949.dir\Debug\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue  -mlongcalls -Wno-frame-address "C:\Users\etara\.espressif\tools\cmake\3.24.0\share\cmake-3.24\Modules\CMakeCCompilerABI.c"
+cl : command line error D8021: invalid numeric argument '/Wno-frame-address' [C:\Users\etara\RC_Car\ble_compatibility_test\build\CMakeFiles\CMakeTmp\cmTC_cd949.vcxproj]
+
+
+
+
+Determining if the C compiler works failed with the following output:
+Change Dir: C:/Users/etara/RC_Car/ble_compatibility_test/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_ac843.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:m && Microsoft (R) Build Engine version 17.0.0+c9eb9dd64 for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.30.30706 for x64
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  cl /c /W1 /WX- /diagnostics:column /O2 /D _MBCS /D "CMAKE_INTDIR=\"Debug\"" /Gm- /MD /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_ac843.dir\Debug\\" /Fd"cmTC_ac843.dir\Debug\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue  -mlongcalls -Wno-frame-address C:\Users\etara\RC_Car\ble_compatibility_test\build\CMakeFiles\CMakeTmp\testCCompiler.c
+cl : command line error D8021: invalid numeric argument '/Wno-frame-address' [C:\Users\etara\RC_Car\ble_compatibility_test\build\CMakeFiles\CMakeTmp\cmTC_ac843.vcxproj]
+
+
+
+Detecting C compiler ABI info failed to compile with the following output:
+Change Dir: C:/Users/etara/RC_Car/ble_compatibility_test/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_ccd6c.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:m && Microsoft (R) Build Engine version 17.0.0+c9eb9dd64 for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.30.30706 for x64
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  cl /c /W1 /WX- /diagnostics:column /O2 /D _MBCS /D "CMAKE_INTDIR=\"Debug\"" /Gm- /MD /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_ccd6c.dir\Debug\\" /Fd"cmTC_ccd6c.dir\Debug\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue  -mlongcalls -Wno-frame-address "C:\Users\etara\.espressif\tools\cmake\3.24.0\share\cmake-3.24\Modules\CMakeCCompilerABI.c"
+cl : command line error D8021: invalid numeric argument '/Wno-frame-address' [C:\Users\etara\RC_Car\ble_compatibility_test\build\CMakeFiles\CMakeTmp\cmTC_ccd6c.vcxproj]
+
+
+
+
+Determining if the C compiler works failed with the following output:
+Change Dir: C:/Users/etara/RC_Car/ble_compatibility_test/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_2b610.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:m && Microsoft (R) Build Engine version 17.0.0+c9eb9dd64 for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.30.30706 for x64
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  cl /c /W1 /WX- /diagnostics:column /O2 /D _MBCS /D "CMAKE_INTDIR=\"Debug\"" /Gm- /MD /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_2b610.dir\Debug\\" /Fd"cmTC_2b610.dir\Debug\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue  -mlongcalls -Wno-frame-address C:\Users\etara\RC_Car\ble_compatibility_test\build\CMakeFiles\CMakeTmp\testCCompiler.c
+cl : command line error D8021: invalid numeric argument '/Wno-frame-address' [C:\Users\etara\RC_Car\ble_compatibility_test\build\CMakeFiles\CMakeTmp\cmTC_2b610.vcxproj]
+
+
+
+Detecting C compiler ABI info failed to compile with the following output:
+Change Dir: C:/Users/etara/RC_Car/ble_compatibility_test/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_c73e4.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:m && Microsoft (R) Build Engine version 17.0.0+c9eb9dd64 for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.30.30706 for x64
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  cl /c /W1 /WX- /diagnostics:column /O2 /D _MBCS /D "CMAKE_INTDIR=\"Debug\"" /Gm- /MD /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_c73e4.dir\Debug\\" /Fd"cmTC_c73e4.dir\Debug\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue  -mlongcalls -Wno-frame-address "C:\Users\etara\.espressif\tools\cmake\3.24.0\share\cmake-3.24\Modules\CMakeCCompilerABI.c"
+cl : command line error D8021: invalid numeric argument '/Wno-frame-address' [C:\Users\etara\RC_Car\ble_compatibility_test\build\CMakeFiles\CMakeTmp\cmTC_c73e4.vcxproj]
+
+
+
+
+Determining if the C compiler works failed with the following output:
+Change Dir: C:/Users/etara/RC_Car/ble_compatibility_test/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_3b1fe.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:m && Microsoft (R) Build Engine version 17.0.0+c9eb9dd64 for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.30.30706 for x64
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  cl /c /W1 /WX- /diagnostics:column /O2 /D _MBCS /D "CMAKE_INTDIR=\"Debug\"" /Gm- /MD /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_3b1fe.dir\Debug\\" /Fd"cmTC_3b1fe.dir\Debug\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue  -mlongcalls -Wno-frame-address C:\Users\etara\RC_Car\ble_compatibility_test\build\CMakeFiles\CMakeTmp\testCCompiler.c
+cl : command line error D8021: invalid numeric argument '/Wno-frame-address' [C:\Users\etara\RC_Car\ble_compatibility_test\build\CMakeFiles\CMakeTmp\cmTC_3b1fe.vcxproj]
+
+
+
+Detecting C compiler ABI info failed to compile with the following output:
+Change Dir: C:/Users/etara/RC_Car/ble_compatibility_test/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_9bfa6.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:m && Microsoft (R) Build Engine version 17.0.0+c9eb9dd64 for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.30.30706 for x64
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  cl /c /W1 /WX- /diagnostics:column /O2 /D _MBCS /D "CMAKE_INTDIR=\"Debug\"" /Gm- /MD /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_9bfa6.dir\Debug\\" /Fd"cmTC_9bfa6.dir\Debug\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue  -mlongcalls -Wno-frame-address "C:\Users\etara\.espressif\tools\cmake\3.24.0\share\cmake-3.24\Modules\CMakeCCompilerABI.c"
+cl : command line error D8021: invalid numeric argument '/Wno-frame-address' [C:\Users\etara\RC_Car\ble_compatibility_test\build\CMakeFiles\CMakeTmp\cmTC_9bfa6.vcxproj]
+
+
+
+
+Determining if the C compiler works failed with the following output:
+Change Dir: C:/Users/etara/RC_Car/ble_compatibility_test/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_2bed9.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:m && Microsoft (R) Build Engine version 17.0.0+c9eb9dd64 for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.30.30706 for x64
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  cl /c /W1 /WX- /diagnostics:column /O2 /D _MBCS /D "CMAKE_INTDIR=\"Debug\"" /Gm- /MD /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_2bed9.dir\Debug\\" /Fd"cmTC_2bed9.dir\Debug\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue  -mlongcalls -Wno-frame-address C:\Users\etara\RC_Car\ble_compatibility_test\build\CMakeFiles\CMakeTmp\testCCompiler.c
+cl : command line error D8021: invalid numeric argument '/Wno-frame-address' [C:\Users\etara\RC_Car\ble_compatibility_test\build\CMakeFiles\CMakeTmp\cmTC_2bed9.vcxproj]
+
+
+
+Detecting C compiler ABI info failed to compile with the following output:
+Change Dir: C:/Users/etara/RC_Car/ble_compatibility_test/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_fcd49.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:m && Microsoft (R) Build Engine version 17.0.0+c9eb9dd64 for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.30.30706 for x64
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  cl /c /W1 /WX- /diagnostics:column /O2 /D _MBCS /D "CMAKE_INTDIR=\"Debug\"" /Gm- /MD /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_fcd49.dir\Debug\\" /Fd"cmTC_fcd49.dir\Debug\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue  -mlongcalls -Wno-frame-address "C:\Users\etara\.espressif\tools\cmake\3.24.0\share\cmake-3.24\Modules\CMakeCCompilerABI.c"
+cl : command line error D8021: invalid numeric argument '/Wno-frame-address' [C:\Users\etara\RC_Car\ble_compatibility_test\build\CMakeFiles\CMakeTmp\cmTC_fcd49.vcxproj]
+
+
+
+
+Determining if the C compiler works failed with the following output:
+Change Dir: C:/Users/etara/RC_Car/ble_compatibility_test/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_5a16b.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:m && Microsoft (R) Build Engine version 17.0.0+c9eb9dd64 for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.30.30706 for x64
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  cl /c /W1 /WX- /diagnostics:column /O2 /D _MBCS /D "CMAKE_INTDIR=\"Debug\"" /Gm- /MD /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_5a16b.dir\Debug\\" /Fd"cmTC_5a16b.dir\Debug\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue  -mlongcalls -Wno-frame-address C:\Users\etara\RC_Car\ble_compatibility_test\build\CMakeFiles\CMakeTmp\testCCompiler.c
+cl : command line error D8021: invalid numeric argument '/Wno-frame-address' [C:\Users\etara\RC_Car\ble_compatibility_test\build\CMakeFiles\CMakeTmp\cmTC_5a16b.vcxproj]
+
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: C:/Users/etara/.espressif/tools/xtensa-esp32-elf/esp-2022r1-11.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc.exe 
+Build flags: -mlongcalls;-Wno-frame-address;
+Id flags:  
+
+The output was:
+1
+CMakeCCompilerId.c:837:1: fatal error: error closing C:\Users\etara\AppData\Local\Temp\ccD7eKMA.s: No space left on device
+  837 | }
+      | ^
+compilation terminated.
+
+
+Checking whether the C compiler is IAR using "" did not match "IAR .+ Compiler":
+xtensa-esp32-elf-gcc.exe: fatal error: no input files
+compilation terminated.
+Checking whether the C compiler is IAR using "" did not match "IAR .+ Compiler":
+xtensa-esp32-elf-gcc.exe: fatal error: no input files
+compilation terminated.
+Checking whether the CXX compiler is IAR using "" did not match "IAR .+ Compiler":
+Checking whether the CXX compiler is IAR using "" did not match "IAR .+ Compiler":
+Checking whether the ASM compiler is GNU using "--version" did not match "(GNU assembler)|(GCC)|(Free Software Foundation)":
+Checking whether the ASM compiler is Clang using "--version" did not match "(clang version)":
+Checking whether the ASM compiler is AppleClang using "--version" did not match "(Apple LLVM version)":
+Checking whether the ASM compiler is ARMClang using "--version" did not match "armclang":
+Checking whether the ASM compiler is HP using "-V" did not match "HP C":
+Checking whether the ASM compiler is Intel using "--version" did not match "(ICC)":
+Checking whether the ASM compiler is IntelLLVM using "--version" did not match "(Intel[^
+]+oneAPI)":
+Checking whether the ASM compiler is SunPro using "-V" did not match "Sun C":
+Checking whether the ASM compiler is XL using "-qversion" did not match "XL C":
+Checking whether the ASM compiler is MSVC using "-?" did not match "Microsoft":
+Checking whether the ASM compiler is TI using "-h" did not match "Texas Instruments":
+Checking whether the ASM compiler is IAR using "" did not match "IAR Assembler":
+Checking whether the ASM compiler is ARMCC using "" did not match "(ARM Compiler)|(ARM Assembler)|(Arm Compiler)":
+Checking whether the ASM compiler is NASM using "-v" did not match "(NASM version)":
+Checking whether the ASM compiler is YASM using "--version" did not match "(yasm)":
+Checking whether the ASM compiler is ADSP using "-version" did not match "Analog Devices":
+Checking whether the ASM compiler is QCC using "-V" did not match "gcc_nto":
+Detecting C compiler ABI info failed to compile with the following output:
+
+
+
+Determining if the C compiler works failed with the following output:
+
+

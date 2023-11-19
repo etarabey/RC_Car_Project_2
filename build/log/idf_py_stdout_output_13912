@@ -1,0 +1,866 @@
+[0/1] Re-running CMake...
+-- ccache will be used for faster recompilation
+-- Project is not inside a git repository, or git repository has no commits; will not use 'git describe' to determine PROJECT_VER.
+-- Building ESP-IDF components for target esp32
+Processing 3 dependencies:
+[1/3] espressif/bdc_motor (0.1.0)
+[2/3] espressif/pid_ctrl (0.1.1)
+[3/3] idf (5.0.2)
+-- Project sdkconfig file C:/Users/etara/RC_Car/ble_compatibility_test/sdkconfig
+Loading defaults file C:/Users/etara/RC_Car/ble_compatibility_test/sdkconfig.defaults...
+-- App "ble_compatibility_test" version: 1
+-- Adding linker script C:/Users/etara/RC_Car/ble_compatibility_test/build/esp-idf/esp_system/ld/memory.ld
+-- Adding linker script C:/Users/etara/esp/esp-idf/components/esp_system/ld/esp32/sections.ld.in
+-- Adding linker script C:/Users/etara/esp/esp-idf/components/esp_rom/esp32/ld/esp32.rom.ld
+-- Adding linker script C:/Users/etara/esp/esp-idf/components/esp_rom/esp32/ld/esp32.rom.api.ld
+-- Adding linker script C:/Users/etara/esp/esp-idf/components/esp_rom/esp32/ld/esp32.rom.libgcc.ld
+-- Adding linker script C:/Users/etara/esp/esp-idf/components/esp_rom/esp32/ld/esp32.rom.newlib-data.ld
+-- Adding linker script C:/Users/etara/esp/esp-idf/components/esp_rom/esp32/ld/esp32.rom.syscalls.ld
+-- Adding linker script C:/Users/etara/esp/esp-idf/components/esp_rom/esp32/ld/esp32.rom.newlib-funcs.ld
+-- Adding linker script C:/Users/etara/esp/esp-idf/components/soc/esp32/ld/esp32.peripherals.ld
+-- Components: app_trace app_update bootloader bootloader_support bt cmock console cxx driver efuse esp-tls esp_adc esp_app_format esp_common esp_eth esp_event esp_gdbstub esp_hid esp_http_client esp_http_server esp_https_ota esp_https_server esp_hw_support esp_lcd esp_local_ctrl esp_netif esp_partition esp_phy esp_pm esp_psram esp_ringbuf esp_rom esp_system esp_timer esp_wifi espcoredump espressif__bdc_motor espressif__pid_ctrl esptool_py fatfs freertos hal heap http_parser idf_test ieee802154 json log lwip main mbedtls mqtt newlib nvs_flash openthread partition_table perfmon protobuf-c protocomm pthread sdmmc soc spi_flash spiffs tcp_transport ulp unity usb vfs wear_levelling wifi_provisioning wpa_supplicant xtensa
+-- Component paths: C:/Users/etara/esp/esp-idf/components/app_trace C:/Users/etara/esp/esp-idf/components/app_update C:/Users/etara/esp/esp-idf/components/bootloader C:/Users/etara/esp/esp-idf/components/bootloader_support C:/Users/etara/esp/esp-idf/components/bt C:/Users/etara/esp/esp-idf/components/cmock C:/Users/etara/esp/esp-idf/components/console C:/Users/etara/esp/esp-idf/components/cxx C:/Users/etara/esp/esp-idf/components/driver C:/Users/etara/esp/esp-idf/components/efuse C:/Users/etara/esp/esp-idf/components/esp-tls C:/Users/etara/esp/esp-idf/components/esp_adc C:/Users/etara/esp/esp-idf/components/esp_app_format C:/Users/etara/esp/esp-idf/components/esp_common C:/Users/etara/esp/esp-idf/components/esp_eth C:/Users/etara/esp/esp-idf/components/esp_event C:/Users/etara/esp/esp-idf/components/esp_gdbstub C:/Users/etara/esp/esp-idf/components/esp_hid C:/Users/etara/esp/esp-idf/components/esp_http_client C:/Users/etara/esp/esp-idf/components/esp_http_server C:/Users/etara/esp/esp-idf/components/esp_https_ota C:/Users/etara/esp/esp-idf/components/esp_https_server C:/Users/etara/esp/esp-idf/components/esp_hw_support C:/Users/etara/esp/esp-idf/components/esp_lcd C:/Users/etara/esp/esp-idf/components/esp_local_ctrl C:/Users/etara/esp/esp-idf/components/esp_netif C:/Users/etara/esp/esp-idf/components/esp_partition C:/Users/etara/esp/esp-idf/components/esp_phy C:/Users/etara/esp/esp-idf/components/esp_pm C:/Users/etara/esp/esp-idf/components/esp_psram C:/Users/etara/esp/esp-idf/components/esp_ringbuf C:/Users/etara/esp/esp-idf/components/esp_rom C:/Users/etara/esp/esp-idf/components/esp_system C:/Users/etara/esp/esp-idf/components/esp_timer C:/Users/etara/esp/esp-idf/components/esp_wifi C:/Users/etara/esp/esp-idf/components/espcoredump C:/Users/etara/RC_Car/ble_compatibility_test/managed_components/espressif__bdc_motor C:/Users/etara/RC_Car/ble_compatibility_test/managed_components/espressif__pid_ctrl C:/Users/etara/esp/esp-idf/components/esptool_py C:/Users/etara/esp/esp-idf/components/fatfs C:/Users/etara/esp/esp-idf/components/freertos C:/Users/etara/esp/esp-idf/components/hal C:/Users/etara/esp/esp-idf/components/heap C:/Users/etara/esp/esp-idf/components/http_parser C:/Users/etara/esp/esp-idf/components/idf_test C:/Users/etara/esp/esp-idf/components/ieee802154 C:/Users/etara/esp/esp-idf/components/json C:/Users/etara/esp/esp-idf/components/log C:/Users/etara/esp/esp-idf/components/lwip C:/Users/etara/RC_Car/ble_compatibility_test/main C:/Users/etara/esp/esp-idf/components/mbedtls C:/Users/etara/esp/esp-idf/components/mqtt C:/Users/etara/esp/esp-idf/components/newlib C:/Users/etara/esp/esp-idf/components/nvs_flash C:/Users/etara/esp/esp-idf/components/openthread C:/Users/etara/esp/esp-idf/components/partition_table C:/Users/etara/esp/esp-idf/components/perfmon C:/Users/etara/esp/esp-idf/components/protobuf-c C:/Users/etara/esp/esp-idf/components/protocomm C:/Users/etara/esp/esp-idf/components/pthread C:/Users/etara/esp/esp-idf/components/sdmmc C:/Users/etara/esp/esp-idf/components/soc C:/Users/etara/esp/esp-idf/components/spi_flash C:/Users/etara/esp/esp-idf/components/spiffs C:/Users/etara/esp/esp-idf/components/tcp_transport C:/Users/etara/esp/esp-idf/components/ulp C:/Users/etara/esp/esp-idf/components/unity C:/Users/etara/esp/esp-idf/components/usb C:/Users/etara/esp/esp-idf/components/vfs C:/Users/etara/esp/esp-idf/components/wear_levelling C:/Users/etara/esp/esp-idf/components/wifi_provisioning C:/Users/etara/esp/esp-idf/components/wpa_supplicant C:/Users/etara/esp/esp-idf/components/xtensa
+-- Configuring done
+-- Generating done
+-- Build files have been written to: C:/Users/etara/RC_Car/ble_compatibility_test/build
+[1/1156] Generating memory.ld linker script...
+[2/1156] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/entropy_poll.c.obj
+[3/1156] Building C object esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/src/bootloader_clock_init.c.obj
+[4/1156] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/entropy.c.obj
+[5/1156] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/hash_info.c.obj
+[6/1156] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/ecp_curves.c.obj
+[7/1156] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/hkdf.c.obj
+[8/1156] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/gcm.c.obj
+[9/1156] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/lmots.c.obj
+[10/1156] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/error.c.obj
+[11/1156] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/hmac_drbg.c.obj
+[12/1156] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/nist_kw.c.obj
+[13/1156] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/md5.c.obj
+[14/1156] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/memory_buffer_alloc.c.obj
+[15/1156] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/oid.c.obj
+[16/1156] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/md.c.obj
+[17/1156] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/lms.c.obj
+[18/1156] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/pem.c.obj
+[19/1156] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/pk.c.obj
+[20/1156] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/pkcs12.c.obj
+[21/1156] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/padlock.c.obj
+[22/1156] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/platform.c.obj
+[23/1156] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/pk_wrap.c.obj
+[24/1156] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/poly1305.c.obj
+[25/1156] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/platform_util.c.obj
+[26/1156] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/pkparse.c.obj
+[27/1156] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/pkwrite.c.obj
+[28/1156] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/pkcs5.c.obj
+[29/1156] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/psa_crypto_client.c.obj
+[30/1156] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/psa_crypto_driver_wrappers.c.obj
+[31/1156] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/psa_crypto_cipher.c.obj
+[32/1156] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/psa_crypto_aead.c.obj
+[33/1156] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/psa_crypto_ecp.c.obj
+[34/1156] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/psa_crypto.c.obj
+[35/1156] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/psa_crypto_mac.c.obj
+[36/1156] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/psa_crypto_pake.c.obj
+[37/1156] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/psa_crypto_hash.c.obj
+[38/1156] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/psa_crypto_rsa.c.obj
+[39/1156] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/psa_its_file.c.obj
+[40/1156] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/psa_crypto_storage.c.obj
+[41/1156] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/ripemd160.c.obj
+[42/1156] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/psa_crypto_se.c.obj
+[43/1156] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/rsa_alt_helpers.c.obj
+[44/1156] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/psa_crypto_slot_management.c.obj
+[45/1156] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/sha256.c.obj
+[46/1156] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/rsa.c.obj
+[47/1156] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/threading.c.obj
+[48/1156] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/sha512.c.obj
+[49/1156] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/sha1.c.obj
+[50/1156] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/version_features.c.obj
+[51/1156] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/C_/Users/etara/esp/esp-idf/components/mbedtls/port/esp_hardware.c.obj
+[52/1156] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/C_/Users/etara/esp/esp-idf/components/mbedtls/port/esp_mem.c.obj
+[53/1156] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/timing.c.obj
+[54/1156] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/version.c.obj
+[55/1156] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/C_/Users/etara/esp/esp-idf/components/mbedtls/port/aes/esp_aes_xts.c.obj
+[56/1156] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/C_/Users/etara/esp/esp-idf/components/mbedtls/port/esp_timing.c.obj
+[57/1156] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/C_/Users/etara/esp/esp-idf/components/mbedtls/port/sha/esp_sha.c.obj
+FAILED: esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/C_/Users/etara/esp/esp-idf/components/mbedtls/port/sha/esp_sha.c.obj 
+ccache C:\Users\etara\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\bin\xtensa-esp32-elf-gcc.exe -DMBEDTLS_CONFIG_FILE=\"mbedtls/esp_config.h\" -DSOC_MMU_PAGE_SIZE=CONFIG_MMU_PAGE_SIZE -IC:/Users/etara/RC_Car/ble_compatibility_test/build/config -IC:/Users/etara/esp/esp-idf/components/mbedtls/port/include -IC:/Users/etara/esp/esp-idf/components/mbedtls/mbedtls/include -IC:/Users/etara/esp/esp-idf/components/mbedtls/mbedtls/library -IC:/Users/etara/esp/esp-idf/components/newlib/platform_include -IC:/Users/etara/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include -IC:/Users/etara/esp/esp-idf/components/freertos/esp_additions/include/freertos -IC:/Users/etara/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include -IC:/Users/etara/esp/esp-idf/components/freertos/esp_additions/include -IC:/Users/etara/esp/esp-idf/components/esp_hw_support/include -IC:/Users/etara/esp/esp-idf/components/esp_hw_support/include/soc -IC:/Users/etara/esp/esp-idf/components/esp_hw_support/include/soc/esp32 -IC:/Users/etara/esp/esp-idf/components/esp_hw_support/port/esp32/. -IC:/Users/etara/esp/esp-idf/components/esp_hw_support/port/esp32/private_include -IC:/Users/etara/esp/esp-idf/components/heap/include -IC:/Users/etara/esp/esp-idf/components/log/include -IC:/Users/etara/esp/esp-idf/components/soc/include -IC:/Users/etara/esp/esp-idf/components/soc/esp32/. -IC:/Users/etara/esp/esp-idf/components/soc/esp32/include -IC:/Users/etara/esp/esp-idf/components/hal/esp32/include -IC:/Users/etara/esp/esp-idf/components/hal/include -IC:/Users/etara/esp/esp-idf/components/hal/platform_port/include -IC:/Users/etara/esp/esp-idf/components/esp_rom/include -IC:/Users/etara/esp/esp-idf/components/esp_rom/include/esp32 -IC:/Users/etara/esp/esp-idf/components/esp_rom/esp32 -IC:/Users/etara/esp/esp-idf/components/esp_common/include -IC:/Users/etara/esp/esp-idf/components/esp_system/include -IC:/Users/etara/esp/esp-idf/components/esp_system/port/soc -IC:/Users/etara/esp/esp-idf/components/esp_system/port/include/private -IC:/Users/etara/esp/esp-idf/components/xtensa/include -IC:/Users/etara/esp/esp-idf/components/xtensa/esp32/include -IC:/Users/etara/esp/esp-idf/components/lwip/include -IC:/Users/etara/esp/esp-idf/components/lwip/include/apps -IC:/Users/etara/esp/esp-idf/components/lwip/include/apps/sntp -IC:/Users/etara/esp/esp-idf/components/lwip/lwip/src/include -IC:/Users/etara/esp/esp-idf/components/lwip/port/esp32/include -IC:/Users/etara/esp/esp-idf/components/lwip/port/esp32/include/arch -mlongcalls -Wno-frame-address  -Wall -Wextra -Wwrite-strings -Wformat=2 -Wno-format-nonliteral -Wvla -Wlogical-op -Wshadow -Wformat-signedness -Wformat-overflow=2 -Wformat-truncation -Werror -Wmissing-declarations -Wmissing-prototypes -fdiagnostics-color=always -ffunction-sections -fdata-sections -Wall -Werror=all -Wno-error=unused-function -Wno-error=unused-variable -Wno-error=deprecated-declarations -Wextra -Wno-unused-parameter -Wno-sign-compare -Wno-enum-conversion -gdwarf-4 -ggdb -Og -fmacro-prefix-map=C:/Users/etara/RC_Car/ble_compatibility_test=. -fmacro-prefix-map=C:/Users/etara/esp/esp-idf=/IDF -fdebug-prefix-map=C:/Users/etara/esp/esp-idf=/IDF -fdebug-prefix-map=C:/Users/etara/RC_Car/ble_compatibility_test=/IDF_PROJECT -fdebug-prefix-map=C:/Users/etara/RC_Car/ble_compatibility_test/build=/IDF_BUILD -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/app_trace=/COMPONENT_APP_TRACE_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/app_update=/COMPONENT_APP_UPDATE_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/bootloader=/COMPONENT_BOOTLOADER_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/bootloader_support=/COMPONENT_BOOTLOADER_SUPPORT_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/bt=/COMPONENT_BT_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/cmock=/COMPONENT_CMOCK_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/console=/COMPONENT_CONSOLE_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/cxx=/COMPONENT_CXX_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/driver=/COMPONENT_DRIVER_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/efuse=/COMPONENT_EFUSE_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/esp-tls=/COMPONENT_ESP-TLS_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/esp_adc=/COMPONENT_ESP_ADC_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/esp_app_format=/COMPONENT_ESP_APP_FORMAT_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/esp_common=/COMPONENT_ESP_COMMON_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/esp_eth=/COMPONENT_ESP_ETH_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/esp_event=/COMPONENT_ESP_EVENT_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/esp_gdbstub=/COMPONENT_ESP_GDBSTUB_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/esp_hid=/COMPONENT_ESP_HID_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/esp_http_client=/COMPONENT_ESP_HTTP_CLIENT_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/esp_http_server=/COMPONENT_ESP_HTTP_SERVER_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/esp_https_ota=/COMPONENT_ESP_HTTPS_OTA_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/esp_https_server=/COMPONENT_ESP_HTTPS_SERVER_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/esp_hw_support=/COMPONENT_ESP_HW_SUPPORT_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/esp_lcd=/COMPONENT_ESP_LCD_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/esp_local_ctrl=/COMPONENT_ESP_LOCAL_CTRL_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/esp_netif=/COMPONENT_ESP_NETIF_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/esp_partition=/COMPONENT_ESP_PARTITION_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/esp_phy=/COMPONENT_ESP_PHY_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/esp_pm=/COMPONENT_ESP_PM_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/esp_psram=/COMPONENT_ESP_PSRAM_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/esp_ringbuf=/COMPONENT_ESP_RINGBUF_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/esp_rom=/COMPONENT_ESP_ROM_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/esp_system=/COMPONENT_ESP_SYSTEM_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/esp_timer=/COMPONENT_ESP_TIMER_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/esp_wifi=/COMPONENT_ESP_WIFI_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/espcoredump=/COMPONENT_ESPCOREDUMP_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/esptool_py=/COMPONENT_ESPTOOL_PY_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/fatfs=/COMPONENT_FATFS_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/freertos=/COMPONENT_FREERTOS_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/hal=/COMPONENT_HAL_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/heap=/COMPONENT_HEAP_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/http_parser=/COMPONENT_HTTP_PARSER_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/idf_test=/COMPONENT_IDF_TEST_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/ieee802154=/COMPONENT_IEEE802154_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/json=/COMPONENT_JSON_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/linux=/COMPONENT_LINUX_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/log=/COMPONENT_LOG_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/lwip=/COMPONENT_LWIP_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/mbedtls=/COMPONENT_MBEDTLS_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/mqtt=/COMPONENT_MQTT_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/newlib=/COMPONENT_NEWLIB_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/nvs_flash=/COMPONENT_NVS_FLASH_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/openthread=/COMPONENT_OPENTHREAD_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/partition_table=/COMPONENT_PARTITION_TABLE_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/perfmon=/COMPONENT_PERFMON_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/protobuf-c=/COMPONENT_PROTOBUF-C_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/protocomm=/COMPONENT_PROTOCOMM_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/pthread=/COMPONENT_PTHREAD_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/riscv=/COMPONENT_RISCV_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/sdmmc=/COMPONENT_SDMMC_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/soc=/COMPONENT_SOC_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/spi_flash=/COMPONENT_SPI_FLASH_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/spiffs=/COMPONENT_SPIFFS_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/tcp_transport=/COMPONENT_TCP_TRANSPORT_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/touch_element=/COMPONENT_TOUCH_ELEMENT_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/ulp=/COMPONENT_ULP_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/unity=/COMPONENT_UNITY_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/usb=/COMPONENT_USB_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/vfs=/COMPONENT_VFS_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/wear_levelling=/COMPONENT_WEAR_LEVELLING_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/wifi_provisioning=/COMPONENT_WIFI_PROVISIONING_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/wpa_supplicant=/COMPONENT_WPA_SUPPLICANT_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/xtensa=/COMPONENT_XTENSA_DIR -fdebug-prefix-map=C:/Users/etara/RC_Car/ble_compatibility_test/main=/COMPONENT_MAIN_DIR -fdebug-prefix-map=C:/Users/etara/RC_Car/ble_compatibility_test/managed_components/espressif__bdc_motor=/COMPONENT_ESPRESSIF__BDC_MOTOR_DIR -fdebug-prefix-map=C:/Users/etara/RC_Car/ble_compatibility_test/managed_components/espressif__pid_ctrl=/COMPONENT_ESPRESSIF__PID_CTRL_DIR -fstrict-volatile-bitfields -Wno-error=unused-but-set-variable -fno-jump-tables -fno-tree-switch-conversion -DconfigENABLE_FREERTOS_DEBUG_OCDAWARE=1 -std=gnu17 -Wno-old-style-declaration -D_GNU_SOURCE -DIDF_VER=\"v5.0.2-dirty\" -DESP_PLATFORM -D_POSIX_READER_WRITER_LOCKS -MD -MT esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/C_/Users/etara/esp/esp-idf/components/mbedtls/port/sha/esp_sha.c.obj -MF esp-idf\mbedtls\mbedtls\library\CMakeFiles\mbedcrypto.dir\C_\Users\etara\esp\esp-idf\components\mbedtls\port\sha\esp_sha.c.obj.d -o esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/C_/Users/etara/esp/esp-idf/components/mbedtls/port/sha/esp_sha.c.obj -c C:/Users/etara/esp/esp-idf/components/mbedtls/port/sha/esp_sha.c
+In file included from C:/Users/etara/esp/esp-idf/components/mbedtls/port/sha/esp_sha.c:12:
+C:/Users/etara/esp/esp-idf/components/log/include/esp_log.h:432:9: error: expected identifier or '(' before 'if'
+  432 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |         ^~
+C:/Users/etara/esp/esp-idf/components/log/include/esp_log.h:432:77: error: __VA_ARGS__ can only appear in the expansion of a C99 variadic macro [-Werror]
+  432 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                                                             ^
+C:/Users/etara/esp/esp-idf/components/log/include/esp_log.h:432:75: error: stray '##' in program
+  432 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                                                           ^~
+C:/Users/etara/esp/esp-idf/components/log/include/esp_log.h:410:137: note: in definition of macro 'ESP_LOG_LEVEL'
+  410 |         if (level==ESP_LOG_ERROR )          { esp_log_write(ESP_LOG_ERROR,      tag, LOG_FORMAT(E, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                                                                         ^~~~~~~~~~~
+C:/Users/etara/esp/esp-idf/components/log/include/esp_log.h:432:75: error: stray '##' in program
+  432 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                                                           ^~
+C:/Users/etara/esp/esp-idf/components/log/include/esp_log.h:411:137: note: in definition of macro 'ESP_LOG_LEVEL'
+  411 |         else if (level==ESP_LOG_WARN )      { esp_log_write(ESP_LOG_WARN,       tag, LOG_FORMAT(W, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                                                                         ^~~~~~~~~~~
+C:/Users/etara/esp/esp-idf/components/log/include/esp_log.h:432:75: error: stray '##' in program
+  432 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                                                           ^~
+C:/Users/etara/esp/esp-idf/components/log/include/esp_log.h:412:137: note: in definition of macro 'ESP_LOG_LEVEL'
+  412 |         else if (level==ESP_LOG_DEBUG )     { esp_log_write(ESP_LOG_DEBUG,      tag, LOG_FORMAT(D, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                                                                         ^~~~~~~~~~~
+C:/Users/etara/esp/esp-idf/components/log/include/esp_log.h:432:75: error: stray '##' in program
+  432 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                                                           ^~
+C:/Users/etara/esp/esp-idf/components/log/include/esp_log.h:413:137: note: in definition of macro 'ESP_LOG_LEVEL'
+  413 |         else if (level==ESP_LOG_VERBOSE )   { esp_log_write(ESP_LOG_VERBOSE,    tag, LOG_FORMAT(V, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                                                                         ^~~~~~~~~~~
+C:/Users/etara/esp/esp-idf/components/log/include/esp_log.h:432:75: error: stray '##' in program
+  432 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                                                           ^~
+C:/Users/etara/esp/esp-idf/components/log/include/esp_log.h:414:137: note: in definition of macro 'ESP_LOG_LEVEL'
+  414 |         else                                { esp_log_write(ESP_LOG_INFO,       tag, LOG_FORMAT(I, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                                                                         ^~~~~~~~~~~
+C:/Users/etara/esp/esp-idf/components/log/include/esp_log.h:415:7: error: expected identifier or '(' before 'while'
+  415 |     } while(0)
+      |       ^~~~~
+C:/Users/etara/esp/esp-idf/components/log/include/esp_log.h:432:41: note: in expansion of macro 'ESP_LOG_LEVEL'
+  432 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                         ^~~~~~~~~~~~~
+C:/Users/etara/esp/esp-idf/components/log/include/esp_log.h:433:5: error: expected identifier or '(' before '}' token
+  433 |     } while(0)
+      |     ^
+C:/Users/etara/esp/esp-idf/components/log/include/esp_log.h:433:7: error: expected identifier or '(' before 'while'
+  433 |     } while(0)
+      |       ^~~~~
+C:/Users/etara/esp/esp-idf/components/mbedtls/port/sha/esp_sha.c: In function 'esp_sha':
+C:/Users/etara/esp/esp-idf/components/mbedtls/port/sha/esp_sha.c:99:1: error: expected 'while' at end of input
+   99 | }
+      | ^
+C:/Users/etara/esp/esp-idf/components/mbedtls/port/sha/esp_sha.c:99:1: error: expected declaration or statement at end of input
+At top level:
+C:/Users/etara/esp/esp-idf/components/mbedtls/port/sha/esp_sha.c:26:20: warning: 'TAG' defined but not used [-Wunused-variable]
+   26 | static const char *TAG = "esp_sha";
+      |                    ^~~
+cc1.exe: all warnings being treated as errors
+[58/1156] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/C_/Users/etara/esp/esp-idf/components/mbedtls/port/aes/esp_aes_common.c.obj
+[59/1156] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/C_/Users/etara/esp/esp-idf/components/mbedtls/port/sha/parallel_engine/sha.c.obj
+[60/1156] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/C_/Users/etara/esp/esp-idf/components/mbedtls/port/esp_bignum.c.obj
+FAILED: esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/C_/Users/etara/esp/esp-idf/components/mbedtls/port/esp_bignum.c.obj 
+ccache C:\Users\etara\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\bin\xtensa-esp32-elf-gcc.exe -DMBEDTLS_CONFIG_FILE=\"mbedtls/esp_config.h\" -DSOC_MMU_PAGE_SIZE=CONFIG_MMU_PAGE_SIZE -IC:/Users/etara/RC_Car/ble_compatibility_test/build/config -IC:/Users/etara/esp/esp-idf/components/mbedtls/port/include -IC:/Users/etara/esp/esp-idf/components/mbedtls/mbedtls/include -IC:/Users/etara/esp/esp-idf/components/mbedtls/mbedtls/library -IC:/Users/etara/esp/esp-idf/components/newlib/platform_include -IC:/Users/etara/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include -IC:/Users/etara/esp/esp-idf/components/freertos/esp_additions/include/freertos -IC:/Users/etara/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include -IC:/Users/etara/esp/esp-idf/components/freertos/esp_additions/include -IC:/Users/etara/esp/esp-idf/components/esp_hw_support/include -IC:/Users/etara/esp/esp-idf/components/esp_hw_support/include/soc -IC:/Users/etara/esp/esp-idf/components/esp_hw_support/include/soc/esp32 -IC:/Users/etara/esp/esp-idf/components/esp_hw_support/port/esp32/. -IC:/Users/etara/esp/esp-idf/components/esp_hw_support/port/esp32/private_include -IC:/Users/etara/esp/esp-idf/components/heap/include -IC:/Users/etara/esp/esp-idf/components/log/include -IC:/Users/etara/esp/esp-idf/components/soc/include -IC:/Users/etara/esp/esp-idf/components/soc/esp32/. -IC:/Users/etara/esp/esp-idf/components/soc/esp32/include -IC:/Users/etara/esp/esp-idf/components/hal/esp32/include -IC:/Users/etara/esp/esp-idf/components/hal/include -IC:/Users/etara/esp/esp-idf/components/hal/platform_port/include -IC:/Users/etara/esp/esp-idf/components/esp_rom/include -IC:/Users/etara/esp/esp-idf/components/esp_rom/include/esp32 -IC:/Users/etara/esp/esp-idf/components/esp_rom/esp32 -IC:/Users/etara/esp/esp-idf/components/esp_common/include -IC:/Users/etara/esp/esp-idf/components/esp_system/include -IC:/Users/etara/esp/esp-idf/components/esp_system/port/soc -IC:/Users/etara/esp/esp-idf/components/esp_system/port/include/private -IC:/Users/etara/esp/esp-idf/components/xtensa/include -IC:/Users/etara/esp/esp-idf/components/xtensa/esp32/include -IC:/Users/etara/esp/esp-idf/components/lwip/include -IC:/Users/etara/esp/esp-idf/components/lwip/include/apps -IC:/Users/etara/esp/esp-idf/components/lwip/include/apps/sntp -IC:/Users/etara/esp/esp-idf/components/lwip/lwip/src/include -IC:/Users/etara/esp/esp-idf/components/lwip/port/esp32/include -IC:/Users/etara/esp/esp-idf/components/lwip/port/esp32/include/arch -mlongcalls -Wno-frame-address  -Wall -Wextra -Wwrite-strings -Wformat=2 -Wno-format-nonliteral -Wvla -Wlogical-op -Wshadow -Wformat-signedness -Wformat-overflow=2 -Wformat-truncation -Werror -Wmissing-declarations -Wmissing-prototypes -fdiagnostics-color=always -ffunction-sections -fdata-sections -Wall -Werror=all -Wno-error=unused-function -Wno-error=unused-variable -Wno-error=deprecated-declarations -Wextra -Wno-unused-parameter -Wno-sign-compare -Wno-enum-conversion -gdwarf-4 -ggdb -Og -fmacro-prefix-map=C:/Users/etara/RC_Car/ble_compatibility_test=. -fmacro-prefix-map=C:/Users/etara/esp/esp-idf=/IDF -fdebug-prefix-map=C:/Users/etara/esp/esp-idf=/IDF -fdebug-prefix-map=C:/Users/etara/RC_Car/ble_compatibility_test=/IDF_PROJECT -fdebug-prefix-map=C:/Users/etara/RC_Car/ble_compatibility_test/build=/IDF_BUILD -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/app_trace=/COMPONENT_APP_TRACE_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/app_update=/COMPONENT_APP_UPDATE_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/bootloader=/COMPONENT_BOOTLOADER_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/bootloader_support=/COMPONENT_BOOTLOADER_SUPPORT_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/bt=/COMPONENT_BT_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/cmock=/COMPONENT_CMOCK_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/console=/COMPONENT_CONSOLE_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/cxx=/COMPONENT_CXX_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/driver=/COMPONENT_DRIVER_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/efuse=/COMPONENT_EFUSE_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/esp-tls=/COMPONENT_ESP-TLS_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/esp_adc=/COMPONENT_ESP_ADC_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/esp_app_format=/COMPONENT_ESP_APP_FORMAT_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/esp_common=/COMPONENT_ESP_COMMON_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/esp_eth=/COMPONENT_ESP_ETH_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/esp_event=/COMPONENT_ESP_EVENT_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/esp_gdbstub=/COMPONENT_ESP_GDBSTUB_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/esp_hid=/COMPONENT_ESP_HID_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/esp_http_client=/COMPONENT_ESP_HTTP_CLIENT_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/esp_http_server=/COMPONENT_ESP_HTTP_SERVER_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/esp_https_ota=/COMPONENT_ESP_HTTPS_OTA_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/esp_https_server=/COMPONENT_ESP_HTTPS_SERVER_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/esp_hw_support=/COMPONENT_ESP_HW_SUPPORT_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/esp_lcd=/COMPONENT_ESP_LCD_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/esp_local_ctrl=/COMPONENT_ESP_LOCAL_CTRL_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/esp_netif=/COMPONENT_ESP_NETIF_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/esp_partition=/COMPONENT_ESP_PARTITION_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/esp_phy=/COMPONENT_ESP_PHY_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/esp_pm=/COMPONENT_ESP_PM_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/esp_psram=/COMPONENT_ESP_PSRAM_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/esp_ringbuf=/COMPONENT_ESP_RINGBUF_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/esp_rom=/COMPONENT_ESP_ROM_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/esp_system=/COMPONENT_ESP_SYSTEM_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/esp_timer=/COMPONENT_ESP_TIMER_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/esp_wifi=/COMPONENT_ESP_WIFI_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/espcoredump=/COMPONENT_ESPCOREDUMP_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/esptool_py=/COMPONENT_ESPTOOL_PY_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/fatfs=/COMPONENT_FATFS_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/freertos=/COMPONENT_FREERTOS_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/hal=/COMPONENT_HAL_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/heap=/COMPONENT_HEAP_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/http_parser=/COMPONENT_HTTP_PARSER_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/idf_test=/COMPONENT_IDF_TEST_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/ieee802154=/COMPONENT_IEEE802154_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/json=/COMPONENT_JSON_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/linux=/COMPONENT_LINUX_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/log=/COMPONENT_LOG_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/lwip=/COMPONENT_LWIP_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/mbedtls=/COMPONENT_MBEDTLS_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/mqtt=/COMPONENT_MQTT_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/newlib=/COMPONENT_NEWLIB_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/nvs_flash=/COMPONENT_NVS_FLASH_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/openthread=/COMPONENT_OPENTHREAD_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/partition_table=/COMPONENT_PARTITION_TABLE_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/perfmon=/COMPONENT_PERFMON_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/protobuf-c=/COMPONENT_PROTOBUF-C_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/protocomm=/COMPONENT_PROTOCOMM_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/pthread=/COMPONENT_PTHREAD_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/riscv=/COMPONENT_RISCV_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/sdmmc=/COMPONENT_SDMMC_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/soc=/COMPONENT_SOC_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/spi_flash=/COMPONENT_SPI_FLASH_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/spiffs=/COMPONENT_SPIFFS_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/tcp_transport=/COMPONENT_TCP_TRANSPORT_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/touch_element=/COMPONENT_TOUCH_ELEMENT_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/ulp=/COMPONENT_ULP_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/unity=/COMPONENT_UNITY_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/usb=/COMPONENT_USB_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/vfs=/COMPONENT_VFS_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/wear_levelling=/COMPONENT_WEAR_LEVELLING_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/wifi_provisioning=/COMPONENT_WIFI_PROVISIONING_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/wpa_supplicant=/COMPONENT_WPA_SUPPLICANT_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/xtensa=/COMPONENT_XTENSA_DIR -fdebug-prefix-map=C:/Users/etara/RC_Car/ble_compatibility_test/main=/COMPONENT_MAIN_DIR -fdebug-prefix-map=C:/Users/etara/RC_Car/ble_compatibility_test/managed_components/espressif__bdc_motor=/COMPONENT_ESPRESSIF__BDC_MOTOR_DIR -fdebug-prefix-map=C:/Users/etara/RC_Car/ble_compatibility_test/managed_components/espressif__pid_ctrl=/COMPONENT_ESPRESSIF__PID_CTRL_DIR -fstrict-volatile-bitfields -Wno-error=unused-but-set-variable -fno-jump-tables -fno-tree-switch-conversion -DconfigENABLE_FREERTOS_DEBUG_OCDAWARE=1 -std=gnu17 -Wno-old-style-declaration -D_GNU_SOURCE -DIDF_VER=\"v5.0.2-dirty\" -DESP_PLATFORM -D_POSIX_READER_WRITER_LOCKS -MD -MT esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/C_/Users/etara/esp/esp-idf/components/mbedtls/port/esp_bignum.c.obj -MF esp-idf\mbedtls\mbedtls\library\CMakeFiles\mbedcrypto.dir\C_\Users\etara\esp\esp-idf\components\mbedtls\port\esp_bignum.c.obj.d -o esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/C_/Users/etara/esp/esp-idf/components/mbedtls/port/esp_bignum.c.obj -c C:/Users/etara/esp/esp-idf/components/mbedtls/port/esp_bignum.c
+In file included from C:/Users/etara/esp/esp-idf/components/mbedtls/port/esp_bignum.c:20:
+C:/Users/etara/esp/esp-idf/components/log/include/esp_log.h:432:9: error: expected identifier or '(' before 'if'
+  432 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |         ^~
+C:/Users/etara/esp/esp-idf/components/log/include/esp_log.h:432:77: error: __VA_ARGS__ can only appear in the expansion of a C99 variadic macro [-Werror]
+  432 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                                                             ^
+C:/Users/etara/esp/esp-idf/components/log/include/esp_log.h:432:75: error: stray '##' in program
+  432 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                                                           ^~
+C:/Users/etara/esp/esp-idf/components/log/include/esp_log.h:410:137: note: in definition of macro 'ESP_LOG_LEVEL'
+  410 |         if (level==ESP_LOG_ERROR )          { esp_log_write(ESP_LOG_ERROR,      tag, LOG_FORMAT(E, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                                                                         ^~~~~~~~~~~
+C:/Users/etara/esp/esp-idf/components/log/include/esp_log.h:432:75: error: stray '##' in program
+  432 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                                                           ^~
+C:/Users/etara/esp/esp-idf/components/log/include/esp_log.h:411:137: note: in definition of macro 'ESP_LOG_LEVEL'
+  411 |         else if (level==ESP_LOG_WARN )      { esp_log_write(ESP_LOG_WARN,       tag, LOG_FORMAT(W, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                                                                         ^~~~~~~~~~~
+C:/Users/etara/esp/esp-idf/components/log/include/esp_log.h:432:75: error: stray '##' in program
+  432 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                                                           ^~
+C:/Users/etara/esp/esp-idf/components/log/include/esp_log.h:412:137: note: in definition of macro 'ESP_LOG_LEVEL'
+  412 |         else if (level==ESP_LOG_DEBUG )     { esp_log_write(ESP_LOG_DEBUG,      tag, LOG_FORMAT(D, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                                                                         ^~~~~~~~~~~
+C:/Users/etara/esp/esp-idf/components/log/include/esp_log.h:432:75: error: stray '##' in program
+  432 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                                                           ^~
+C:/Users/etara/esp/esp-idf/components/log/include/esp_log.h:413:137: note: in definition of macro 'ESP_LOG_LEVEL'
+  413 |         else if (level==ESP_LOG_VERBOSE )   { esp_log_write(ESP_LOG_VERBOSE,    tag, LOG_FORMAT(V, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                                                                         ^~~~~~~~~~~
+C:/Users/etara/esp/esp-idf/components/log/include/esp_log.h:432:75: error: stray '##' in program
+  432 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                                                           ^~
+C:/Users/etara/esp/esp-idf/components/log/include/esp_log.h:414:137: note: in definition of macro 'ESP_LOG_LEVEL'
+  414 |         else                                { esp_log_write(ESP_LOG_INFO,       tag, LOG_FORMAT(I, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                                                                         ^~~~~~~~~~~
+C:/Users/etara/esp/esp-idf/components/log/include/esp_log.h:415:7: error: expected identifier or '(' before 'while'
+  415 |     } while(0)
+      |       ^~~~~
+C:/Users/etara/esp/esp-idf/components/log/include/esp_log.h:432:41: note: in expansion of macro 'ESP_LOG_LEVEL'
+  432 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                         ^~~~~~~~~~~~~
+C:/Users/etara/esp/esp-idf/components/log/include/esp_log.h:433:5: error: expected identifier or '(' before '}' token
+  433 |     } while(0)
+      |     ^
+C:/Users/etara/esp/esp-idf/components/log/include/esp_log.h:433:7: error: expected identifier or '(' before 'while'
+  433 |     } while(0)
+      |       ^~~~~
+In file included from C:/Users/etara/esp/esp-idf/components/mbedtls/port/esp_bignum.c:22:
+C:/Users/etara/esp/esp-idf/components/esp_hw_support/include/esp_intr_alloc.h:154:49: error: unknown type name 'intr_handler_t'; did you mean 'intr_handle_t'?
+  154 | esp_err_t esp_intr_alloc(int source, int flags, intr_handler_t handler, void *arg, intr_handle_t *ret_handle);
+      |                                                 ^~~~~~~~~~~~~~
+      |                                                 intr_handle_t
+C:/Users/etara/esp/esp-idf/components/esp_hw_support/include/esp_intr_alloc.h:192:109: error: unknown type name 'intr_handler_t'; did you mean 'intr_handle_t'?
+  192 | esp_err_t esp_intr_alloc_intrstatus(int source, int flags, uint32_t intrstatusreg, uint32_t intrstatusmask, intr_handler_t handler, void *arg, intr_handle_t *ret_handle);
+      |                                                                                                             ^~~~~~~~~~~~~~
+      |                                                                                                             intr_handle_t
+cc1.exe: all warnings being treated as errors
+[61/1156] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/C_/Users/etara/esp/esp-idf/components/mbedtls/port/aes/block/esp_aes.c.obj
+FAILED: esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/C_/Users/etara/esp/esp-idf/components/mbedtls/port/aes/block/esp_aes.c.obj 
+ccache C:\Users\etara\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\bin\xtensa-esp32-elf-gcc.exe -DMBEDTLS_CONFIG_FILE=\"mbedtls/esp_config.h\" -DSOC_MMU_PAGE_SIZE=CONFIG_MMU_PAGE_SIZE -IC:/Users/etara/RC_Car/ble_compatibility_test/build/config -IC:/Users/etara/esp/esp-idf/components/mbedtls/port/include -IC:/Users/etara/esp/esp-idf/components/mbedtls/mbedtls/include -IC:/Users/etara/esp/esp-idf/components/mbedtls/mbedtls/library -IC:/Users/etara/esp/esp-idf/components/newlib/platform_include -IC:/Users/etara/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include -IC:/Users/etara/esp/esp-idf/components/freertos/esp_additions/include/freertos -IC:/Users/etara/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include -IC:/Users/etara/esp/esp-idf/components/freertos/esp_additions/include -IC:/Users/etara/esp/esp-idf/components/esp_hw_support/include -IC:/Users/etara/esp/esp-idf/components/esp_hw_support/include/soc -IC:/Users/etara/esp/esp-idf/components/esp_hw_support/include/soc/esp32 -IC:/Users/etara/esp/esp-idf/components/esp_hw_support/port/esp32/. -IC:/Users/etara/esp/esp-idf/components/esp_hw_support/port/esp32/private_include -IC:/Users/etara/esp/esp-idf/components/heap/include -IC:/Users/etara/esp/esp-idf/components/log/include -IC:/Users/etara/esp/esp-idf/components/soc/include -IC:/Users/etara/esp/esp-idf/components/soc/esp32/. -IC:/Users/etara/esp/esp-idf/components/soc/esp32/include -IC:/Users/etara/esp/esp-idf/components/hal/esp32/include -IC:/Users/etara/esp/esp-idf/components/hal/include -IC:/Users/etara/esp/esp-idf/components/hal/platform_port/include -IC:/Users/etara/esp/esp-idf/components/esp_rom/include -IC:/Users/etara/esp/esp-idf/components/esp_rom/include/esp32 -IC:/Users/etara/esp/esp-idf/components/esp_rom/esp32 -IC:/Users/etara/esp/esp-idf/components/esp_common/include -IC:/Users/etara/esp/esp-idf/components/esp_system/include -IC:/Users/etara/esp/esp-idf/components/esp_system/port/soc -IC:/Users/etara/esp/esp-idf/components/esp_system/port/include/private -IC:/Users/etara/esp/esp-idf/components/xtensa/include -IC:/Users/etara/esp/esp-idf/components/xtensa/esp32/include -IC:/Users/etara/esp/esp-idf/components/lwip/include -IC:/Users/etara/esp/esp-idf/components/lwip/include/apps -IC:/Users/etara/esp/esp-idf/components/lwip/include/apps/sntp -IC:/Users/etara/esp/esp-idf/components/lwip/lwip/src/include -IC:/Users/etara/esp/esp-idf/components/lwip/port/esp32/include -IC:/Users/etara/esp/esp-idf/components/lwip/port/esp32/include/arch -mlongcalls -Wno-frame-address  -Wall -Wextra -Wwrite-strings -Wformat=2 -Wno-format-nonliteral -Wvla -Wlogical-op -Wshadow -Wformat-signedness -Wformat-overflow=2 -Wformat-truncation -Werror -Wmissing-declarations -Wmissing-prototypes -fdiagnostics-color=always -ffunction-sections -fdata-sections -Wall -Werror=all -Wno-error=unused-function -Wno-error=unused-variable -Wno-error=deprecated-declarations -Wextra -Wno-unused-parameter -Wno-sign-compare -Wno-enum-conversion -gdwarf-4 -ggdb -Og -fmacro-prefix-map=C:/Users/etara/RC_Car/ble_compatibility_test=. -fmacro-prefix-map=C:/Users/etara/esp/esp-idf=/IDF -fdebug-prefix-map=C:/Users/etara/esp/esp-idf=/IDF -fdebug-prefix-map=C:/Users/etara/RC_Car/ble_compatibility_test=/IDF_PROJECT -fdebug-prefix-map=C:/Users/etara/RC_Car/ble_compatibility_test/build=/IDF_BUILD -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/app_trace=/COMPONENT_APP_TRACE_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/app_update=/COMPONENT_APP_UPDATE_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/bootloader=/COMPONENT_BOOTLOADER_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/bootloader_support=/COMPONENT_BOOTLOADER_SUPPORT_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/bt=/COMPONENT_BT_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/cmock=/COMPONENT_CMOCK_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/console=/COMPONENT_CONSOLE_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/cxx=/COMPONENT_CXX_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/driver=/COMPONENT_DRIVER_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/efuse=/COMPONENT_EFUSE_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/esp-tls=/COMPONENT_ESP-TLS_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/esp_adc=/COMPONENT_ESP_ADC_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/esp_app_format=/COMPONENT_ESP_APP_FORMAT_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/esp_common=/COMPONENT_ESP_COMMON_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/esp_eth=/COMPONENT_ESP_ETH_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/esp_event=/COMPONENT_ESP_EVENT_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/esp_gdbstub=/COMPONENT_ESP_GDBSTUB_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/esp_hid=/COMPONENT_ESP_HID_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/esp_http_client=/COMPONENT_ESP_HTTP_CLIENT_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/esp_http_server=/COMPONENT_ESP_HTTP_SERVER_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/esp_https_ota=/COMPONENT_ESP_HTTPS_OTA_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/esp_https_server=/COMPONENT_ESP_HTTPS_SERVER_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/esp_hw_support=/COMPONENT_ESP_HW_SUPPORT_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/esp_lcd=/COMPONENT_ESP_LCD_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/esp_local_ctrl=/COMPONENT_ESP_LOCAL_CTRL_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/esp_netif=/COMPONENT_ESP_NETIF_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/esp_partition=/COMPONENT_ESP_PARTITION_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/esp_phy=/COMPONENT_ESP_PHY_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/esp_pm=/COMPONENT_ESP_PM_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/esp_psram=/COMPONENT_ESP_PSRAM_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/esp_ringbuf=/COMPONENT_ESP_RINGBUF_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/esp_rom=/COMPONENT_ESP_ROM_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/esp_system=/COMPONENT_ESP_SYSTEM_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/esp_timer=/COMPONENT_ESP_TIMER_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/esp_wifi=/COMPONENT_ESP_WIFI_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/espcoredump=/COMPONENT_ESPCOREDUMP_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/esptool_py=/COMPONENT_ESPTOOL_PY_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/fatfs=/COMPONENT_FATFS_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/freertos=/COMPONENT_FREERTOS_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/hal=/COMPONENT_HAL_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/heap=/COMPONENT_HEAP_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/http_parser=/COMPONENT_HTTP_PARSER_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/idf_test=/COMPONENT_IDF_TEST_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/ieee802154=/COMPONENT_IEEE802154_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/json=/COMPONENT_JSON_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/linux=/COMPONENT_LINUX_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/log=/COMPONENT_LOG_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/lwip=/COMPONENT_LWIP_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/mbedtls=/COMPONENT_MBEDTLS_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/mqtt=/COMPONENT_MQTT_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/newlib=/COMPONENT_NEWLIB_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/nvs_flash=/COMPONENT_NVS_FLASH_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/openthread=/COMPONENT_OPENTHREAD_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/partition_table=/COMPONENT_PARTITION_TABLE_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/perfmon=/COMPONENT_PERFMON_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/protobuf-c=/COMPONENT_PROTOBUF-C_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/protocomm=/COMPONENT_PROTOCOMM_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/pthread=/COMPONENT_PTHREAD_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/riscv=/COMPONENT_RISCV_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/sdmmc=/COMPONENT_SDMMC_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/soc=/COMPONENT_SOC_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/spi_flash=/COMPONENT_SPI_FLASH_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/spiffs=/COMPONENT_SPIFFS_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/tcp_transport=/COMPONENT_TCP_TRANSPORT_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/touch_element=/COMPONENT_TOUCH_ELEMENT_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/ulp=/COMPONENT_ULP_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/unity=/COMPONENT_UNITY_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/usb=/COMPONENT_USB_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/vfs=/COMPONENT_VFS_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/wear_levelling=/COMPONENT_WEAR_LEVELLING_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/wifi_provisioning=/COMPONENT_WIFI_PROVISIONING_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/wpa_supplicant=/COMPONENT_WPA_SUPPLICANT_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/xtensa=/COMPONENT_XTENSA_DIR -fdebug-prefix-map=C:/Users/etara/RC_Car/ble_compatibility_test/main=/COMPONENT_MAIN_DIR -fdebug-prefix-map=C:/Users/etara/RC_Car/ble_compatibility_test/managed_components/espressif__bdc_motor=/COMPONENT_ESPRESSIF__BDC_MOTOR_DIR -fdebug-prefix-map=C:/Users/etara/RC_Car/ble_compatibility_test/managed_components/espressif__pid_ctrl=/COMPONENT_ESPRESSIF__PID_CTRL_DIR -fstrict-volatile-bitfields -Wno-error=unused-but-set-variable -fno-jump-tables -fno-tree-switch-conversion -DconfigENABLE_FREERTOS_DEBUG_OCDAWARE=1 -std=gnu17 -Wno-old-style-declaration -D_GNU_SOURCE -DIDF_VER=\"v5.0.2-dirty\" -DESP_PLATFORM -D_POSIX_READER_WRITER_LOCKS -MD -MT esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/C_/Users/etara/esp/esp-idf/components/mbedtls/port/aes/block/esp_aes.c.obj -MF esp-idf\mbedtls\mbedtls\library\CMakeFiles\mbedcrypto.dir\C_\Users\etara\esp\esp-idf\components\mbedtls\port\aes\block\esp_aes.c.obj.d -o esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/C_/Users/etara/esp/esp-idf/components/mbedtls/port/aes/block/esp_aes.c.obj -c C:/Users/etara/esp/esp-idf/components/mbedtls/port/aes/block/esp_aes.c
+In file included from C:/Users/etara/esp/esp-idf/components/mbedtls/port/aes/block/esp_aes.c:31:
+C:/Users/etara/esp/esp-idf/components/log/include/esp_log.h:432:9: error: expected identifier or '(' before 'if'
+  432 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |         ^~
+C:/Users/etara/esp/esp-idf/components/log/include/esp_log.h:432:77: error: __VA_ARGS__ can only appear in the expansion of a C99 variadic macro [-Werror]
+  432 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                                                             ^
+C:/Users/etara/esp/esp-idf/components/log/include/esp_log.h:432:75: error: stray '##' in program
+  432 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                                                           ^~
+C:/Users/etara/esp/esp-idf/components/log/include/esp_log.h:410:137: note: in definition of macro 'ESP_LOG_LEVEL'
+  410 |         if (level==ESP_LOG_ERROR )          { esp_log_write(ESP_LOG_ERROR,      tag, LOG_FORMAT(E, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                                                                         ^~~~~~~~~~~
+C:/Users/etara/esp/esp-idf/components/log/include/esp_log.h:432:75: error: stray '##' in program
+  432 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                                                           ^~
+C:/Users/etara/esp/esp-idf/components/log/include/esp_log.h:411:137: note: in definition of macro 'ESP_LOG_LEVEL'
+  411 |         else if (level==ESP_LOG_WARN )      { esp_log_write(ESP_LOG_WARN,       tag, LOG_FORMAT(W, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                                                                         ^~~~~~~~~~~
+C:/Users/etara/esp/esp-idf/components/log/include/esp_log.h:432:75: error: stray '##' in program
+  432 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                                                           ^~
+C:/Users/etara/esp/esp-idf/components/log/include/esp_log.h:412:137: note: in definition of macro 'ESP_LOG_LEVEL'
+  412 |         else if (level==ESP_LOG_DEBUG )     { esp_log_write(ESP_LOG_DEBUG,      tag, LOG_FORMAT(D, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                                                                         ^~~~~~~~~~~
+C:/Users/etara/esp/esp-idf/components/log/include/esp_log.h:432:75: error: stray '##' in program
+  432 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                                                           ^~
+C:/Users/etara/esp/esp-idf/components/log/include/esp_log.h:413:137: note: in definition of macro 'ESP_LOG_LEVEL'
+  413 |         else if (level==ESP_LOG_VERBOSE )   { esp_log_write(ESP_LOG_VERBOSE,    tag, LOG_FORMAT(V, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                                                                         ^~~~~~~~~~~
+C:/Users/etara/esp/esp-idf/components/log/include/esp_log.h:432:75: error: stray '##' in program
+  432 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                                                           ^~
+C:/Users/etara/esp/esp-idf/components/log/include/esp_log.h:414:137: note: in definition of macro 'ESP_LOG_LEVEL'
+  414 |         else                                { esp_log_write(ESP_LOG_INFO,       tag, LOG_FORMAT(I, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                                                                         ^~~~~~~~~~~
+C:/Users/etara/esp/esp-idf/components/log/include/esp_log.h:415:7: error: expected identifier or '(' before 'while'
+  415 |     } while(0)
+      |       ^~~~~
+C:/Users/etara/esp/esp-idf/components/log/include/esp_log.h:432:41: note: in expansion of macro 'ESP_LOG_LEVEL'
+  432 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                         ^~~~~~~~~~~~~
+C:/Users/etara/esp/esp-idf/components/log/include/esp_log.h:433:5: error: expected identifier or '(' before '}' token
+  433 |     } while(0)
+      |     ^
+C:/Users/etara/esp/esp-idf/components/log/include/esp_log.h:433:7: error: expected identifier or '(' before 'while'
+  433 |     } while(0)
+      |       ^~~~~
+In file included from C:/Users/etara/esp/esp-idf/components/soc/esp32/include/soc/dport_reg.h:12,
+                 from C:/Users/etara/esp/esp-idf/components/soc/include/soc/hwcrypto_periph.h:13,
+                 from C:/Users/etara/esp/esp-idf/components/mbedtls/port/aes/block/esp_aes.c:33:
+C:/Users/etara/esp/esp-idf/components/hal/esp32/include/hal/aes_ll.h: In function 'aes_ll_get_state':
+C:/Users/etara/esp/esp-idf/components/soc/esp32/include/soc/dport_access.h:116:42: error: implicit declaration of function 'esp_dport_access_reg_read'; did you mean 'esp_dport_access_read_buffer'? [-Werror=implicit-function-declaration]
+  116 |     #define DPORT_REG_READ(reg)          esp_dport_access_reg_read(reg)
+      |                                          ^~~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/etara/esp/esp-idf/components/hal/esp32/include/hal/aes_ll.h:136:12: note: in expansion of macro 'DPORT_REG_READ'
+  136 |     return DPORT_REG_READ(AES_IDLE_REG);
+      |            ^~~~~~~~~~~~~~
+C:/Users/etara/esp/esp-idf/components/mbedtls/port/aes/block/esp_aes.c: In function 'esp_aes_validate_input':
+C:/Users/etara/esp/esp-idf/components/mbedtls/port/aes/block/esp_aes.c:125:5: error: expected 'while' before 'if'
+  125 |     if (!input) {
+      |     ^~
+C:/Users/etara/esp/esp-idf/components/mbedtls/port/aes/block/esp_aes.c:546:1: error: expected declaration or statement at end of input
+  546 | }
+      | ^
+C:/Users/etara/esp/esp-idf/components/mbedtls/port/aes/block/esp_aes.c:546:1: error: expected declaration or statement at end of input
+At top level:
+C:/Users/etara/esp/esp-idf/components/mbedtls/port/aes/block/esp_aes.c:118:12: warning: 'esp_aes_validate_input' defined but not used [-Wunused-function]
+  118 | static int esp_aes_validate_input(esp_aes_context *ctx, const unsigned char *input,
+      |            ^~~~~~~~~~~~~~~~~~~~~~
+C:/Users/etara/esp/esp-idf/components/mbedtls/port/aes/block/esp_aes.c:78:12: warning: 'esp_aes_block' defined but not used [-Wunused-function]
+   78 | static int esp_aes_block(esp_aes_context *ctx, const void *input, void *output)
+      |            ^~~~~~~~~~~~~
+C:/Users/etara/esp/esp-idf/components/mbedtls/port/aes/block/esp_aes.c:44:20: warning: 'TAG' defined but not used [-Wunused-variable]
+   44 | static const char *TAG = "esp-aes";
+      |                    ^~~
+cc1.exe: all warnings being treated as errors
+[62/1156] Performing build step for 'bootloader'
+FAILED: bootloader-prefix/src/bootloader-stamp/bootloader-build bootloader/bootloader.elf bootloader/bootloader.bin bootloader/bootloader.map C:/Users/etara/RC_Car/ble_compatibility_test/build/bootloader-prefix/src/bootloader-stamp/bootloader-build C:/Users/etara/RC_Car/ble_compatibility_test/build/bootloader/bootloader.elf C:/Users/etara/RC_Car/ble_compatibility_test/build/bootloader/bootloader.bin C:/Users/etara/RC_Car/ble_compatibility_test/build/bootloader/bootloader.map 
+cmd.exe /C "cd /D C:\Users\etara\RC_Car\ble_compatibility_test\build\bootloader && C:\Users\etara\.espressif\tools\cmake\3.24.0\bin\cmake.exe --build ."
+[0/1] Re-running CMake...
+-- Building ESP-IDF components for target esp32
+-- Project sdkconfig file C:/Users/etara/RC_Car/ble_compatibility_test/sdkconfig
+-- Adding linker script C:/Users/etara/esp/esp-idf/components/soc/esp32/ld/esp32.peripherals.ld
+-- App "bootloader" version: v5.0.2-dirty
+-- Adding linker script C:/Users/etara/esp/esp-idf/components/esp_rom/esp32/ld/esp32.rom.ld
+-- Adding linker script C:/Users/etara/esp/esp-idf/components/esp_rom/esp32/ld/esp32.rom.api.ld
+-- Adding linker script C:/Users/etara/esp/esp-idf/components/esp_rom/esp32/ld/esp32.rom.libgcc.ld
+-- Adding linker script C:/Users/etara/esp/esp-idf/components/esp_rom/esp32/ld/esp32.rom.newlib-funcs.ld
+-- Adding linker script C:/Users/etara/esp/esp-idf/components/bootloader/subproject/main/ld/esp32/bootloader.ld
+-- Adding linker script C:/Users/etara/esp/esp-idf/components/bootloader/subproject/main/ld/esp32/bootloader.rom.ld
+-- Components: bootloader bootloader_support efuse esp_app_format esp_common esp_hw_support esp_rom esp_system esptool_py freertos hal log main micro-ecc newlib partition_table soc spi_flash xtensa
+-- Component paths: C:/Users/etara/esp/esp-idf/components/bootloader C:/Users/etara/esp/esp-idf/components/bootloader_support C:/Users/etara/esp/esp-idf/components/efuse C:/Users/etara/esp/esp-idf/components/esp_app_format C:/Users/etara/esp/esp-idf/components/esp_common C:/Users/etara/esp/esp-idf/components/esp_hw_support C:/Users/etara/esp/esp-idf/components/esp_rom C:/Users/etara/esp/esp-idf/components/esp_system C:/Users/etara/esp/esp-idf/components/esptool_py C:/Users/etara/esp/esp-idf/components/freertos C:/Users/etara/esp/esp-idf/components/hal C:/Users/etara/esp/esp-idf/components/log C:/Users/etara/esp/esp-idf/components/bootloader/subproject/main C:/Users/etara/esp/esp-idf/components/bootloader/subproject/components/micro-ecc C:/Users/etara/esp/esp-idf/components/newlib C:/Users/etara/esp/esp-idf/components/partition_table C:/Users/etara/esp/esp-idf/components/soc C:/Users/etara/esp/esp-idf/components/spi_flash C:/Users/etara/esp/esp-idf/components/xtensa
+-- Configuring done
+-- Generating done
+-- Build files have been written to: C:/Users/etara/RC_Car/ble_compatibility_test/build/bootloader
+[1/99] Building C object esp-idf/log/CMakeFiles/__idf_log.dir/log.c.obj
+FAILED: esp-idf/log/CMakeFiles/__idf_log.dir/log.c.obj 
+C:\Users\etara\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\bin\xtensa-esp32-elf-gcc.exe -DSOC_MMU_PAGE_SIZE=CONFIG_MMU_PAGE_SIZE -IC:/Users/etara/RC_Car/ble_compatibility_test/build/bootloader/config -IC:/Users/etara/esp/esp-idf/components/log/include -IC:/Users/etara/esp/esp-idf/components/esp_rom/include -IC:/Users/etara/esp/esp-idf/components/esp_rom/include/esp32 -IC:/Users/etara/esp/esp-idf/components/esp_rom/esp32 -IC:/Users/etara/esp/esp-idf/components/esp_common/include -IC:/Users/etara/esp/esp-idf/components/esp_hw_support/include -IC:/Users/etara/esp/esp-idf/components/esp_hw_support/include/soc -IC:/Users/etara/esp/esp-idf/components/esp_hw_support/include/soc/esp32 -IC:/Users/etara/esp/esp-idf/components/esp_hw_support/port/esp32/. -IC:/Users/etara/esp/esp-idf/components/esp_hw_support/port/esp32/private_include -IC:/Users/etara/esp/esp-idf/components/newlib/platform_include -IC:/Users/etara/esp/esp-idf/components/xtensa/include -IC:/Users/etara/esp/esp-idf/components/xtensa/esp32/include -IC:/Users/etara/esp/esp-idf/components/soc/include -IC:/Users/etara/esp/esp-idf/components/soc/esp32/. -IC:/Users/etara/esp/esp-idf/components/soc/esp32/include -IC:/Users/etara/esp/esp-idf/components/hal/esp32/include -IC:/Users/etara/esp/esp-idf/components/hal/include -IC:/Users/etara/esp/esp-idf/components/hal/platform_port/include -mlongcalls -Wno-frame-address  -fdiagnostics-color=always -ffunction-sections -fdata-sections -Wall -Werror=all -Wno-error=unused-function -Wno-error=unused-variable -Wno-error=deprecated-declarations -Wextra -Wno-unused-parameter -Wno-sign-compare -Wno-enum-conversion -gdwarf-4 -ggdb -Os -freorder-blocks -fmacro-prefix-map=C:/Users/etara/esp/esp-idf/components/bootloader/subproject=. -fmacro-prefix-map=C:/Users/etara/esp/esp-idf=/IDF -fdebug-prefix-map=C:/Users/etara/esp/esp-idf=/IDF -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/bootloader/subproject=/IDF_PROJECT -fdebug-prefix-map=C:/Users/etara/RC_Car/ble_compatibility_test/build/bootloader=/IDF_BUILD -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/app_trace=/COMPONENT_APP_TRACE_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/app_update=/COMPONENT_APP_UPDATE_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/bootloader=/COMPONENT_BOOTLOADER_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/bootloader_support=/COMPONENT_BOOTLOADER_SUPPORT_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/bt=/COMPONENT_BT_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/cmock=/COMPONENT_CMOCK_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/console=/COMPONENT_CONSOLE_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/cxx=/COMPONENT_CXX_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/driver=/COMPONENT_DRIVER_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/efuse=/COMPONENT_EFUSE_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/esp-tls=/COMPONENT_ESP-TLS_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/esp_adc=/COMPONENT_ESP_ADC_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/esp_app_format=/COMPONENT_ESP_APP_FORMAT_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/esp_common=/COMPONENT_ESP_COMMON_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/esp_eth=/COMPONENT_ESP_ETH_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/esp_event=/COMPONENT_ESP_EVENT_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/esp_gdbstub=/COMPONENT_ESP_GDBSTUB_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/esp_hid=/COMPONENT_ESP_HID_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/esp_http_client=/COMPONENT_ESP_HTTP_CLIENT_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/esp_http_server=/COMPONENT_ESP_HTTP_SERVER_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/esp_https_ota=/COMPONENT_ESP_HTTPS_OTA_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/esp_https_server=/COMPONENT_ESP_HTTPS_SERVER_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/esp_hw_support=/COMPONENT_ESP_HW_SUPPORT_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/esp_lcd=/COMPONENT_ESP_LCD_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/esp_local_ctrl=/COMPONENT_ESP_LOCAL_CTRL_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/esp_netif=/COMPONENT_ESP_NETIF_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/esp_partition=/COMPONENT_ESP_PARTITION_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/esp_phy=/COMPONENT_ESP_PHY_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/esp_pm=/COMPONENT_ESP_PM_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/esp_psram=/COMPONENT_ESP_PSRAM_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/esp_ringbuf=/COMPONENT_ESP_RINGBUF_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/esp_rom=/COMPONENT_ESP_ROM_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/esp_system=/COMPONENT_ESP_SYSTEM_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/esp_timer=/COMPONENT_ESP_TIMER_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/esp_wifi=/COMPONENT_ESP_WIFI_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/espcoredump=/COMPONENT_ESPCOREDUMP_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/esptool_py=/COMPONENT_ESPTOOL_PY_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/fatfs=/COMPONENT_FATFS_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/freertos=/COMPONENT_FREERTOS_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/hal=/COMPONENT_HAL_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/heap=/COMPONENT_HEAP_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/http_parser=/COMPONENT_HTTP_PARSER_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/idf_test=/COMPONENT_IDF_TEST_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/ieee802154=/COMPONENT_IEEE802154_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/json=/COMPONENT_JSON_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/linux=/COMPONENT_LINUX_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/log=/COMPONENT_LOG_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/lwip=/COMPONENT_LWIP_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/mbedtls=/COMPONENT_MBEDTLS_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/mqtt=/COMPONENT_MQTT_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/newlib=/COMPONENT_NEWLIB_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/nvs_flash=/COMPONENT_NVS_FLASH_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/openthread=/COMPONENT_OPENTHREAD_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/partition_table=/COMPONENT_PARTITION_TABLE_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/perfmon=/COMPONENT_PERFMON_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/protobuf-c=/COMPONENT_PROTOBUF-C_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/protocomm=/COMPONENT_PROTOCOMM_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/pthread=/COMPONENT_PTHREAD_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/riscv=/COMPONENT_RISCV_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/sdmmc=/COMPONENT_SDMMC_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/soc=/COMPONENT_SOC_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/spi_flash=/COMPONENT_SPI_FLASH_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/spiffs=/COMPONENT_SPIFFS_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/tcp_transport=/COMPONENT_TCP_TRANSPORT_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/touch_element=/COMPONENT_TOUCH_ELEMENT_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/ulp=/COMPONENT_ULP_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/unity=/COMPONENT_UNITY_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/usb=/COMPONENT_USB_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/vfs=/COMPONENT_VFS_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/wear_levelling=/COMPONENT_WEAR_LEVELLING_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/wifi_provisioning=/COMPONENT_WIFI_PROVISIONING_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/wpa_supplicant=/COMPONENT_WPA_SUPPLICANT_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/xtensa=/COMPONENT_XTENSA_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/bootloader/subproject/main=/COMPONENT_MAIN_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/bootloader/subproject/components/micro-ecc=/COMPONENT_MICRO-ECC_DIR -fstrict-volatile-bitfields -Wno-error=unused-but-set-variable -fno-jump-tables -fno-tree-switch-conversion -fno-stack-protector -std=gnu17 -Wno-old-style-declaration -D_GNU_SOURCE -DIDF_VER=\"v5.0.2-dirty\" -DESP_PLATFORM -DBOOTLOADER_BUILD=1 -MD -MT esp-idf/log/CMakeFiles/__idf_log.dir/log.c.obj -MF esp-idf\log\CMakeFiles\__idf_log.dir\log.c.obj.d -o esp-idf/log/CMakeFiles/__idf_log.dir/log.c.obj -c C:/Users/etara/esp/esp-idf/components/log/log.c
+In file included from C:/Users/etara/esp/esp-idf/components/log/log.c:38:
+C:/Users/etara/esp/esp-idf/components/log/include/esp_log.h:432:9: error: expected identifier or '(' before 'if'
+  432 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |         ^~
+C:/Users/etara/esp/esp-idf/components/log/include/esp_log.h:432:77: warning: __VA_ARGS__ can only appear in the expansion of a C99 variadic macro
+  432 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                                                             ^
+C:/Users/etara/esp/esp-idf/components/log/include/esp_log.h:432:75: error: stray '##' in program
+  432 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                                                           ^~
+C:/Users/etara/esp/esp-idf/components/log/include/esp_log.h:410:137: note: in definition of macro 'ESP_LOG_LEVEL'
+  410 |         if (level==ESP_LOG_ERROR )          { esp_log_write(ESP_LOG_ERROR,      tag, LOG_FORMAT(E, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                                                                         ^~~~~~~~~~~
+C:/Users/etara/esp/esp-idf/components/log/include/esp_log.h:432:75: error: stray '##' in program
+  432 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                                                           ^~
+C:/Users/etara/esp/esp-idf/components/log/include/esp_log.h:411:137: note: in definition of macro 'ESP_LOG_LEVEL'
+  411 |         else if (level==ESP_LOG_WARN )      { esp_log_write(ESP_LOG_WARN,       tag, LOG_FORMAT(W, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                                                                         ^~~~~~~~~~~
+C:/Users/etara/esp/esp-idf/components/log/include/esp_log.h:432:75: error: stray '##' in program
+  432 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                                                           ^~
+C:/Users/etara/esp/esp-idf/components/log/include/esp_log.h:412:137: note: in definition of macro 'ESP_LOG_LEVEL'
+  412 |         else if (level==ESP_LOG_DEBUG )     { esp_log_write(ESP_LOG_DEBUG,      tag, LOG_FORMAT(D, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                                                                         ^~~~~~~~~~~
+C:/Users/etara/esp/esp-idf/components/log/include/esp_log.h:432:75: error: stray '##' in program
+  432 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                                                           ^~
+C:/Users/etara/esp/esp-idf/components/log/include/esp_log.h:413:137: note: in definition of macro 'ESP_LOG_LEVEL'
+  413 |         else if (level==ESP_LOG_VERBOSE )   { esp_log_write(ESP_LOG_VERBOSE,    tag, LOG_FORMAT(V, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                                                                         ^~~~~~~~~~~
+C:/Users/etara/esp/esp-idf/components/log/include/esp_log.h:432:75: error: stray '##' in program
+  432 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                                                           ^~
+C:/Users/etara/esp/esp-idf/components/log/include/esp_log.h:414:137: note: in definition of macro 'ESP_LOG_LEVEL'
+  414 |         else                                { esp_log_write(ESP_LOG_INFO,       tag, LOG_FORMAT(I, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                                                                         ^~~~~~~~~~~
+C:/Users/etara/esp/esp-idf/components/log/include/esp_log.h:415:7: error: expected identifier or '(' before 'while'
+  415 |     } while(0)
+      |       ^~~~~
+C:/Users/etara/esp/esp-idf/components/log/include/esp_log.h:432:41: note: in expansion of macro 'ESP_LOG_LEVEL'
+  432 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                         ^~~~~~~~~~~~~
+C:/Users/etara/esp/esp-idf/components/log/include/esp_log.h:433:5: error: expected identifier or '(' before '}' token
+  433 |     } while(0)
+      |     ^
+C:/Users/etara/esp/esp-idf/components/log/include/esp_log.h:433:7: error: expected identifier or '(' before 'while'
+  433 |     } while(0)
+      |       ^~~~~
+C:/Users/etara/esp/esp-idf/components/log/log.c: In function 'esp_log_set_vprintf':
+C:/Users/etara/esp/esp-idf/components/log/log.c:87:5: error: implicit declaration of function 'esp_log_impl_lock'; did you mean 'esp_log_impl_unlock'? [-Werror=implicit-function-declaration]
+   87 |     esp_log_impl_lock();
+      |     ^~~~~~~~~~~~~~~~~
+      |     esp_log_impl_unlock
+cc1.exe: some warnings being treated as errors
+[2/99] Building C object esp-idf/log/CMakeFiles/__idf_log.dir/log_buffers.c.obj
+FAILED: esp-idf/log/CMakeFiles/__idf_log.dir/log_buffers.c.obj 
+C:\Users\etara\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\bin\xtensa-esp32-elf-gcc.exe -DSOC_MMU_PAGE_SIZE=CONFIG_MMU_PAGE_SIZE -IC:/Users/etara/RC_Car/ble_compatibility_test/build/bootloader/config -IC:/Users/etara/esp/esp-idf/components/log/include -IC:/Users/etara/esp/esp-idf/components/esp_rom/include -IC:/Users/etara/esp/esp-idf/components/esp_rom/include/esp32 -IC:/Users/etara/esp/esp-idf/components/esp_rom/esp32 -IC:/Users/etara/esp/esp-idf/components/esp_common/include -IC:/Users/etara/esp/esp-idf/components/esp_hw_support/include -IC:/Users/etara/esp/esp-idf/components/esp_hw_support/include/soc -IC:/Users/etara/esp/esp-idf/components/esp_hw_support/include/soc/esp32 -IC:/Users/etara/esp/esp-idf/components/esp_hw_support/port/esp32/. -IC:/Users/etara/esp/esp-idf/components/esp_hw_support/port/esp32/private_include -IC:/Users/etara/esp/esp-idf/components/newlib/platform_include -IC:/Users/etara/esp/esp-idf/components/xtensa/include -IC:/Users/etara/esp/esp-idf/components/xtensa/esp32/include -IC:/Users/etara/esp/esp-idf/components/soc/include -IC:/Users/etara/esp/esp-idf/components/soc/esp32/. -IC:/Users/etara/esp/esp-idf/components/soc/esp32/include -IC:/Users/etara/esp/esp-idf/components/hal/esp32/include -IC:/Users/etara/esp/esp-idf/components/hal/include -IC:/Users/etara/esp/esp-idf/components/hal/platform_port/include -mlongcalls -Wno-frame-address  -fdiagnostics-color=always -ffunction-sections -fdata-sections -Wall -Werror=all -Wno-error=unused-function -Wno-error=unused-variable -Wno-error=deprecated-declarations -Wextra -Wno-unused-parameter -Wno-sign-compare -Wno-enum-conversion -gdwarf-4 -ggdb -Os -freorder-blocks -fmacro-prefix-map=C:/Users/etara/esp/esp-idf/components/bootloader/subproject=. -fmacro-prefix-map=C:/Users/etara/esp/esp-idf=/IDF -fdebug-prefix-map=C:/Users/etara/esp/esp-idf=/IDF -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/bootloader/subproject=/IDF_PROJECT -fdebug-prefix-map=C:/Users/etara/RC_Car/ble_compatibility_test/build/bootloader=/IDF_BUILD -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/app_trace=/COMPONENT_APP_TRACE_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/app_update=/COMPONENT_APP_UPDATE_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/bootloader=/COMPONENT_BOOTLOADER_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/bootloader_support=/COMPONENT_BOOTLOADER_SUPPORT_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/bt=/COMPONENT_BT_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/cmock=/COMPONENT_CMOCK_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/console=/COMPONENT_CONSOLE_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/cxx=/COMPONENT_CXX_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/driver=/COMPONENT_DRIVER_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/efuse=/COMPONENT_EFUSE_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/esp-tls=/COMPONENT_ESP-TLS_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/esp_adc=/COMPONENT_ESP_ADC_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/esp_app_format=/COMPONENT_ESP_APP_FORMAT_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/esp_common=/COMPONENT_ESP_COMMON_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/esp_eth=/COMPONENT_ESP_ETH_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/esp_event=/COMPONENT_ESP_EVENT_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/esp_gdbstub=/COMPONENT_ESP_GDBSTUB_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/esp_hid=/COMPONENT_ESP_HID_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/esp_http_client=/COMPONENT_ESP_HTTP_CLIENT_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/esp_http_server=/COMPONENT_ESP_HTTP_SERVER_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/esp_https_ota=/COMPONENT_ESP_HTTPS_OTA_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/esp_https_server=/COMPONENT_ESP_HTTPS_SERVER_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/esp_hw_support=/COMPONENT_ESP_HW_SUPPORT_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/esp_lcd=/COMPONENT_ESP_LCD_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/esp_local_ctrl=/COMPONENT_ESP_LOCAL_CTRL_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/esp_netif=/COMPONENT_ESP_NETIF_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/esp_partition=/COMPONENT_ESP_PARTITION_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/esp_phy=/COMPONENT_ESP_PHY_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/esp_pm=/COMPONENT_ESP_PM_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/esp_psram=/COMPONENT_ESP_PSRAM_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/esp_ringbuf=/COMPONENT_ESP_RINGBUF_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/esp_rom=/COMPONENT_ESP_ROM_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/esp_system=/COMPONENT_ESP_SYSTEM_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/esp_timer=/COMPONENT_ESP_TIMER_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/esp_wifi=/COMPONENT_ESP_WIFI_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/espcoredump=/COMPONENT_ESPCOREDUMP_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/esptool_py=/COMPONENT_ESPTOOL_PY_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/fatfs=/COMPONENT_FATFS_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/freertos=/COMPONENT_FREERTOS_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/hal=/COMPONENT_HAL_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/heap=/COMPONENT_HEAP_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/http_parser=/COMPONENT_HTTP_PARSER_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/idf_test=/COMPONENT_IDF_TEST_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/ieee802154=/COMPONENT_IEEE802154_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/json=/COMPONENT_JSON_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/linux=/COMPONENT_LINUX_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/log=/COMPONENT_LOG_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/lwip=/COMPONENT_LWIP_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/mbedtls=/COMPONENT_MBEDTLS_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/mqtt=/COMPONENT_MQTT_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/newlib=/COMPONENT_NEWLIB_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/nvs_flash=/COMPONENT_NVS_FLASH_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/openthread=/COMPONENT_OPENTHREAD_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/partition_table=/COMPONENT_PARTITION_TABLE_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/perfmon=/COMPONENT_PERFMON_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/protobuf-c=/COMPONENT_PROTOBUF-C_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/protocomm=/COMPONENT_PROTOCOMM_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/pthread=/COMPONENT_PTHREAD_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/riscv=/COMPONENT_RISCV_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/sdmmc=/COMPONENT_SDMMC_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/soc=/COMPONENT_SOC_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/spi_flash=/COMPONENT_SPI_FLASH_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/spiffs=/COMPONENT_SPIFFS_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/tcp_transport=/COMPONENT_TCP_TRANSPORT_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/touch_element=/COMPONENT_TOUCH_ELEMENT_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/ulp=/COMPONENT_ULP_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/unity=/COMPONENT_UNITY_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/usb=/COMPONENT_USB_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/vfs=/COMPONENT_VFS_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/wear_levelling=/COMPONENT_WEAR_LEVELLING_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/wifi_provisioning=/COMPONENT_WIFI_PROVISIONING_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/wpa_supplicant=/COMPONENT_WPA_SUPPLICANT_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/xtensa=/COMPONENT_XTENSA_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/bootloader/subproject/main=/COMPONENT_MAIN_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/bootloader/subproject/components/micro-ecc=/COMPONENT_MICRO-ECC_DIR -fstrict-volatile-bitfields -Wno-error=unused-but-set-variable -fno-jump-tables -fno-tree-switch-conversion -fno-stack-protector -std=gnu17 -Wno-old-style-declaration -D_GNU_SOURCE -DIDF_VER=\"v5.0.2-dirty\" -DESP_PLATFORM -DBOOTLOADER_BUILD=1 -MD -MT esp-idf/log/CMakeFiles/__idf_log.dir/log_buffers.c.obj -MF esp-idf\log\CMakeFiles\__idf_log.dir\log_buffers.c.obj.d -o esp-idf/log/CMakeFiles/__idf_log.dir/log_buffers.c.obj -c C:/Users/etara/esp/esp-idf/components/log/log_buffers.c
+In file included from C:/Users/etara/esp/esp-idf/components/log/log_buffers.c:11:
+C:/Users/etara/esp/esp-idf/components/log/include/esp_log.h:432:9: error: expected identifier or '(' before 'if'
+  432 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |         ^~
+C:/Users/etara/esp/esp-idf/components/log/include/esp_log.h:432:77: warning: __VA_ARGS__ can only appear in the expansion of a C99 variadic macro
+  432 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                                                             ^
+C:/Users/etara/esp/esp-idf/components/log/include/esp_log.h:432:75: error: stray '##' in program
+  432 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                                                           ^~
+C:/Users/etara/esp/esp-idf/components/log/include/esp_log.h:410:137: note: in definition of macro 'ESP_LOG_LEVEL'
+  410 |         if (level==ESP_LOG_ERROR )          { esp_log_write(ESP_LOG_ERROR,      tag, LOG_FORMAT(E, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                                                                         ^~~~~~~~~~~
+C:/Users/etara/esp/esp-idf/components/log/include/esp_log.h:432:75: error: stray '##' in program
+  432 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                                                           ^~
+C:/Users/etara/esp/esp-idf/components/log/include/esp_log.h:411:137: note: in definition of macro 'ESP_LOG_LEVEL'
+  411 |         else if (level==ESP_LOG_WARN )      { esp_log_write(ESP_LOG_WARN,       tag, LOG_FORMAT(W, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                                                                         ^~~~~~~~~~~
+C:/Users/etara/esp/esp-idf/components/log/include/esp_log.h:432:75: error: stray '##' in program
+  432 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                                                           ^~
+C:/Users/etara/esp/esp-idf/components/log/include/esp_log.h:412:137: note: in definition of macro 'ESP_LOG_LEVEL'
+  412 |         else if (level==ESP_LOG_DEBUG )     { esp_log_write(ESP_LOG_DEBUG,      tag, LOG_FORMAT(D, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                                                                         ^~~~~~~~~~~
+C:/Users/etara/esp/esp-idf/components/log/include/esp_log.h:432:75: error: stray '##' in program
+  432 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                                                           ^~
+C:/Users/etara/esp/esp-idf/components/log/include/esp_log.h:413:137: note: in definition of macro 'ESP_LOG_LEVEL'
+  413 |         else if (level==ESP_LOG_VERBOSE )   { esp_log_write(ESP_LOG_VERBOSE,    tag, LOG_FORMAT(V, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                                                                         ^~~~~~~~~~~
+C:/Users/etara/esp/esp-idf/components/log/include/esp_log.h:432:75: error: stray '##' in program
+  432 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                                                           ^~
+C:/Users/etara/esp/esp-idf/components/log/include/esp_log.h:414:137: note: in definition of macro 'ESP_LOG_LEVEL'
+  414 |         else                                { esp_log_write(ESP_LOG_INFO,       tag, LOG_FORMAT(I, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                                                                         ^~~~~~~~~~~
+C:/Users/etara/esp/esp-idf/components/log/include/esp_log.h:415:7: error: expected identifier or '(' before 'while'
+  415 |     } while(0)
+      |       ^~~~~
+C:/Users/etara/esp/esp-idf/components/log/include/esp_log.h:432:41: note: in expansion of macro 'ESP_LOG_LEVEL'
+  432 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                         ^~~~~~~~~~~~~
+C:/Users/etara/esp/esp-idf/components/log/include/esp_log.h:433:5: error: expected identifier or '(' before '}' token
+  433 |     } while(0)
+      |     ^
+C:/Users/etara/esp/esp-idf/components/log/include/esp_log.h:433:7: error: expected identifier or '(' before 'while'
+  433 |     } while(0)
+      |       ^~~~~
+[3/99] Building C object esp-idf/esp_rom/CMakeFiles/__idf_esp_rom.dir/patches/esp_rom_efuse.c.obj
+[4/99] Building ASM object esp-idf/esp_rom/CMakeFiles/__idf_esp_rom.dir/patches/esp_rom_longjmp.S.obj
+[5/99] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/bootloader_start.c.obj
+FAILED: esp-idf/main/CMakeFiles/__idf_main.dir/bootloader_start.c.obj 
+C:\Users\etara\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\bin\xtensa-esp32-elf-gcc.exe -DSOC_MMU_PAGE_SIZE=CONFIG_MMU_PAGE_SIZE -IC:/Users/etara/RC_Car/ble_compatibility_test/build/bootloader/config -IC:/Users/etara/esp/esp-idf/components/log/include -IC:/Users/etara/esp/esp-idf/components/esp_rom/include -IC:/Users/etara/esp/esp-idf/components/esp_rom/include/esp32 -IC:/Users/etara/esp/esp-idf/components/esp_rom/esp32 -IC:/Users/etara/esp/esp-idf/components/esp_common/include -IC:/Users/etara/esp/esp-idf/components/esp_hw_support/include -IC:/Users/etara/esp/esp-idf/components/esp_hw_support/include/soc -IC:/Users/etara/esp/esp-idf/components/esp_hw_support/include/soc/esp32 -IC:/Users/etara/esp/esp-idf/components/esp_hw_support/port/esp32/. -IC:/Users/etara/esp/esp-idf/components/esp_hw_support/port/esp32/private_include -IC:/Users/etara/esp/esp-idf/components/newlib/platform_include -IC:/Users/etara/esp/esp-idf/components/xtensa/include -IC:/Users/etara/esp/esp-idf/components/xtensa/esp32/include -IC:/Users/etara/esp/esp-idf/components/soc/include -IC:/Users/etara/esp/esp-idf/components/soc/esp32/. -IC:/Users/etara/esp/esp-idf/components/soc/esp32/include -IC:/Users/etara/esp/esp-idf/components/bootloader_support/include -IC:/Users/etara/esp/esp-idf/components/bootloader_support/bootloader_flash/include -IC:/Users/etara/esp/esp-idf/components/bootloader_support/private_include -mlongcalls -Wno-frame-address  -fdiagnostics-color=always -ffunction-sections -fdata-sections -Wall -Werror=all -Wno-error=unused-function -Wno-error=unused-variable -Wno-error=deprecated-declarations -Wextra -Wno-unused-parameter -Wno-sign-compare -Wno-enum-conversion -gdwarf-4 -ggdb -Os -freorder-blocks -fmacro-prefix-map=C:/Users/etara/esp/esp-idf/components/bootloader/subproject=. -fmacro-prefix-map=C:/Users/etara/esp/esp-idf=/IDF -fdebug-prefix-map=C:/Users/etara/esp/esp-idf=/IDF -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/bootloader/subproject=/IDF_PROJECT -fdebug-prefix-map=C:/Users/etara/RC_Car/ble_compatibility_test/build/bootloader=/IDF_BUILD -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/app_trace=/COMPONENT_APP_TRACE_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/app_update=/COMPONENT_APP_UPDATE_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/bootloader=/COMPONENT_BOOTLOADER_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/bootloader_support=/COMPONENT_BOOTLOADER_SUPPORT_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/bt=/COMPONENT_BT_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/cmock=/COMPONENT_CMOCK_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/console=/COMPONENT_CONSOLE_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/cxx=/COMPONENT_CXX_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/driver=/COMPONENT_DRIVER_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/efuse=/COMPONENT_EFUSE_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/esp-tls=/COMPONENT_ESP-TLS_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/esp_adc=/COMPONENT_ESP_ADC_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/esp_app_format=/COMPONENT_ESP_APP_FORMAT_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/esp_common=/COMPONENT_ESP_COMMON_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/esp_eth=/COMPONENT_ESP_ETH_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/esp_event=/COMPONENT_ESP_EVENT_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/esp_gdbstub=/COMPONENT_ESP_GDBSTUB_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/esp_hid=/COMPONENT_ESP_HID_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/esp_http_client=/COMPONENT_ESP_HTTP_CLIENT_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/esp_http_server=/COMPONENT_ESP_HTTP_SERVER_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/esp_https_ota=/COMPONENT_ESP_HTTPS_OTA_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/esp_https_server=/COMPONENT_ESP_HTTPS_SERVER_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/esp_hw_support=/COMPONENT_ESP_HW_SUPPORT_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/esp_lcd=/COMPONENT_ESP_LCD_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/esp_local_ctrl=/COMPONENT_ESP_LOCAL_CTRL_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/esp_netif=/COMPONENT_ESP_NETIF_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/esp_partition=/COMPONENT_ESP_PARTITION_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/esp_phy=/COMPONENT_ESP_PHY_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/esp_pm=/COMPONENT_ESP_PM_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/esp_psram=/COMPONENT_ESP_PSRAM_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/esp_ringbuf=/COMPONENT_ESP_RINGBUF_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/esp_rom=/COMPONENT_ESP_ROM_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/esp_system=/COMPONENT_ESP_SYSTEM_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/esp_timer=/COMPONENT_ESP_TIMER_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/esp_wifi=/COMPONENT_ESP_WIFI_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/espcoredump=/COMPONENT_ESPCOREDUMP_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/esptool_py=/COMPONENT_ESPTOOL_PY_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/fatfs=/COMPONENT_FATFS_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/freertos=/COMPONENT_FREERTOS_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/hal=/COMPONENT_HAL_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/heap=/COMPONENT_HEAP_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/http_parser=/COMPONENT_HTTP_PARSER_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/idf_test=/COMPONENT_IDF_TEST_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/ieee802154=/COMPONENT_IEEE802154_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/json=/COMPONENT_JSON_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/linux=/COMPONENT_LINUX_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/log=/COMPONENT_LOG_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/lwip=/COMPONENT_LWIP_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/mbedtls=/COMPONENT_MBEDTLS_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/mqtt=/COMPONENT_MQTT_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/newlib=/COMPONENT_NEWLIB_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/nvs_flash=/COMPONENT_NVS_FLASH_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/openthread=/COMPONENT_OPENTHREAD_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/partition_table=/COMPONENT_PARTITION_TABLE_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/perfmon=/COMPONENT_PERFMON_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/protobuf-c=/COMPONENT_PROTOBUF-C_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/protocomm=/COMPONENT_PROTOCOMM_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/pthread=/COMPONENT_PTHREAD_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/riscv=/COMPONENT_RISCV_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/sdmmc=/COMPONENT_SDMMC_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/soc=/COMPONENT_SOC_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/spi_flash=/COMPONENT_SPI_FLASH_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/spiffs=/COMPONENT_SPIFFS_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/tcp_transport=/COMPONENT_TCP_TRANSPORT_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/touch_element=/COMPONENT_TOUCH_ELEMENT_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/ulp=/COMPONENT_ULP_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/unity=/COMPONENT_UNITY_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/usb=/COMPONENT_USB_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/vfs=/COMPONENT_VFS_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/wear_levelling=/COMPONENT_WEAR_LEVELLING_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/wifi_provisioning=/COMPONENT_WIFI_PROVISIONING_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/wpa_supplicant=/COMPONENT_WPA_SUPPLICANT_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/xtensa=/COMPONENT_XTENSA_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/bootloader/subproject/main=/COMPONENT_MAIN_DIR -fdebug-prefix-map=C:/Users/etara/esp/esp-idf/components/bootloader/subproject/components/micro-ecc=/COMPONENT_MICRO-ECC_DIR -fstrict-volatile-bitfields -Wno-error=unused-but-set-variable -fno-jump-tables -fno-tree-switch-conversion -fno-stack-protector -std=gnu17 -Wno-old-style-declaration -D_GNU_SOURCE -DIDF_VER=\"v5.0.2-dirty\" -DESP_PLATFORM -DBOOTLOADER_BUILD=1 -MD -MT esp-idf/main/CMakeFiles/__idf_main.dir/bootloader_start.c.obj -MF esp-idf\main\CMakeFiles\__idf_main.dir\bootloader_start.c.obj.d -o esp-idf/main/CMakeFiles/__idf_main.dir/bootloader_start.c.obj -c C:/Users/etara/esp/esp-idf/components/bootloader/subproject/main/bootloader_start.c
+In file included from C:/Users/etara/esp/esp-idf/components/bootloader/subproject/main/bootloader_start.c:7:
+C:/Users/etara/esp/esp-idf/components/log/include/esp_log.h:432:9: error: expected identifier or '(' before 'if'
+  432 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |         ^~
+C:/Users/etara/esp/esp-idf/components/log/include/esp_log.h:432:77: warning: __VA_ARGS__ can only appear in the expansion of a C99 variadic macro
+  432 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                                                             ^
+C:/Users/etara/esp/esp-idf/components/log/include/esp_log.h:432:75: error: stray '##' in program
+  432 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                                                           ^~
+C:/Users/etara/esp/esp-idf/components/log/include/esp_log.h:410:137: note: in definition of macro 'ESP_LOG_LEVEL'
+  410 |         if (level==ESP_LOG_ERROR )          { esp_log_write(ESP_LOG_ERROR,      tag, LOG_FORMAT(E, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                                                                         ^~~~~~~~~~~
+C:/Users/etara/esp/esp-idf/components/log/include/esp_log.h:432:75: error: stray '##' in program
+  432 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                                                           ^~
+C:/Users/etara/esp/esp-idf/components/log/include/esp_log.h:411:137: note: in definition of macro 'ESP_LOG_LEVEL'
+  411 |         else if (level==ESP_LOG_WARN )      { esp_log_write(ESP_LOG_WARN,       tag, LOG_FORMAT(W, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                                                                         ^~~~~~~~~~~
+C:/Users/etara/esp/esp-idf/components/log/include/esp_log.h:432:75: error: stray '##' in program
+  432 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                                                           ^~
+C:/Users/etara/esp/esp-idf/components/log/include/esp_log.h:412:137: note: in definition of macro 'ESP_LOG_LEVEL'
+  412 |         else if (level==ESP_LOG_DEBUG )     { esp_log_write(ESP_LOG_DEBUG,      tag, LOG_FORMAT(D, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                                                                         ^~~~~~~~~~~
+C:/Users/etara/esp/esp-idf/components/log/include/esp_log.h:432:75: error: stray '##' in program
+  432 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                                                           ^~
+C:/Users/etara/esp/esp-idf/components/log/include/esp_log.h:413:137: note: in definition of macro 'ESP_LOG_LEVEL'
+  413 |         else if (level==ESP_LOG_VERBOSE )   { esp_log_write(ESP_LOG_VERBOSE,    tag, LOG_FORMAT(V, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                                                                         ^~~~~~~~~~~
+C:/Users/etara/esp/esp-idf/components/log/include/esp_log.h:432:75: error: stray '##' in program
+  432 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                                                           ^~
+C:/Users/etara/esp/esp-idf/components/log/include/esp_log.h:414:137: note: in definition of macro 'ESP_LOG_LEVEL'
+  414 |         else                                { esp_log_write(ESP_LOG_INFO,       tag, LOG_FORMAT(I, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                                                                         ^~~~~~~~~~~
+C:/Users/etara/esp/esp-idf/components/log/include/esp_log.h:415:7: error: expected identifier or '(' before 'while'
+  415 |     } while(0)
+      |       ^~~~~
+C:/Users/etara/esp/esp-idf/components/log/include/esp_log.h:432:41: note: in expansion of macro 'ESP_LOG_LEVEL'
+  432 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                         ^~~~~~~~~~~~~
+C:/Users/etara/esp/esp-idf/components/log/include/esp_log.h:433:5: error: expected identifier or '(' before '}' token
+  433 |     } while(0)
+      |     ^
+C:/Users/etara/esp/esp-idf/components/log/include/esp_log.h:433:7: error: expected identifier or '(' before 'while'
+  433 |     } while(0)
+      |       ^~~~~
+In file included from C:/Users/etara/esp/esp-idf/components/newlib/platform_include/assert.h:13,
+                 from c:\users\etara\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\xtensa-esp32-elf\sys-include\sys\reent.h:503,
+                 from C:/Users/etara/esp/esp-idf/components/newlib/platform_include/sys/reent.h:9,
+                 from c:\users\etara\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\xtensa-esp32-elf\sys-include\stdio.h:60,
+                 from C:/Users/etara/esp/esp-idf/components/esp_common/include/esp_err.h:10,
+                 from C:/Users/etara/esp/esp-idf/components/bootloader_support/private_include/bootloader_init.h:8,
+                 from C:/Users/etara/esp/esp-idf/components/bootloader/subproject/main/bootloader_start.c:9:
+c:\users\etara\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\xtensa-esp32-elf\sys-include\stdlib.h:78:33: error: unknown type name 'size_t'
+   78 | void    arc4random_buf (void *, size_t);
+      |                                 ^~~~~~
+c:\users\etara\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\xtensa-esp32-elf\sys-include\stdlib.h:23:1: note: 'size_t' is defined in header '<stddef.h>'; did you forget to '#include <stddef.h>'?
+   22 | #include <alloca.h>
+  +++ |+#include <stddef.h>
+   23 | #endif
+c:\users\etara\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\xtensa-esp32-elf\sys-include\stdlib.h:91:24: error: unknown type name 'size_t'
+   91 |                        size_t __nmemb,
+      |                        ^~~~~~
+c:\users\etara\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\xtensa-esp32-elf\sys-include\stdlib.h:91:24: note: 'size_t' is defined in header '<stddef.h>'; did you forget to '#include <stddef.h>'?
+c:\users\etara\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\xtensa-esp32-elf\sys-include\stdlib.h:92:24: error: unknown type name 'size_t'
+   92 |                        size_t __size,
+      |                        ^~~~~~
+c:\users\etara\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\xtensa-esp32-elf\sys-include\stdlib.h:92:24: note: 'size_t' is defined in header '<stddef.h>'; did you forget to '#include <stddef.h>'?
+c:\users\etara\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\xtensa-esp32-elf\sys-include\stdlib.h:113:30: error: unknown type name 'size_t'
+  113 | int     mblen (const char *, size_t);
+      |                              ^~~~~~
+c:\users\etara\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\xtensa-esp32-elf\sys-include\stdlib.h:113:30: note: 'size_t' is defined in header '<stddef.h>'; did you forget to '#include <stddef.h>'?
+c:\users\etara\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\xtensa-esp32-elf\sys-include\stdlib.h:114:50: error: unknown type name 'size_t'
+  114 | int     _mblen_r (struct _reent *, const char *, size_t, _mbstate_t *);
+      |                                                  ^~~~~~
+c:\users\etara\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\xtensa-esp32-elf\sys-include\stdlib.h:114:50: note: 'size_t' is defined in header '<stddef.h>'; did you forget to '#include <stddef.h>'?
+c:\users\etara\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\xtensa-esp32-elf\sys-include\stdlib.h:115:62: error: unknown type name 'size_t'
+  115 | int     mbtowc (wchar_t *__restrict, const char *__restrict, size_t);
+      |                                                              ^~~~~~
+c:\users\etara\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\xtensa-esp32-elf\sys-include\stdlib.h:115:62: note: 'size_t' is defined in header '<stddef.h>'; did you forget to '#include <stddef.h>'?
+c:\users\etara\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\xtensa-esp32-elf\sys-include\stdlib.h:116:82: error: unknown type name 'size_t'
+  116 | int     _mbtowc_r (struct _reent *, wchar_t *__restrict, const char *__restrict, size_t, _mbstate_t *);
+      |                                                                                  ^~~~~~
+c:\users\etara\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\xtensa-esp32-elf\sys-include\stdlib.h:116:82: note: 'size_t' is defined in header '<stddef.h>'; did you forget to '#include <stddef.h>'?
+c:\users\etara\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\xtensa-esp32-elf\sys-include\stdlib.h:119:1: error: unknown type name 'size_t'
+  119 | size_t  mbstowcs (wchar_t *__restrict, const char *__restrict, size_t);
+      | ^~~~~~
+c:\users\etara\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\xtensa-esp32-elf\sys-include\stdlib.h:119:1: note: 'size_t' is defined in header '<stddef.h>'; did you forget to '#include <stddef.h>'?
+c:\users\etara\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\xtensa-esp32-elf\sys-include\stdlib.h:119:64: error: unknown type name 'size_t'
+  119 | size_t  mbstowcs (wchar_t *__restrict, const char *__restrict, size_t);
+      |                                                                ^~~~~~
+c:\users\etara\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\xtensa-esp32-elf\sys-include\stdlib.h:119:64: note: 'size_t' is defined in header '<stddef.h>'; did you forget to '#include <stddef.h>'?
+c:\users\etara\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\xtensa-esp32-elf\sys-include\stdlib.h:120:1: error: unknown type name 'size_t'
+  120 | size_t  _mbstowcs_r (struct _reent *, wchar_t *__restrict, const char *__restrict, size_t, _mbstate_t *);
+      | ^~~~~~
+c:\users\etara\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\xtensa-esp32-elf\sys-include\stdlib.h:120:1: note: 'size_t' is defined in header '<stddef.h>'; did you forget to '#include <stddef.h>'?
+c:\users\etara\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\xtensa-esp32-elf\sys-include\stdlib.h:120:84: error: unknown type name 'size_t'
+  120 | size_t  _mbstowcs_r (struct _reent *, wchar_t *__restrict, const char *__restrict, size_t, _mbstate_t *);
+      |                                                                                    ^~~~~~
+c:\users\etara\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\xtensa-esp32-elf\sys-include\stdlib.h:120:84: note: 'size_t' is defined in header '<stddef.h>'; did you forget to '#include <stddef.h>'?
+c:\users\etara\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\xtensa-esp32-elf\sys-include\stdlib.h:121:1: error: unknown type name 'size_t'
+  121 | size_t  wcstombs (char *__restrict, const wchar_t *__restrict, size_t);
+      | ^~~~~~
+c:\users\etara\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\xtensa-esp32-elf\sys-include\stdlib.h:121:1: note: 'size_t' is defined in header '<stddef.h>'; did you forget to '#include <stddef.h>'?
+c:\users\etara\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\xtensa-esp32-elf\sys-include\stdlib.h:121:64: error: unknown type name 'size_t'
+  121 | size_t  wcstombs (char *__restrict, const wchar_t *__restrict, size_t);
+      |                                                                ^~~~~~
+c:\users\etara\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\xtensa-esp32-elf\sys-include\stdlib.h:121:64: note: 'size_t' is defined in header '<stddef.h>'; did you forget to '#include <stddef.h>'?
+c:\users\etara\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\xtensa-esp32-elf\sys-include\stdlib.h:122:1: error: unknown type name 'size_t'
+  122 | size_t  _wcstombs_r (struct _reent *, char *__restrict, const wchar_t *__restrict, size_t, _mbstate_t *);
+      | ^~~~~~
+c:\users\etara\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\xtensa-esp32-elf\sys-include\stdlib.h:122:1: note: 'size_t' is defined in header '<stddef.h>'; did you forget to '#include <stddef.h>'?
+c:\users\etara\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\xtensa-esp32-elf\sys-include\stdlib.h:122:84: error: unknown type name 'size_t'
+  122 | size_t  _wcstombs_r (struct _reent *, char *__restrict, const wchar_t *__restrict, size_t, _mbstate_t *);
+      |                                                                                    ^~~~~~
+c:\users\etara\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\xtensa-esp32-elf\sys-include\stdlib.h:122:84: note: 'size_t' is defined in header '<stddef.h>'; did you forget to '#include <stddef.h>'?
+In file included from C:/Users/etara/esp/esp-idf/components/newlib/platform_include/assert.h:13,
+                 from c:\users\etara\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\xtensa-esp32-elf\sys-include\sys\reent.h:503,
+                 from C:/Users/etara/esp/esp-idf/components/newlib/platform_include/sys/reent.h:9,
+                 from c:\users\etara\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\xtensa-esp32-elf\sys-include\stdio.h:60,
+                 from C:/Users/etara/esp/esp-idf/components/esp_common/include/esp_err.h:10,
+                 from C:/Users/etara/esp/esp-idf/components/bootloader_support/private_include/bootloader_init.h:8,
+                 from C:/Users/etara/esp/esp-idf/components/bootloader/subproject/main/bootloader_start.c:9:
+c:\users\etara\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\xtensa-esp32-elf\sys-include\stdlib.h:155:30: error: unknown type name 'size_t'
+  155 | void    qsort (void *__base, size_t __nmemb, size_t __size, __compar_fn_t _compar);
+      |                              ^~~~~~
+c:\users\etara\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\xtensa-esp32-elf\sys-include\stdlib.h:155:30: note: 'size_t' is defined in header '<stddef.h>'; did you forget to '#include <stddef.h>'?
+c:\users\etara\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\xtensa-esp32-elf\sys-include\stdlib.h:155:46: error: unknown type name 'size_t'
+  155 | void    qsort (void *__base, size_t __nmemb, size_t __size, __compar_fn_t _compar);
+      |                                              ^~~~~~
+c:\users\etara\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\xtensa-esp32-elf\sys-include\stdlib.h:155:46: note: 'size_t' is defined in header '<stddef.h>'; did you forget to '#include <stddef.h>'?
+c:\users\etara\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\xtensa-esp32-elf\sys-include\stdlib.h:157:26: error: unknown type name 'size_t'
+  157 | void    *realloc(void *, size_t) __result_use_check __alloc_size(2) _NOTHROW;
+      |                          ^~~~~~
+c:\users\etara\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\xtensa-esp32-elf\sys-include\stdlib.h:157:26: note: 'size_t' is defined in header '<stddef.h>'; did you forget to '#include <stddef.h>'?
+c:\users\etara\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\xtensa-esp32-elf\sys-include\stdlib.h:159:31: error: unknown type name 'size_t'
+  159 | void    *reallocarray(void *, size_t, size_t) __result_use_check __alloc_size2(2, 3);
+      |                               ^~~~~~
+c:\users\etara\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\xtensa-esp32-elf\sys-include\stdlib.h:159:31: note: 'size_t' is defined in header '<stddef.h>'; did you forget to '#include <stddef.h>'?
+c:\users\etara\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\xtensa-esp32-elf\sys-include\stdlib.h:159:39: error: unknown type name 'size_t'
+  159 | void    *reallocarray(void *, size_t, size_t) __result_use_check __alloc_size2(2, 3);
+      |                                       ^~~~~~
+c:\users\etara\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\xtensa-esp32-elf\sys-include\stdlib.h:159:39: note: 'size_t' is defined in header '<stddef.h>'; did you forget to '#include <stddef.h>'?
+c:\users\etara\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\xtensa-esp32-elf\sys-include\stdlib.h:160:27: error: unknown type name 'size_t'
+  160 | void    *reallocf(void *, size_t) __result_use_check __alloc_size(2);
+      |                           ^~~~~~
+c:\users\etara\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\xtensa-esp32-elf\sys-include\stdlib.h:160:27: note: 'size_t' is defined in header '<stddef.h>'; did you forget to '#include <stddef.h>'?
+c:\users\etara\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\xtensa-esp32-elf\sys-include\stdlib.h:220:47: error: unknown type name 'size_t'
+  220 | void *  _reallocf_r (struct _reent *, void *, size_t);
+      |                                               ^~~~~~
+c:\users\etara\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\xtensa-esp32-elf\sys-include\stdlib.h:220:47: note: 'size_t' is defined in header '<stddef.h>'; did you forget to '#include <stddef.h>'?
+c:\users\etara\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\xtensa-esp32-elf\sys-include\stdlib.h:269:38: error: unknown type name 'size_t'
+  269 | char *  initstate (unsigned, char *, size_t);
+      |                                      ^~~~~~
+c:\users\etara\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\xtensa-esp32-elf\sys-include\stdlib.h:269:38: note: 'size_t' is defined in header '<stddef.h>'; did you forget to '#include <stddef.h>'?
+c:\users\etara\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\xtensa-esp32-elf\sys-include\stdlib.h:300:34: error: unknown type name 'size_t'
+  300 | int     posix_memalign (void **, size_t, size_t) __nonnull((1))
+      |                                  ^~~~~~
+c:\users\etara\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\xtensa-esp32-elf\sys-include\stdlib.h:300:34: note: 'size_t' is defined in header '<stddef.h>'; did you forget to '#include <stddef.h>'?
+c:\users\etara\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\xtensa-esp32-elf\sys-include\stdlib.h:300:42: error: unknown type name 'size_t'
+  300 | int     posix_memalign (void **, size_t, size_t) __nonnull((1))
+      |                                          ^~~~~~
+c:\users\etara\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\xtensa-esp32-elf\sys-include\stdlib.h:300:42: note: 'size_t' is defined in header '<stddef.h>'; did you forget to '#include <stddef.h>'?
+c:\users\etara\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\xtensa-esp32-elf\sys-include\stdlib.h:306:37: error: unknown type name 'size_t'
+  306 | void *  _malloc_r (struct _reent *, size_t) _NOTHROW;
+      |                                     ^~~~~~
+c:\users\etara\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\xtensa-esp32-elf\sys-include\stdlib.h:306:37: note: 'size_t' is defined in header '<stddef.h>'; did you forget to '#include <stddef.h>'?
+c:\users\etara\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\xtensa-esp32-elf\sys-include\stdlib.h:307:37: error: unknown type name 'size_t'
+  307 | void *  _calloc_r (struct _reent *, size_t, size_t) _NOTHROW;
+      |                                     ^~~~~~
+c:\users\etara\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\xtensa-esp32-elf\sys-include\stdlib.h:307:37: note: 'size_t' is defined in header '<stddef.h>'; did you forget to '#include <stddef.h>'?
+c:\users\etara\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\xtensa-esp32-elf\sys-include\stdlib.h:307:45: error: unknown type name 'size_t'
+  307 | void *  _calloc_r (struct _reent *, size_t, size_t) _NOTHROW;
+      |                                             ^~~~~~
+c:\users\etara\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\xtensa-esp32-elf\sys-include\stdlib.h:307:45: note: 'size_t' is defined in header '<stddef.h>'; did you forget to '#include <stddef.h>'?
+c:\users\etara\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\xtensa-esp32-elf\sys-include\stdlib.h:309:46: error: unknown type name 'size_t'
+  309 | void *  _realloc_r (struct _reent *, void *, size_t) _NOTHROW;
+      |                                              ^~~~~~
+c:\users\etara\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\xtensa-esp32-elf\sys-include\stdlib.h:309:46: note: 'size_t' is defined in header '<stddef.h>'; did you forget to '#include <stddef.h>'?
+c:\users\etara\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\xtensa-esp32-elf\sys-include\stdlib.h:321:32: error: unknown type name 'size_t'
+  321 | void    qsort_r (void *__base, size_t __nmemb, size_t __size, int (*_compar)(const void *, const void *, void *), void *__thunk);
+      |                                ^~~~~~
+c:\users\etara\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\xtensa-esp32-elf\sys-include\stdlib.h:321:32: note: 'size_t' is defined in header '<stddef.h>'; did you forget to '#include <stddef.h>'?
+c:\users\etara\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\xtensa-esp32-elf\sys-include\stdlib.h:321:48: error: unknown type name 'size_t'
+  321 | void    qsort_r (void *__base, size_t __nmemb, size_t __size, int (*_compar)(const void *, const void *, void *), void *__thunk);
+      |                                                ^~~~~~
+c:\users\etara\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\xtensa-esp32-elf\sys-include\stdlib.h:321:48: note: 'size_t' is defined in header '<stddef.h>'; did you forget to '#include <stddef.h>'?
+In file included from C:/Users/etara/esp/esp-idf/components/esp_common/include/esp_err.h:10,
+                 from C:/Users/etara/esp/esp-idf/components/bootloader_support/private_include/bootloader_init.h:8,
+                 from C:/Users/etara/esp/esp-idf/components/bootloader/subproject/main/bootloader_start.c:9:
+c:\users\etara\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\xtensa-esp32-elf\sys-include\stdio.h:195:59: error: unknown type name 'size_t'
+  195 | int     setvbuf (FILE *__restrict, char *__restrict, int, size_t);
+      |                                                           ^~~~~~
+c:\users\etara\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\xtensa-esp32-elf\sys-include\stdio.h:80:1: note: 'size_t' is defined in header '<stddef.h>'; did you forget to '#include <stddef.h>'?
+   79 | #include <sys/stdio.h>
+  +++ |+#include <stddef.h>
+   80 | 
+c:\users\etara\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\xtensa-esp32-elf\sys-include\stdio.h:223:1: error: unknown type name 'size_t'
+  223 | size_t  fread (void *__restrict, size_t _size, size_t _n, FILE *__restrict);
+      | ^~~~~~
+c:\users\etara\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\xtensa-esp32-elf\sys-include\stdio.h:223:1: note: 'size_t' is defined in header '<stddef.h>'; did you forget to '#include <stddef.h>'?
+c:\users\etara\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\xtensa-esp32-elf\sys-include\stdio.h:223:34: error: unknown type name 'size_t'
+  223 | size_t  fread (void *__restrict, size_t _size, size_t _n, FILE *__restrict);
+      |                                  ^~~~~~
+c:\users\etara\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\xtensa-esp32-elf\sys-include\stdio.h:223:34: note: 'size_t' is defined in header '<stddef.h>'; did you forget to '#include <stddef.h>'?
+c:\users\etara\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\xtensa-esp32-elf\sys-include\stdio.h:223:48: error: unknown type name 'size_t'
+  223 | size_t  fread (void *__restrict, size_t _size, size_t _n, FILE *__restrict);
+      |                                                ^~~~~~
+c:\users\etara\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\xtensa-esp32-elf\sys-include\stdio.h:223:48: note: 'size_t' is defined in header '<stddef.h>'; did you forget to '#include <stddef.h>'?
+c:\users\etara\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\xtensa-esp32-elf\sys-include\stdio.h:224:1: error: unknown type name 'size_t'
+  224 | size_t  fwrite (const void *__restrict , size_t _size, size_t _n, FILE *);
+      | ^~~~~~
+c:\users\etara\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\xtensa-esp32-elf\sys-include\stdio.h:224:1: note: 'size_t' is defined in header '<stddef.h>'; did you forget to '#include <stddef.h>'?
+c:\users\etara\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\xtensa-esp32-elf\sys-include\stdio.h:224:42: error: unknown type name 'size_t'
+  224 | size_t  fwrite (const void *__restrict , size_t _size, size_t _n, FILE *);
+      |                                          ^~~~~~
+c:\users\etara\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\xtensa-esp32-elf\sys-include\stdio.h:224:42: note: 'size_t' is defined in header '<stddef.h>'; did you forget to '#include <stddef.h>'?
+c:\users\etara\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\xtensa-esp32-elf\sys-include\stdio.h:224:56: error: unknown type name 'size_t'
+  224 | size_t  fwrite (const void *__restrict , size_t _size, size_t _n, FILE *);
+      |                                                        ^~~~~~
+c:\users\etara\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\xtensa-esp32-elf\sys-include\stdio.h:224:56: note: 'size_t' is defined in header '<stddef.h>'; did you forget to '#include <stddef.h>'?
+c:\users\etara\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\xtensa-esp32-elf\sys-include\stdio.h:266:37: error: unknown type name 'size_t'
+  266 | int     snprintf (char *__restrict, size_t, const char *__restrict, ...)
+      |                                     ^~~~~~
+c:\users\etara\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\xtensa-esp32-elf\sys-include\stdio.h:266:37: note: 'size_t' is defined in header '<stddef.h>'; did you forget to '#include <stddef.h>'?
+c:\users\etara\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\xtensa-esp32-elf\sys-include\stdio.h:268:38: error: unknown type name 'size_t'
+  268 | int     vsnprintf (char *__restrict, size_t, const char *__restrict, __VALIST)
+      |                                      ^~~~~~
+c:\users\etara\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\xtensa-esp32-elf\sys-include\stdio.h:268:38: note: 'size_t' is defined in header '<stddef.h>'; did you forget to '#include <stddef.h>'?
+c:\users\etara\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\xtensa-esp32-elf\sys-include\stdio.h:286:29: error: unknown type name 'size_t'
+  286 | char *  asniprintf (char *, size_t *, const char *, ...)
+      |                             ^~~~~~
+c:\users\etara\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\xtensa-esp32-elf\sys-include\stdio.h:286:29: note: 'size_t' is defined in header '<stddef.h>'; did you forget to '#include <stddef.h>'?
+c:\users\etara\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\xtensa-esp32-elf\sys-include\stdio.h:288:38: error: unknown type name 'size_t'
+  288 | char *  asnprintf (char *__restrict, size_t *__restrict, const char *__restrict, ...)
+      |                                      ^~~~~~
+c:\users\etara\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\xtensa-esp32-elf\sys-include\stdio.h:288:38: note: 'size_t' is defined in header '<stddef.h>'; did you forget to '#include <stddef.h>'?
+c:\users\etara\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\xtensa-esp32-elf\sys-include\stdio.h:306:28: error: unknown type name 'size_t'
+  306 | int     sniprintf (char *, size_t, const char *, ...)
+      |                            ^~~~~~
+c:\users\etara\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\xtensa-esp32-elf\sys-include\stdio.h:306:28: note: 'size_t' is defined in header '<stddef.h>'; did you forget to '#include <stddef.h>'?
+c:\users\etara\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\xtensa-esp32-elf\sys-include\stdio.h:310:30: error: unknown type name 'size_t'
+  310 | char *  vasniprintf (char *, size_t *, const char *, __VALIST)
+      |                              ^~~~~~
+c:\users\etara\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\xtensa-esp32-elf\sys-include\stdio.h:310:30: note: 'size_t' is defined in header '<stddef.h>'; did you forget to '#include <stddef.h>'?
+c:\users\etara\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\xtensa-esp32-elf\sys-include\stdio.h:312:29: error: unknown type name 'size_t'
+  312 | char *  vasnprintf (char *, size_t *, const char *, __VALIST)
+      |                             ^~~~~~
+c:\users\etara\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\xtensa-esp32-elf\sys-include\stdio.h:312:29: note: 'size_t' is defined in header '<stddef.h>'; did you forget to '#include <stddef.h>'?
+c:\users\etara\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\xtensa-esp32-elf\sys-include\stdio.h:328:29: error: unknown type name 'size_t'
+  328 | int     vsniprintf (char *, size_t, const char *, __VALIST)
+      |                             ^~~~~~
+c:\users\etara\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\xtensa-esp32-elf\sys-include\stdio.h:328:29: note: 'size_t' is defined in header '<stddef.h>'; did you forget to '#include <stddef.h>'?
+c:\users\etara\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\xtensa-esp32-elf\sys-include\stdio.h:377:37: error: unknown type name 'size_t'
+  377 | FILE *  fmemopen (void *__restrict, size_t, const char *__restrict);
+      |                                     ^~~~~~
+c:\users\etara\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\xtensa-esp32-elf\sys-include\stdio.h:377:37: note: 'size_t' is defined in header '<stddef.h>'; did you forget to '#include <stddef.h>'?
+c:\users\etara\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\xtensa-esp32-elf\sys-include\stdio.h:380:34: error: unknown type name 'size_t'
+  380 | FILE *  open_memstream (char **, size_t *);
+      |                                  ^~~~~~
+c:\users\etara\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\xtensa-esp32-elf\sys-include\stdio.h:380:34: note: 'size_t' is defined in header '<stddef.h>'; did you forget to '#include <stddef.h>'?
+c:\users\etara\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\xtensa-esp32-elf\sys-include\stdio.h:398:49: error: unknown type name 'size_t'
+  398 | char *  _asniprintf_r (struct _reent *, char *, size_t *, const char *, ...)
+      |                                                 ^~~~~~
+c:\users\etara\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\xtensa-esp32-elf\sys-include\stdio.h:398:49: note: 'size_t' is defined in header '<stddef.h>'; did you forget to '#include <stddef.h>'?
+c:\users\etara\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\xtensa-esp32-elf\sys-include\stdio.h:400:58: error: unknown type name 'size_t'
+  400 | char *  _asnprintf_r (struct _reent *, char *__restrict, size_t *__restrict, const char *__restrict, ...)
+      |                                                          ^~~~~~
+c:\users\etara\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\xtensa-esp32-elf\sys-include\stdio.h:400:58: note: 'size_t' is defined in header '<stddef.h>'; did you forget to '#include <stddef.h>'?
+c:\users\etara\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\xtensa-esp32-elf\sys-include\stdio.h:427:57: error: unknown type name 'size_t'
+  427 | FILE *  _fmemopen_r (struct _reent *, void *__restrict, size_t, const char *__restrict);
+      |                                                         ^~~~~~
+c:\users\etara\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\xtensa-esp32-elf\sys-include\stdio.h:427:57: note: 'size_t' is defined in header '<stddef.h>'; did you forget to '#include <stddef.h>'?
+c:\users\etara\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\xtensa-esp32-elf\sys-include\stdio.h:437:1: error: unknown type name 'size_t'
+  437 | size_t  _fread_r (struct _reent *, void *__restrict, size_t _size, size_t _n, FILE *__restrict);
+      | ^~~~~~
+c:\users\etara\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\xtensa-esp32-elf\sys-include\stdio.h:437:1: note: 'size_t' is defined in header '<stddef.h>'; did you forget to '#include <stddef.h>'?
+c:\users\etara\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\xtensa-esp32-elf\sys-include\stdio.h:437:54: error: unknown type name 'size_t'
+  437 | size_t  _fread_r (struct _reent *, void *__restrict, size_t _size, size_t _n, FILE *__restrict);
+      |                                                      ^~~~~~
+c:\users\etara\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\xtensa-esp32-elf\sys-include\stdio.h:437:54: note: 'size_t' is defined in header '<stddef.h>'; did you forget to '#include <stddef.h>'?
+c:\users\etara\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\xtensa-esp32-elf\sys-include\stdio.h:437:68: error: unknown type name 'size_t'
+  437 | size_t  _fread_r (struct _reent *, void *__restrict, size_t _size, size_t _n, FILE *__restrict);
+      |                                                                    ^~~~~~
+c:\users\etara\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\xtensa-esp32-elf\sys-include\stdio.h:437:68: note: 'size_t' is defined in header '<stddef.h>'; did you forget to '#include <stddef.h>'?
+c:\users\etara\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\xtensa-esp32-elf\sys-include\stdio.h:438:1: error: unknown type name 'size_t'
+  438 | size_t  _fread_unlocked_r (struct _reent *, void *__restrict, size_t _size, size_t _n, FILE *__restrict);
+      | ^~~~~~
+c:\users\etara\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\xtensa-esp32-elf\sys-include\stdio.h:438:1: note: 'size_t' is defined in header '<stddef.h>'; did you forget to '#include <stddef.h>'?
+c:\users\etara\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\xtensa-esp32-elf\sys-include\stdio.h:438:63: error: unknown type name 'size_t'
+  438 | size_t  _fread_unlocked_r (struct _reent *, void *__restrict, size_t _size, size_t _n, FILE *__restrict);
+      |                                                               ^~~~~~
+c:\users\etara\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\xtensa-esp32-elf\sys-include\stdio.h:438:63: note: 'size_t' is defined in header '<stddef.h>'; did you forget to '#include <stddef.h>'?
+c:\users\etara\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\xtensa-esp32-elf\sys-include\stdio.h:438:77: error: unknown type name 'size_t'
+  438 | size_t  _fread_unlocked_r (struct _reent *, void *__restrict, size_t _size, size_t _n, FILE *__restrict);
+      |                                                                             ^~~~~~
+c:\users\etara\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\xtensa-esp32-elf\sys-include\stdio.h:438:77: note: 'size_t' is defined in header '<stddef.h>'; did you forget to '#include <stddef.h>'?
+c:\users\etara\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\xtensa-esp32-elf\sys-include\stdio.h:446:1: error: unknown type name 'size_t'
+  446 | size_t  _fwrite_r (struct _reent *, const void *__restrict, size_t _size, size_t _n, FILE *__restrict);
+      | ^~~~~~
+c:\users\etara\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\xtensa-esp32-elf\sys-include\stdio.h:446:1: note: 'size_t' is defined in header '<stddef.h>'; did you forget to '#include <stddef.h>'?
+c:\users\etara\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\xtensa-esp32-elf\sys-include\stdio.h:446:61: error: unknown type name 'size_t'
+  446 | size_t  _fwrite_r (struct _reent *, const void *__restrict, size_t _size, size_t _n, FILE *__restrict);
+      |                                                             ^~~~~~
+c:\users\etara\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\xtensa-esp32-elf\sys-include\stdio.h:446:61: note: 'size_t' is defined in header '<stddef.h>'; did you forget to '#include <stddef.h>'?
+c:\users\etara\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\xtensa-esp32-elf\sys-include\stdio.h:446:75: error: unknown type name 'size_t'
+  446 | size_t  _fwrite_r (struct _reent *, const void *__restrict, size_t _size, size_t _n, FILE *__restrict);
+      |                                                                           ^~~~~~
+c:\users\etara\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\xtensa-esp32-elf\sys-include\stdio.h:446:75: note: 'size_t' is defined in header '<stddef.h>'; did you forget to '#include <stddef.h>'?
+c:\users\etara\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\xtensa-esp32-elf\sys-include\stdio.h:447:1: error: unknown type name 'size_t'
+  447 | size_t  _fwrite_unlocked_r (struct _reent *, const void *__restrict, size_t _size, size_t _n, FILE *__restrict);
+      | ^~~~~~
+c:\users\etara\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\xtensa-esp32-elf\sys-include\stdio.h:447:1: note: 'size_t' is defined in header '<stddef.h>'; did you forget to '#include <stddef.h>'?
+c:\users\etara\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\xtensa-esp32-elf\sys-include\stdio.h:447:70: error: unknown type name 'size_t'
+  447 | size_t  _fwrite_unlocked_r (struct _reent *, const void *__restrict, size_t _size, size_t _n, FILE *__restrict);
+      |                                                                      ^~~~~~
+c:\users\etara\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\xtensa-esp32-elf\sys-include\stdio.h:447:70: note: 'size_t' is defined in header '<stddef.h>'; did you forget to '#include <stddef.h>'?
+c:\users\etara\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\xtensa-esp32-elf\sys-include\stdio.h:447:84: error: unknown type name 'size_t'
+  447 | size_t  _fwrite_unlocked_r (struct _reent *, const void *__restrict, size_t _size, size_t _n, FILE *__restrict);
+      |                                                                                    ^~~~~~
+c:\users\etara\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\xtensa-esp32-elf\sys-include\stdio.h:447:84: note: 'size_t' is defined in header '<stddef.h>'; did you forget to '#include <stddef.h>'?
+c:\users\etara\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\xtensa-esp32-elf\sys-include\stdio.h:457:54: error: unknown type name 'size_t'
+  457 | FILE *  _open_memstream_r (struct _reent *, char **, size_t *);
+      |                                                      ^~~~~~
+c:\users\etara\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\xtensa-esp32-elf\sys-include\stdio.h:457:54: note: 'size_t' is defined in header '<stddef.h>'; did you forget to '#include <stddef.h>'?
+c:\users\etara\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\xtensa-esp32-elf\sys-include\stdio.h:475:48: error: unknown type name 'size_t'
+  475 | int     _sniprintf_r (struct _reent *, char *, size_t, const char *, ...)
+      |                                                ^~~~~~
+c:\users\etara\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\xtensa-esp32-elf\sys-include\stdio.h:475:48: note: 'size_t' is defined in header '<stddef.h>'; did you forget to '#include <stddef.h>'?
+c:\users\etara\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\xtensa-esp32-elf\sys-include\stdio.h:477:57: error: unknown type name 'size_t'
+  477 | int     _snprintf_r (struct _reent *, char *__restrict, size_t, const char *__restrict, ...)
+      |                                                         ^~~~~~
+c:\users\etara\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\xtensa-esp32-elf\sys-include\stdio.h:477:57: note: 'size_t' is defined in header '<stddef.h>'; did you forget to '#include <stddef.h>'?
+c:\users\etara\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\xtensa-esp32-elf\sys-include\stdio.h:489:49: error: unknown type name 'size_t'
+  489 | char *  _vasniprintf_r (struct _reent*, char *, size_t *, const char *, __VALIST)
+      |                                                 ^~~~~~
+c:\users\etara\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\xtensa-esp32-elf\sys-include\stdio.h:489:49: note: 'size_t' is defined in header '<stddef.h>'; did you forget to '#include <stddef.h>'?
+c:\users\etara\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\xtensa-esp32-elf\sys-include\stdio.h:491:48: error: unknown type name 'size_t'
+  491 | char *  _vasnprintf_r (struct _reent*, char *, size_t *, const char *, __VALIST)
+      |                                                ^~~~~~
+c:\users\etara\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\xtensa-esp32-elf\sys-include\stdio.h:491:48: note: 'size_t' is defined in header '<stddef.h>'; did you forget to '#include <stddef.h>'?
+c:\users\etara\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\xtensa-esp32-elf\sys-include\stdio.h:519:49: error: unknown type name 'size_t'
+  519 | int     _vsniprintf_r (struct _reent *, char *, size_t, const char *, __VALIST)
+      |                                                 ^~~~~~
+c:\users\etara\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\xtensa-esp32-elf\sys-include\stdio.h:519:49: note: 'size_t' is defined in header '<stddef.h>'; did you forget to '#include <stddef.h>'?
+c:\users\etara\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\xtensa-esp32-elf\sys-include\stdio.h:521:58: error: unknown type name 'size_t'
+  521 | int     _vsnprintf_r (struct _reent *, char *__restrict, size_t, const char *__restrict, __VALIST)
+      |                                                          ^~~~~~
+c:\users\etara\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\xtensa-esp32-elf\sys-include\stdio.h:521:58: note: 'size_t' is defined in header '<stddef.h>'; did you forget to '#include <stddef.h>'?
+c:\users\etara\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\xtensa-esp32-elf\sys-include\stdio.h:531:30: error: unknown type name 'size_t'
+  531 | ssize_t __getdelim (char **, size_t *, int, FILE *);
+      |                              ^~~~~~
+c:\users\etara\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\xtensa-esp32-elf\sys-include\stdio.h:531:30: note: 'size_t' is defined in header '<stddef.h>'; did you forget to '#include <stddef.h>'?
+c:\users\etara\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\xtensa-esp32-elf\sys-include\stdio.h:532:29: error: unknown type name 'size_t'
+  532 | ssize_t __getline (char **, size_t *, FILE *);
+      |                             ^~~~~~
+c:\users\etara\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\xtensa-esp32-elf\sys-include\stdio.h:532:29: note: 'size_t' is defined in header '<stddef.h>'; did you forget to '#include <stddef.h>'?
+c:\users\etara\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\xtensa-esp32-elf\sys-include\stdio.h:542:1: error: unknown type name 'size_t'
+  542 | size_t  fread_unlocked (void *__restrict, size_t _size, size_t _n, FILE *__restrict);
+      | ^~~~~~
+c:\users\etara\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\xtensa-esp32-elf\sys-include\stdio.h:542:1: note: 'size_t' is defined in header '<stddef.h>'; did you forget to '#include <stddef.h>'?
+c:\users\etara\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\xtensa-esp32-elf\sys-include\stdio.h:542:43: error: unknown type name 'size_t'
+  542 | size_t  fread_unlocked (void *__restrict, size_t _size, size_t _n, FILE *__restrict);
+      |                                           ^~~~~~
+c:\users\etara\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\xtensa-esp32-elf\sys-include\stdio.h:542:43: note: 'size_t' is defined in header '<stddef.h>'; did you forget to '#include <stddef.h>'?
+c:\users\etara\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\xtensa-esp32-elf\sys-include\stdio.h:542:57: error: unknown type name 'size_t'
+  542 | size_t  fread_unlocked (void *__restrict, size_t _size, size_t _n, FILE *__restrict);
+      |                                                         ^~~~~~
+c:\users\etara\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\xtensa-esp32-elf\sys-include\stdio.h:542:57: note: 'size_t' is defined in header '<stddef.h>'; did you forget to '#include <stddef.h>'?
+c:\users\etara\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\xtensa-esp32-elf\sys-include\stdio.h:543:1: error: unknown type name 'size_t'
+  543 | size_t  fwrite_unlocked (const void *__restrict , size_t _size, size_t _n, FILE *);
+      | ^~~~~~
+c:\users\etara\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\xtensa-esp32-elf\sys-include\stdio.h:543:1: note: 'size_t' is defined in header '<stddef.h>'; did you forget to '#include <stddef.h>'?
+c:\users\etara\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\xtensa-esp32-elf\sys-include\stdio.h:543:51: error: unknown type name 'size_t'
+  543 | size_t  fwrite_unlocked (const void *__restrict , size_t _size, size_t _n, FILE *);
+      |                                                   ^~~~~~
+c:\users\etara\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\xtensa-esp32-elf\sys-include\stdio.h:543:51: note: 'size_t' is defined in header '<stddef.h>'; did you forget to '#include <stddef.h>'?
+c:\users\etara\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\xtensa-esp32-elf\sys-include\stdio.h:543:65: error: unknown type name 'size_t'
+  543 | size_t  fwrite_unlocked (const void *__restrict , size_t _size, size_t _n, FILE *);
+      |                                                                 ^~~~~~
+c:\users\etara\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\xtensa-esp32-elf\sys-include\stdio.h:543:65: note: 'size_t' is defined in header '<stddef.h>'; did you forget to '#include <stddef.h>'?
+c:\users\etara\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\xtensa-esp32-elf\sys-include\stdio.h:624:69: error: unknown type name 'size_t'
+  624 | typedef ssize_t cookie_read_function_t(void *__cookie, char *__buf, size_t __n);
+      |                                                                     ^~~~~~
+c:\users\etara\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\xtensa-esp32-elf\sys-include\stdio.h:624:69: note: 'size_t' is defined in header '<stddef.h>'; did you forget to '#include <stddef.h>'?
+c:\users\etara\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\xtensa-esp32-elf\sys-include\stdio.h:626:41: error: unknown type name 'size_t'
+  626 |                                         size_t __n);
+      |                                         ^~~~~~
+c:\users\etara\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\xtensa-esp32-elf\sys-include\stdio.h:626:41: note: 'size_t' is defined in header '<stddef.h>'; did you forget to '#include <stddef.h>'?
+c:\users\etara\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\xtensa-esp32-elf\sys-include\stdio.h:638:3: error: unknown type name 'cookie_read_function_t'
+  638 |   cookie_read_function_t  *read;
+      |   ^~~~~~~~~~~~~~~~~~~~~~
+c:\users\etara\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\xtensa-esp32-elf\sys-include\stdio.h:639:3: error: unknown type name 'cookie_write_function_t'
+  639 |   cookie_write_function_t *write;
+      |   ^~~~~~~~~~~~~~~~~~~~~~~
+In file included from C:/Users/etara/esp/esp-idf/components/bootloader_support/private_include/bootloader_init.h:8,
+                 from C:/Users/etara/esp/esp-idf/components/bootloader/subproject/main/bootloader_start.c:9:
+C:/Users/etara/esp/esp-idf/components/esp_common/include/esp_err.h:76:58: error: unknown type name 'size_t'
+   76 | const char *esp_err_to_name_r(esp_err_t code, char *buf, size_t buflen);
+      |                                                          ^~~~~~
+In file included from C:/Users/etara/esp/esp-idf/components/bootloader_support/private_include/bootloader_init.h:8,
+                 from C:/Users/etara/esp/esp-idf/components/bootloader/subproject/main/bootloader_start.c:9:
+C:/Users/etara/esp/esp-idf/components/esp_common/include/esp_err.h:14:1: note: 'size_t' is defined in header '<stddef.h>'; did you forget to '#include <stddef.h>'?
+   13 | #include "esp_compiler.h"
+  +++ |+#include <stddef.h>
+   14 | 
+In file included from C:/Users/etara/esp/esp-idf/components/bootloader_support/include/esp_image_format.h:10,
+                 from C:/Users/etara/esp/esp-idf/components/bootloader_support/private_include/bootloader_init.h:9,
+                 from C:/Users/etara/esp/esp-idf/components/bootloader/subproject/main/bootloader_start.c:9:
+C:/Users/etara/esp/esp-idf/components/bootloader_support/include/esp_flash_partitions.h:104:43: error: unknown type name 'size_t'
+  104 | bool esp_partition_main_flash_region_safe(size_t addr, size_t size);
+      |                                           ^~~~~~
+In file included from C:/Users/etara/esp/esp-idf/components/bootloader_support/include/esp_image_format.h:10,
+                 from C:/Users/etara/esp/esp-idf/components/bootloader_support/private_include/bootloader_init.h:9,
+                 from C:/Users/etara/esp/esp-idf/components/bootloader/subproject/main/bootloader_start.c:9:
+C:/Users/etara/esp/esp-idf/components/bootloader_support/include/esp_flash_partitions.h:10:1: note: 'size_t' is defined in header '<stddef.h>'; did you forget to '#include <stddef.h>'?
+    9 | #include "esp_types.h"
+  +++ |+#include <stddef.h>
+   10 | #include "sdkconfig.h"
+In file included from C:/Users/etara/esp/esp-idf/components/bootloader_support/include/esp_image_format.h:10,
+                 from C:/Users/etara/esp/esp-idf/components/bootloader_support/private_include/bootloader_init.h:9,
+                 from C:/Users/etara/esp/esp-idf/components/bootloader/subproject/main/bootloader_start.c:9:
+C:/Users/etara/esp/esp-idf/components/bootloader_support/include/esp_flash_partitions.h:104:56: error: unknown type name 'size_t'
+  104 | bool esp_partition_main_flash_region_safe(size_t addr, size_t size);
+      |                                                        ^~~~~~
+C:/Users/etara/esp/esp-idf/components/bootloader_support/include/esp_flash_partitions.h:104:56: note: 'size_t' is defined in header '<stddef.h>'; did you forget to '#include <stddef.h>'?
+In file included from C:/Users/etara/esp/esp-idf/components/bootloader/subproject/main/bootloader_start.c:10:
+C:/Users/etara/esp/esp-idf/components/bootloader_support/private_include/bootloader_utility.h:96:84: error: unknown type name 'size_t'
+   96 | esp_err_t bootloader_sha256_hex_to_str(char *out_str, const uint8_t *in_array_hex, size_t len);
+      |                                                                                    ^~~~~~
+C:/Users/etara/esp/esp-idf/components/bootloader_support/private_include/bootloader_utility.h:9:1: note: 'size_t' is defined in header '<stddef.h>'; did you forget to '#include <stddef.h>'?
+    8 | #include "bootloader_config.h"
+  +++ |+#include <stddef.h>
+    9 | #include "esp_image_format.h"
+C:/Users/etara/esp/esp-idf/components/bootloader_support/private_include/bootloader_utility.h:108:50: error: unknown type name 'size_t'
+  108 | void bootloader_debug_buffer(const void *buffer, size_t length, const char *label);
+      |                                                  ^~~~~~
+C:/Users/etara/esp/esp-idf/components/bootloader_support/private_include/bootloader_utility.h:108:50: note: 'size_t' is defined in header '<stddef.h>'; did you forget to '#include <stddef.h>'?
+[6/99] Building C object esp-idf/log/CMakeFiles/__idf_log.dir/log_noos.c.obj
+ninja: build stopped: subcommand failed.
+ninja: build stopped: subcommand failed.

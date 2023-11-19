@@ -1,0 +1,7 @@
+-- ccache will be used for faster recompilation
+-- Project is not inside a git repository, or git repository has no commits; will not use 'git describe' to determine PROJECT_VER.
+-- Building ESP-IDF components for target esp32
+Solving dependencies requirements
+..-- Configuring incomplete, errors occurred!
+See also "C:/Users/etara/RC_Car/ble_compatibility_test/build/CMakeFiles/CMakeOutput.log".
+See also "C:/Users/etara/RC_Car/ble_compatibility_test/build/CMakeFiles/CMakeError.log".
