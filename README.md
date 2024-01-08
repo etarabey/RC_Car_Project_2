@@ -7,8 +7,9 @@ The code in this repository is to give users the ability to connect two ESP32 de
 Code includes 
 
 - BLE Client Server
-- PWM generation
+- PWM generation for gate driver
 - Servo control
+- 
 
   
 
