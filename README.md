@@ -4,9 +4,11 @@ The code in this repository is to give users the ability to connect two ESP32 de
 
 ### NOTE: This code is mostly based off of ESP-IDF documentation and examples found on the ESP32 repository. Code includes 
 
-# BLE Client Server
-# PWM 
-# Servo 
+- BLE Client Server
+- PWM 
+- Servo
+
+  
 
 
 
